@@ -19,10 +19,11 @@ function setLanguage(next, persist = true) {
   altNodes.forEach(el => el.setAttribute('alt', language === 'sq' ? el.dataset.sqAlt : el.dataset.enAlt));
   document.querySelectorAll('[data-lang]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.lang === language)));
   document.title = language === 'sq' ? 'PREJ — Sisteme komplekse. Zgjidhje të qarta.' : 'PREJ — Complex systems. Clear solutions.';
-  document.querySelector('meta[name="description"]').content = language === 'sq' ? 'PREJ është kompani softuerike në Kosovë, e drejtuar nga themeluesi. Aplikacione mobile, platforma web dhe sisteme të ndërlidhura.' : 'PREJ is a founder-led software engineering company in Kosovo. Mobile applications, web platforms and connected systems, designed with purpose and built with care.';
+  document.querySelector('meta[name="description"]').content = language === 'sq' ? 'PREJ është kompani zhvillimi softuerik në Kosovë. Aplikacione mobile, platforma biznesi, sisteme të asistuara nga AI, infrastrukturë e lidhur dhe produkte interaktive 3D.' : 'PREJ is a software development company in Kosovo. Mobile apps, business platforms, AI-assisted systems, connected infrastructure and interactive 3D products.';
   document.querySelector('meta[property="og:title"]').content = document.title;
   document.querySelector('meta[property="og:description"]').content = document.querySelector('meta[name="description"]').content;
   updateMenuLabel();
+  updateProjectCount();
   if (document.querySelector('#form-status').dataset.state) showStatus(document.querySelector('#form-status').dataset.state);
   if (persist) { try { localStorage.setItem('prej.language', language); } catch {} }
 }
@@ -47,17 +48,46 @@ const initialLanguage = new URLSearchParams(location.search).get('lang');
 let savedLanguage = 'en'; try { savedLanguage = localStorage.getItem('prej.language') || 'en'; } catch {}
 setLanguage(initialLanguage || savedLanguage, false);
 
-const projectTabs = [...document.querySelectorAll('[data-project]')];
-function selectProject(id, moveFocus = false) {
-  if (!projectTabs.some(tab => tab.dataset.project === id)) return;
-  projectTabs.forEach(tab => { const active = tab.dataset.project === id; tab.setAttribute('aria-selected',String(active)); tab.tabIndex = active ? 0 : -1; document.getElementById(tab.getAttribute('aria-controls')).hidden = !active; if (active && moveFocus) tab.focus(); });
+// All projects remain available without JavaScript. Filters update existing semantic cards.
+function updateProjectCount() {
+  const count = [...document.querySelectorAll('.portfolio-card')].filter(card => !card.hidden).length;
+  document.querySelector('#project-count').textContent = language === 'sq' ? `${count} projekte të shfaqura` : `${count} projects shown`;
 }
-projectTabs.forEach((tab, index) => {
-  tab.addEventListener('click', () => selectProject(tab.dataset.project));
-  tab.addEventListener('keydown', e => { let next; if (e.key === 'ArrowRight') next = (index + 1) % projectTabs.length; if (e.key === 'ArrowLeft') next = (index + projectTabs.length - 1) % projectTabs.length; if (e.key === 'Home') next = 0; if (e.key === 'End') next = projectTabs.length - 1; if (next !== undefined) { e.preventDefault(); selectProject(projectTabs[next].dataset.project, true); } });
-});
-document.querySelectorAll('[data-show-project]').forEach(link => link.addEventListener('click', () => selectProject(link.dataset.showProject)));
-selectProject('mobility');
+function filterProjects(category) {
+  document.querySelectorAll('[data-filter]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.filter === category)));
+  document.querySelectorAll('.portfolio-card').forEach(card => {
+    card.hidden = category !== 'all' && card.dataset.category !== category;
+    if (!card.hidden) card.classList.add('is-revealed');
+  });
+  updateProjectCount();
+}
+document.querySelectorAll('[data-filter]').forEach(button => button.addEventListener('click', () => filterProjects(button.dataset.filter)));
+document.querySelectorAll('[data-filter-link]').forEach(link => link.addEventListener('click', () => filterProjects(link.dataset.filterLink)));
+updateProjectCount();
+
+// Motion is progressive enhancement, finite, and respects live system preference changes.
+const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+const revealTargets = [...document.querySelectorAll('.section-heading, .capability, .portfolio-card, .process-grid article, .accountability, .stack-grid article')];
+let revealObserver;
+function configureMotion() {
+  revealObserver?.disconnect();
+  if (reducedMotion.matches || !('IntersectionObserver' in window)) {
+    revealTargets.forEach(el => { el.classList.remove('reveal-ready'); el.classList.add('is-revealed'); });
+    return;
+  }
+  revealObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('is-revealed'); revealObserver.unobserve(entry.target); }
+    });
+  }, {threshold: 0.06, rootMargin: '0px 0px -24px 0px'});
+  revealTargets.forEach(el => {
+    // Already-seen content never disappears when preferences change.
+    if (!el.classList.contains('is-revealed')) { el.classList.add('reveal-ready'); revealObserver.observe(el); }
+  });
+}
+configureMotion();
+reducedMotion.addEventListener('change', configureMotion);
+document.addEventListener('focusin', event => event.target.closest('.reveal-ready')?.classList.add('is-revealed'));
 
 const dialog = document.querySelector('#brief-dialog');
 const form = document.querySelector('#brief-form');
