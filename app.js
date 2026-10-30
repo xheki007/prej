@@ -128,3 +128,33 @@ document.querySelector('#copy-brief').addEventListener('click', async () => {
   catch { document.querySelector('#manual-copy').hidden = false; const text = document.querySelector('#manual-brief'); text.value = brief; text.focus(); text.select(); showStatus('manual'); }
 });
 document.querySelector('#year').textContent = String(new Date().getFullYear());
+
+// Attach the movie only after an explicit play request. Page loads fetch no video.
+const workflowVideo = document.querySelector('#workflow-video');
+const workflowPlay = document.querySelector('.workflow-play');
+const workflowVideoError = document.querySelector('#workflow-video-error');
+function showWorkflowVideoError() {
+  workflowPlay.hidden = false;
+  workflowVideo.controls = false;
+  workflowVideo.setAttribute('aria-hidden', 'true');
+  workflowVideo.tabIndex = -1;
+  workflowVideoError.hidden = false;
+}
+workflowVideo.addEventListener('error', showWorkflowVideoError);
+workflowPlay.addEventListener('click', async () => {
+  workflowVideoError.hidden = true;
+  workflowPlay.hidden = true;
+  workflowVideo.controls = true;
+  workflowVideo.removeAttribute('aria-hidden');
+  workflowVideo.tabIndex = 0;
+  if (!workflowVideo.getAttribute('src') || workflowVideo.error) {
+    workflowVideo.src = workflowVideo.dataset.src;
+  }
+  try {
+    await workflowVideo.play();
+    workflowVideo.focus({preventScroll: true});
+  } catch {
+    showWorkflowVideoError();
+    workflowPlay.focus({preventScroll: true});
+  }
+});
