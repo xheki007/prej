@@ -53,25 +53,21 @@ with sync_playwright() as p:
    # Animation timeline changes; test a known moving interval, not its intentional quiet interval.
    stage.locator('svg').evaluate('(e)=>e.getAnimations({subtree:true}).forEach(a=>{a.currentTime=500})')
    first=offset(page);page.wait_for_timeout(160);assert offset(page)!=first,(lang,width,first,motion_diagnostic(page))
-   button=page.locator('.hero-motion-toggle');button.click();state(page,'paused');settle_pause(page)
+   assert page.locator('.hero-motion-toggle').count()==0
+   # Both cycles remain infinite; seek into a second cycle without overriding CSS playback.
+   assert stage.locator('.hero-light-left').evaluate('(e)=>getComputedStyle(e).animationIterationCount')=='infinite'
+   stage.locator('svg').evaluate('(e)=>e.getAnimations({subtree:true}).forEach(a=>{a.currentTime=7500})')
+   first=offset(page);page.wait_for_timeout(160);assert offset(page)!=first,(lang,width,first,motion_diagnostic(page))
+   # Actual viewport screenshots avoid sticky-header artifacts in oversized element captures.
+   page.evaluate("window.scrollTo({left:0,top:0,behavior:'instant'})")
+   page.screenshot(path=str(out/f'hero-{lang}-{width}.png'))
+   page.locator('footer').scroll_into_view_if_needed();state(page,'paused');settle_pause(page)
    first=offset(page);page.wait_for_timeout(160);assert offset(page)==first,(lang,width,first,motion_diagnostic(page))
-   assert button.inner_text()==button.get_attribute('data-resume')
-   page.locator('footer').scroll_into_view_if_needed();state(page,'paused')
-   show_stage(page);state(page,'paused')
-   assert page.locator('.hero-light-left').evaluate('(e)=>getComputedStyle(e).animationPlayState')=='paused'
-   button.focus();page.keyboard.press('Enter');show_stage(page);state(page,'running')
-   # Native control owns playback. Seek only: WAAPI play()/pause() would override CSS.
-   button.click();state(page,'paused');settle_pause(page)
-   stage.locator('svg').evaluate('(e)=>e.getAnimations({subtree:true}).forEach(a=>{a.currentTime=1500})')
-   assert page.locator('.hero').evaluate('(e)=>e.scrollLeft')==0
-   assert page.locator('.hero-grid').bounding_box()['x']>=16
-   page.locator('.hero').screenshot(path=str(out/f'hero-{lang}-{width}.png'))
-   button.click();show_stage(page);state(page,'running')
-   page.locator('footer').scroll_into_view_if_needed();state(page,'paused')
    show_stage(page);state(page,'running')
    # Exercise real visibilitychange handler without a production test hook.
    page.evaluate("Object.defineProperty(document,'hidden',{configurable:true,get:()=>true});document.dispatchEvent(new Event('visibilitychange'))")
-   state(page,'paused')
+   state(page,'paused');settle_pause(page)
+   first=offset(page);page.wait_for_timeout(160);assert offset(page)==first
    page.evaluate("delete document.hidden;document.dispatchEvent(new Event('visibilitychange'))")
    state(page,'running')
    if width==1440:
@@ -88,7 +84,7 @@ with sync_playwright() as p:
     page.locator('[data-open-brief]').tap();assert page.locator('dialog').is_visible();page.keyboard.press('Escape')
     show_stage(page);state(page,'running')
    page.emulate_media(reduced_motion='reduce');state(page,'paused')
-   assert not button.is_visible()
+   assert page.locator('.hero-motion-toggle').count()==0
    assert stage.locator('svg').evaluate('(e)=>getComputedStyle(e).display')=='none'
    assert stage.evaluate('(e)=>getComputedStyle(e).transform')=='none'
    page.emulate_media(reduced_motion='no-preference');state(page,'running')
@@ -100,14 +96,14 @@ with sync_playwright() as p:
  page.goto(base+'/en/')
  page.evaluate("document.dispatchEvent(new Event('visibilitychange'))")
  page.emulate_media(reduced_motion='reduce');page.emulate_media(reduced_motion='no-preference')
- assert not page.locator('.hero-motion-toggle').is_visible()
+ assert page.locator('.hero-motion-toggle').count()==0
  assert page.locator('.hero-motion-stage').get_attribute('data-enhanced') is None
  assert page.locator('.hero-motion-overlay').evaluate('(e)=>getComputedStyle(e).display')=='none'
  context.close()
  # No JS: static original photograph, no inert visible control.
  context=browser.new_context(java_script_enabled=False)
  page=context.new_page();page.goto(base+'/en/')
- assert not page.locator('.hero-motion-toggle').is_visible()
+ assert page.locator('.hero-motion-toggle').count()==0
  assert page.locator('.hero-motion-overlay').evaluate('(e)=>getComputedStyle(e).display')=='none'
  assert page.locator('.hero-art img').is_visible();context.close()
  # Two brief actual-motion previews, isolated from full-suite screenshots.

@@ -8,9 +8,6 @@
 .hero-icon-glow{opacity:0;animation:hero-arrival 7s ease-in-out infinite}
 .hero-icon-phone{animation-delay:-.7s}.hero-icon-web{animation-delay:1.5s}.hero-icon-db{animation-delay:4s}
 .hero-motion-stage[data-motion="paused"] .hero-motion-overlay *{animation-play-state:paused}
-.hero-motion-toggle{display:block;width:fit-content;min-height:44px;margin-top:10px;padding:8px 0;background:transparent;border:0;color:#9bb9c9;font:inherit;font-size:11px;text-align:left;text-decoration:underline;text-underline-offset:4px;cursor:pointer}
-.hero-motion-toggle:hover{color:#d4f8f2}.hero-motion-toggle:focus-visible{outline:2px solid var(--teal);outline-offset:4px}
-.hero-motion-toggle[hidden]{display:none}
 @keyframes hero-conduit{0%{stroke-dashoffset:14;opacity:0}8%{opacity:.75}37%{stroke-dashoffset:-112;opacity:.75}44%,100%{stroke-dashoffset:-112;opacity:0}}
 @keyframes hero-arrival{0%,12%,47%,100%{opacity:0}28%{opacity:.65}}
-@media(prefers-reduced-motion:reduce){.hero-motion-stage{transform:none!important;transition:none}.hero-motion-stage[data-enhanced] .hero-motion-overlay{display:none}.hero-motion-toggle{display:none}}
+@media(prefers-reduced-motion:reduce){.hero-motion-stage{transform:none!important;transition:none}.hero-motion-stage[data-enhanced] .hero-motion-overlay{display:none}}
