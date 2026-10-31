@@ -1,0 +1,58 @@
+{
+  "title": "Softuer për shkolla vallëzimi: projekti Home of Dance | PREJ",
+  "description": "Projekti PREJ për Home of Dance: panel pune i personalizuar, kërkesa regjistrimi, vijueshmëri, fatura dhe nënshkrim elektronik kontratash, me shqyrtim nga zyra.",
+  "eyebrow": "Studim rasti i projektit · Platformë web e personalizuar",
+  "name": "Home of Dance",
+  "h1": "Panel pune i lidhur dhe regjistrim online për Home of Dance",
+  "intro": "PREJ zhvilloi një aplikacion web të personalizuar për Home of Dance, për të mbështetur organizimin e veprimtarisë së shkollës së vallëzimit. Projekti bashkon një panel të brendshëm pune me një përvojë publike për zgjedhjen e kurseve dhe regjistrimin në lokacionet e shkollës në Breisach dhe Freiburg. Kërkimi i kurseve, të dhënat e pjesëmarrësve dhe shqyrtimi administrativ janë pjesë të një rrjedhe të lidhur pune, ndërsa përgjegjësia për konfirmimin mbetet te zyra.",
+  "scopeTitle": "Çfarë lidh platforma",
+  "scope": [
+    "Kërkimi publik i kurseve dhe kërkesat për regjistrim",
+    "Planifikimi i kurseve, vijueshmëria dhe listat e punës së zyrës",
+    "Kontratat, nënshkrimi elektronik dhe administrimi i faturave"
+  ],
+  "workflowTitle": "Nga gjetja e kursit te shqyrtimi i kërkesës",
+  "workflowIntro": "Rruga publike nis me zgjedhjen e një kursi të përshtatshëm, jo me një formular të përgjithshëm kontakti. Vizitorët mund ta filtrojnë katalogun sipas lokacionit, stilit të vallëzimit, moshës dhe llojit të kursit. Gjendjet e disponueshmërisë dhe listës së pritjes sqarojnë cili hap është i mundur më tej, ndërsa përzgjedhja mund të përfshijë më shumë se një kurs. Këto kontrolle e lidhin ndërfaqen publike me ofertën e shkollës, pa e trajtuar çdo kërkesë si të njëjtin veprim.",
+  "bookingCaption": "Katalogu publik origjinal në gjermanisht i Home of Dance, i paraqitur pa të dhëna të pjesëmarrësve. Çmimet dhe disponueshmëria e kurseve mund të ndryshojnë.",
+  "bookingAlt": "Katalogu publik i kurseve të Home of Dance me filtra për lokacionin, stilin e vallëzimit, moshën dhe llojin e kursit",
+  "requestTitle": "Informacion i strukturuar, me një kufi të qartë konfirmimi",
+  "requestText": "Përvoja e regjistrimit dallon kërkesat për regjistrim me detyrim, kërkesat për provë, kërkesat për informacion dhe ato për listën e pritjes. Ajo mbledh informacionin e nevojshëm për rrjedhën përkatëse, përfshirë kontaktet e pjesëmarrësit dhe prindit ose kujdestarit, të dhënat e kontratës apo të ndryshimit, muajin e fillimit, tarifën dhe adresën. Preferencat e pagesës përfshijnë debitimin direkt SEPA dhe transfertën bankare. Informacioni i privatësisë është i ndarë nga pëlqimi opsional për publikimin e fotografive ose videove, në vend që këto zgjedhje të ndryshme të bashkohen në një pëlqim të supozuar.",
+  "boundaryTitle": "Një kërkesë nuk është konfirmim i menjëhershëm",
+  "boundaryText": "Kërkesat e dërguara shqyrtohen nga zyra e Home of Dance. Kontrata hyn në fuqi vetëm kur zyra e konfirmon. Zgjedhja e një kursi, tarife apo mënyre pagese nuk do të thotë vetvetiu se vendi është konfirmuar ose se është arkëtuar pagesa. Ky dallim është pjesë e rrjedhës publike dhe mbetet i rëndësishëm edhe kur përshkruhen funksionet e softuerit.",
+  "requestCaption": "Ndërfaqja publike origjinale në gjermanisht për kërkesat, me fusha bosh për pjesëmarrësin dhe prindin ose kujdestarin. Nuk shfaqen të dhëna private.",
+  "requestAlt": "Formulari publik i regjistrimit të Home of Dance në gjermanisht, me fusha bosh për kontaktet e pjesëmarrësit dhe prindit ose kujdestarit",
+  "backofficeTitle": "Ana operative e sistemit",
+  "backofficeIntro": "Pas faqeve publike, paneli i punës i grupon mjetet sipas detyrave operative të shkollës. Studimi i rastit përshkruan funksionet që janë të pranishme në aplikacion, jo rezultate të matura për kohën e kursyer apo performancën tregtare.",
+  "modules": [
+    {
+      "title": "Kurset dhe vijueshmëria",
+      "text": "Regjistrat e kurseve përfshijnë orarin, lokacionin, sallën dhe statusin. Plani javor mbështet pamjen e orarit, ndërsa vijueshmëria organizohet sipas kursit dhe datës. Kjo i jep ndërfaqes administrative një lidhje konkrete me aktivitetin e planifikuar, në vend që orari dhe regjistrat e pjesëmarrjes të mbeten në ekrane të palidhura."
+    },
+    {
+      "title": "Shqyrtimi i regjistrimeve dhe rezervimeve",
+      "text": "Lista e punës së zyrës mbështet statusin, llojin e kërkesës, fushën, përgjegjësinë, vendimin e personit përgjegjës dhe kërkimin. Stafi mund t’i shqyrtojë regjistrimet dhe rezervimet hyrëse në kontekstin e tyre administrativ. Prania e një formulari publik nuk e heq këtë hap shqyrtimi dhe as nuk nënkupton pranimin automatik të çdo kërkese të dërguar."
+    },
+    {
+      "title": "Kontratat dhe faturat",
+      "text": "Rrjedhat e kontratave përfshijnë përgatitjen e PDF-ve, ngarkimin, shqyrtimin dhe kontrollet e faturimit. Nënshkrimi elektronik i kontratave është gjithashtu pjesë e funksionalitetit të kontratave në platformë. Administrimi i faturave përfshin pamje sipas muajit dhe statusit, me gjendje të shlyera dhe të hapura. Këto janë funksione softuerike; ky studim rasti nuk jep garanci për vlefshmërinë juridike të nënshkrimeve dhe as nuk pretendon se janë testuar transaksione pagese."
+    }
+  ],
+  "designTitle": "Një platformë, përgjegjësi të dallueshme",
+  "designText": "Projekti i lidh zgjedhjet publike me informacionin që i nevojitet zyrës për t’i trajtuar ato. Vizitorët kanë nevojë për një rrugë të qartë drejt kursit të duhur dhe për një shpjegim të saktë të kuptimit të kërkesës së tyre. Panelit të punës i duhen regjistra të strukturuar, gjendje shqyrtimi dhe konteksti përkatës i kursit, kontratës dhe faturës. Mbajtja e këtyre përgjegjësive të dukshme është një vendim praktik dizajni: një ekran rezervimi i punuar bukur nuk duhet të fshehë se kush duhet ta konfirmojë kërkesën ose çfarë ndodh më pas.",
+  "evidenceTitle": "Çfarë tregon ky studim rasti",
+  "evidenceText": "Pamjet publike tregojnë katalogun e kurseve dhe ndërfaqen e kërkesave pa informacion privat të pjesëmarrësve. Përshkrimi i funksioneve mbulon rrugën publike të vëzhguar dhe inventarin e funksioneve të panelit të punës, me nënshkrimin elektronik të konfirmuar si veçori e projektit. Gjatë shqyrtimit për këtë studim rasti nuk u dërgua asnjë regjistrim real, nuk u krye pagesë dhe nuk u vendos nënshkrim. Nga ndërfaqet nuk nxirren tregues performance, dëshmi klientësh apo pretendime për funksionim plotësisht autonom.",
+  "publicLink": "Eksploro katalogun publik të kurseve",
+  "serviceLink": "Eksploro shërbimin tonë të zhvillimit të platformave web",
+  "portfolioLink": "Kthehu te katalogu i projekteve PREJ",
+  "readCase": "Lexo studimin e rastit Home of Dance",
+  "relatedTitle": "Po planifikon një platformë biznesi të lidhur?",
+  "relatedText": "Nëse procesi yt bashkon një kërkesë publike me shqyrtim të brendshëm, fillo duke përcaktuar vendimet, regjistrat dhe personat e përfshirë. PREJ mund të diskutojë fushëveprimin e një portali ose paneli pune të personalizuar rreth asaj rrjedhe, përfshirë kufijtë që duhet të mbeten nën kontroll njerëzor.",
+  "cta": "Diskuto projektin tënd",
+  "home": "Ballina",
+  "projects": "Projektet",
+  "language": "Gjuha",
+  "status": "Platformë web e personalizuar",
+  "portfolioSummary": "Panel pune i personalizuar dhe përvojë publike regjistrimi në kurse për Home of Dance. Kërkimi i kurseve, të dhënat e pjesëmarrësve dhe prindërve ose kujdestarëve, vijueshmëria, kontratat, nënshkrimi elektronik dhe administrimi i faturave e lidhin rrugën publike të kërkesës me shqyrtimin nga zyra.",
+  "portfolioBoundary": "Kërkesat për regjistrim shqyrtohen nga zyra e shkollës; kontrata hyn në fuqi vetëm pas konfirmimit të zyrës. Pamjet publike në studimin e rastit nuk përmbajnë të dhëna private të pjesëmarrësve.",
+  "serviceProof": "Për Home of Dance, PREJ zhvilloi një panel pune të personalizuar, të lidhur me zgjedhjen publike të kurseve dhe kërkesat për regjistrim. Platforma përfshin planifikimin e kurseve, vijueshmërinë, listat e punës së zyrës, administrimin e kontratave me nënshkrim elektronik dhe pamjet e faturave. Kërkesat shqyrtohen nga zyra e shkollës; zgjedhja e një kursi apo mënyre pagese nuk e konfirmon vetvetiu kontratën dhe as nuk arkëton pagesë. Studimi i rastit paraqet pamje të ndërfaqes publike pa të dhëna private të pjesëmarrësve."
+}

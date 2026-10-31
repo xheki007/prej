@@ -90,7 +90,7 @@
       "processText": "Fillojmë duke kuptuar si kryhet puna sot dhe ku shfaqen vështirësitë. Së bashku përcaktojmë një fushëveprim fillestar të dobishëm, identifikojmë varësitë dhe biem dakord si do të shqyrtohet përparimi. Arkitektura, dizajni i produktit dhe inxhinieria trajtohen si pjesë të një sistemi të vetëm. Rishikimi njerëzor mbetet qendror edhe kur AI asiston implementimin. Kufizimet e njohura dhe faza e ardhshme e dorëzimit dokumentohen, në vend që të fshihen pas një ndërfaqeje të kuruar.",
       "projectName": "Home of Dance",
       "projectId": "project-dance",
-      "projectText": "Home of Dance është një implementim në zhvillim që lidh nxënësit, familjet, trajnerët dhe kurset. Oraret, vijueshmëria, kontratat dhe faturimi bashkohen në një hapësirë administrative të projektuar rreth punës së përditshme të një shkolle vallëzimi. Portfolioja përshkruan leje sipas roleve, regjistra auditimi, rrjedha privatësie dhe autentikim me dy faktorë në implementim. Kjo tregon llojin e rrjedhës së lidhur të punës me të cilën merret PREJ; nuk paraqitet si rezultat biznesi i verifikuar në mënyrë të pavarur.",
+      "projectText": "Për Home of Dance, PREJ zhvilloi një panel pune të personalizuar, të lidhur me zgjedhjen publike të kurseve dhe kërkesat për regjistrim. Platforma përfshin planifikimin e kurseve, vijueshmërinë, listat e punës së zyrës, administrimin e kontratave me nënshkrim elektronik dhe pamjet e faturave. Kërkesat shqyrtohen nga zyra e shkollës; zgjedhja e një kursi apo mënyre pagese nuk e konfirmon vetvetiu kontratën dhe as nuk arkëton pagesë. Studimi i rastit paraqet pamje të ndërfaqes publike pa të dhëna private të pjesëmarrësve.",
       "faq": [
         {
           "q": "A mund të fillojmë me një pjesë të procesit tonë?",

@@ -33,6 +33,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/en/services/api-integrations/"/>
   </url>
   <url>
+    <loc>https://prej-tech.com/sq/projects/home-of-dance/</loc>
+    <xhtml:link rel="alternate" hreflang="sq" href="https://prej-tech.com/sq/projects/home-of-dance/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prej-tech.com/en/projects/home-of-dance/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prej-tech.com/de/projects/home-of-dance/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://prej-tech.com/it/projects/home-of-dance/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/en/projects/home-of-dance/"/>
+  </url>
+  <url>
     <loc>https://prej-tech.com/en/</loc>
     <xhtml:link rel="alternate" hreflang="sq" href="https://prej-tech.com/sq/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://prej-tech.com/en/"/>
@@ -63,6 +71,14 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://prej-tech.com/de/services/api-integrations/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://prej-tech.com/it/services/api-integrations/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/en/services/api-integrations/"/>
+  </url>
+  <url>
+    <loc>https://prej-tech.com/en/projects/home-of-dance/</loc>
+    <xhtml:link rel="alternate" hreflang="sq" href="https://prej-tech.com/sq/projects/home-of-dance/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prej-tech.com/en/projects/home-of-dance/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prej-tech.com/de/projects/home-of-dance/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://prej-tech.com/it/projects/home-of-dance/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/en/projects/home-of-dance/"/>
   </url>
   <url>
     <loc>https://prej-tech.com/de/</loc>
@@ -97,6 +113,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/en/services/api-integrations/"/>
   </url>
   <url>
+    <loc>https://prej-tech.com/de/projects/home-of-dance/</loc>
+    <xhtml:link rel="alternate" hreflang="sq" href="https://prej-tech.com/sq/projects/home-of-dance/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prej-tech.com/en/projects/home-of-dance/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prej-tech.com/de/projects/home-of-dance/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://prej-tech.com/it/projects/home-of-dance/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/en/projects/home-of-dance/"/>
+  </url>
+  <url>
     <loc>https://prej-tech.com/it/</loc>
     <xhtml:link rel="alternate" hreflang="sq" href="https://prej-tech.com/sq/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://prej-tech.com/en/"/>
@@ -127,5 +151,13 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://prej-tech.com/de/services/api-integrations/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://prej-tech.com/it/services/api-integrations/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/en/services/api-integrations/"/>
+  </url>
+  <url>
+    <loc>https://prej-tech.com/it/projects/home-of-dance/</loc>
+    <xhtml:link rel="alternate" hreflang="sq" href="https://prej-tech.com/sq/projects/home-of-dance/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prej-tech.com/en/projects/home-of-dance/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prej-tech.com/de/projects/home-of-dance/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://prej-tech.com/it/projects/home-of-dance/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/en/projects/home-of-dance/"/>
   </url>
 </urlset>

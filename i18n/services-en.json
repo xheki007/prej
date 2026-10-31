@@ -90,7 +90,7 @@
       "processText": "We begin by understanding how the work happens today and where it becomes difficult. Together we define a first useful scope, identify dependencies and agree how progress will be reviewed. Architecture, product design and engineering are handled as parts of one system. Human review remains central even when AI assists implementation. Known limitations and the next delivery stage are recorded instead of hidden behind a polished interface.",
       "projectName": "Home of Dance",
       "projectId": "project-dance",
-      "projectText": "Home of Dance is a development implementation connecting students, families, trainers and courses. Scheduling, attendance, contracts and invoicing come together in a back office designed around a dance school’s daily work. The portfolio identifies role permissions, audit records, privacy workflows and two-factor authentication in the implementation. This demonstrates the kind of connected workflow PREJ works on; it is not presented as an independently verified business outcome.",
+      "projectText": "For Home of Dance, PREJ developed a custom backoffice connected to public course selection and registration requests. The platform includes course planning, attendance, office worklists, contract administration with electronic signing and invoice views. Requests are reviewed by the school office; selecting a course or payment method does not itself confirm a contract or collect payment. The case study presents public interface screenshots without private participant records.",
       "faq": [
         {
           "q": "Can we start with one part of our process?",

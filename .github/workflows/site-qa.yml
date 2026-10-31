@@ -40,11 +40,23 @@ jobs:
           done
           python tests/browser.py
           python tests/service_browser.py
+          python tests/case_browser.py
       - name: Preserve review screenshots
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: site-qa-screenshots
-          path: qa-screenshots/*.png
+          path: |
+            qa-screenshots/*.png
+            !qa-screenshots/case-*.png
+          if-no-files-found: warn
+          retention-days: 1
+
+      - name: Preserve case-study screenshots
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: case-study-qa-screenshots
+          path: qa-screenshots/case-*.png
           if-no-files-found: warn
           retention-days: 1
