@@ -9,6 +9,18 @@ out=ROOT/'qa-hero';out.mkdir(exist_ok=True)
 base='http://localhost:4174'
 def state(page, expected):
  page.wait_for_function("(s) => document.querySelector('.hero-motion-stage').dataset.motion === s",arg=expected)
+def show_stage(page):
+ # The image deliberately exceeds its column. scrollIntoView can horizontally scroll
+ # its overflow:hidden hero ancestor, moving all copy. Only scroll the viewport vertically.
+ page.evaluate("""() => {
+   const stage=document.querySelector('.hero-motion-stage');
+   const hero=document.querySelector('.hero');
+   hero.scrollLeft=0;
+   const header=document.querySelector('header').getBoundingClientRect().height;
+   window.scrollTo({left:0,top:Math.max(0,scrollY+stage.getBoundingClientRect().top-header-12),behavior:'instant'});
+ }""")
+ assert page.locator('.hero').evaluate('(e)=>e.scrollLeft')==0
+ assert page.locator('.hero-grid').bounding_box()['x']>=16
 def offset(page):
  return page.locator('.hero-light-left').evaluate('(e)=>getComputedStyle(e).strokeDashoffset')
 def motion_diagnostic(page):
@@ -20,7 +32,7 @@ with sync_playwright() as p:
   page=context.new_page();errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
   for lang in ('sq','en','de','it'):
    response=page.goto(base+'/'+lang+'/');assert response.status==200
-   stage=page.locator('.hero-motion-stage');stage.scroll_into_view_if_needed();state(page,'running')
+   stage=page.locator('.hero-motion-stage');show_stage(page);state(page,'running')
    image=stage.locator('img');image.evaluate('(e)=>e.decode()')
    a=image.bounding_box();b=stage.locator('svg').bounding_box()
    for key in ('x','y','width','height'):assert abs(a[key]-b[key])<.1,(lang,width,key,a,b)
@@ -33,16 +45,18 @@ with sync_playwright() as p:
    first=offset(page);page.wait_for_timeout(160);assert offset(page)==first,(lang,width,first,motion_diagnostic(page))
    assert button.inner_text()==button.get_attribute('data-resume')
    page.locator('footer').scroll_into_view_if_needed();state(page,'paused')
-   stage.scroll_into_view_if_needed();state(page,'paused')
+   show_stage(page);state(page,'paused')
    assert page.locator('.hero-light-left').evaluate('(e)=>getComputedStyle(e).animationPlayState')=='paused'
-   button.focus();page.keyboard.press('Enter');stage.scroll_into_view_if_needed();state(page,'running')
+   button.focus();page.keyboard.press('Enter');show_stage(page);state(page,'running')
    # Native control owns playback. Seek only: WAAPI play()/pause() would override CSS.
    button.click();state(page,'paused')
    stage.locator('svg').evaluate('(e)=>e.getAnimations({subtree:true}).forEach(a=>{a.currentTime=1500})')
+   assert page.locator('.hero').evaluate('(e)=>e.scrollLeft')==0
+   assert page.locator('.hero-grid').bounding_box()['x']>=16
    page.locator('.hero').screenshot(path=str(out/f'hero-{lang}-{width}.png'))
-   button.click();stage.scroll_into_view_if_needed();state(page,'running')
+   button.click();show_stage(page);state(page,'running')
    page.locator('footer').scroll_into_view_if_needed();state(page,'paused')
-   stage.scroll_into_view_if_needed();state(page,'running')
+   show_stage(page);state(page,'running')
    # Exercise real visibilitychange handler without a production test hook.
    page.evaluate("Object.defineProperty(document,'hidden',{configurable:true,get:()=>true});document.dispatchEvent(new Event('visibilitychange'))")
    state(page,'paused')
@@ -60,7 +74,7 @@ with sync_playwright() as p:
     assert stage.evaluate("(e)=>parseFloat(e.style.getPropertyValue('--hero-x')) || 0")==0
     page.locator('.hero a.button').tap();page.wait_for_url('**/#contact')
     page.locator('[data-open-brief]').tap();assert page.locator('dialog').is_visible();page.keyboard.press('Escape')
-    stage.scroll_into_view_if_needed();state(page,'running')
+    show_stage(page);state(page,'running')
    page.emulate_media(reduced_motion='reduce');state(page,'paused')
    assert not button.is_visible()
    assert stage.locator('svg').evaluate('(e)=>getComputedStyle(e).display')=='none'
@@ -87,7 +101,7 @@ with sync_playwright() as p:
  # Two brief actual-motion previews, isolated from full-suite screenshots.
  for width,height in [(1280,820),(390,844)]:
   context=browser.new_context(viewport={'width':width,'height':height},record_video_dir=str(out),record_video_size={'width':width,'height':height},has_touch=width<500,is_mobile=width<500)
-  page=context.new_page();page.goto(base+'/sq/');page.locator('.hero-motion-stage').scroll_into_view_if_needed();state(page,'running')
+  page=context.new_page();page.goto(base+'/sq/');show_stage(page);state(page,'running')
   page.wait_for_timeout(7600)
   video=page.video;context.close();video.save_as(str(out/f'hero-motion-{width}.webm'));Path(video.path()).unlink()
  browser.close()
