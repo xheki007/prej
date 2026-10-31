@@ -25,6 +25,8 @@ with sync_playwright() as p:
     assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'),f'Overflow {path} {width}'
     assert page.locator('main').inner_text().strip(),path
     assert page.locator('a[href="/'+lang+'/#contact"]').count()>0
+    # Capture the fresh navigation before any history restoration or FAQ scrolling.
+    page.screenshot(path=str(out/f'service-{service}-{lang}-{width}.png'),full_page=width==390)
     # Shared chrome must remain keyboard-operable and announce current language.
     picker=page.locator('header .language-picker')
     picker.locator('summary').click();assert picker.locator('a[hreflang]').count()==4
@@ -45,9 +47,6 @@ with sync_playwright() as p:
      faqs.last.locator('summary').click()
      faqs.last.locator('a').click();assert page.url==base+f'/{lang}/services/api-integrations/'
      page.go_back();assert page.url==base+path
-    page.evaluate("window.scrollTo({top:0,left:0,behavior:'instant'})")
-    page.wait_for_function('window.scrollY===0')
-    page.screenshot(path=str(out/f'service-{service}-{lang}-{width}.png'),full_page=width==390)
     # Language switching must keep this service, not silently return to the home page.
     target='en' if lang!='en' else 'sq'
     picker.locator('summary').click();picker.locator(f'a[hreflang="{target}"]').click()
