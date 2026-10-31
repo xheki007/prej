@@ -13,4 +13,4 @@
 .hero-motion-toggle[hidden]{display:none}
 @keyframes hero-conduit{0%{stroke-dashoffset:14;opacity:0}8%{opacity:.75}37%{stroke-dashoffset:-112;opacity:.75}44%,100%{stroke-dashoffset:-112;opacity:0}}
 @keyframes hero-arrival{0%,12%,47%,100%{opacity:0}28%{opacity:.65}}
-@media(prefers-reduced-motion:reduce){.hero-motion-stage{transform:none!important;transition:none}.hero-motion-stage .hero-motion-overlay{display:none}.hero-motion-toggle{display:none}}
+@media(prefers-reduced-motion:reduce){.hero-motion-stage{transform:none!important;transition:none}.hero-motion-stage[data-enhanced] .hero-motion-overlay{display:none}.hero-motion-toggle{display:none}}
