@@ -1,37 +1,21 @@
 /* PREJ — small, dependency-free interactions; no form data is stored or sent here. */
 document.documentElement.classList.add('js');
-const translatable = [...document.querySelectorAll('[data-sq]')];
-translatable.forEach(el => { el.dataset.en = el.innerHTML; });
-const ariaNodes = [...document.querySelectorAll('[data-sq-aria]')];
-ariaNodes.forEach(el => { el.dataset.enAria = el.getAttribute('aria-label'); });
-const altNodes = [...document.querySelectorAll('[data-sq-alt]')];
-altNodes.forEach(el => { el.dataset.enAlt = el.getAttribute('alt'); });
-let language = 'en';
-const statusCopy = {
-  en: {copied:'Project brief copied. Paste it into an email to ferizixhevdet@gmail.com.',manual:'Automatic copying is unavailable. Select and copy the text below.',draft:'Opening your email app. Review and send the draft there; no message has been sent by this site.',name:'Name',email:'Email',project:'Project',idea:'Idea / challenge',subject:'Project enquiry'},
-  sq: {copied:'Përshkrimi u kopjua. Ngjite në një email për ferizixhevdet@gmail.com.',manual:'Kopjimi automatik nuk është i disponueshëm. Përzgjidhe dhe kopjoje tekstin më poshtë.',draft:'Po hapet aplikacioni i emailit. Kontrollo dhe dërgoje draftin atje; faqja nuk ka dërguar mesazh.',name:'Emri',email:'Email',project:'Projekti',idea:'Ideja / problemi',subject:'Kërkesë për projekt'}
-};
-function setLanguage(next, persist = true) {
-  language = next === 'sq' ? 'sq' : 'en';
-  document.documentElement.lang = language;
-  translatable.forEach(el => { if (language === 'sq') el.textContent = el.dataset.sq; else el.innerHTML = el.dataset.en; });
-  ariaNodes.forEach(el => el.setAttribute('aria-label', language === 'sq' ? el.dataset.sqAria : el.dataset.enAria));
-  altNodes.forEach(el => el.setAttribute('alt', language === 'sq' ? el.dataset.sqAlt : el.dataset.enAlt));
-  document.querySelectorAll('[data-lang]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.lang === language)));
-  document.title = language === 'sq' ? 'PREJ — Sisteme komplekse. Zgjidhje të qarta.' : 'PREJ — Complex systems. Clear solutions.';
-  document.querySelector('meta[name="description"]').content = language === 'sq' ? 'PREJ është kompani zhvillimi softuerik në Kosovë. Aplikacione mobile, platforma biznesi, sisteme të asistuara nga AI, infrastrukturë e lidhur dhe produkte interaktive 3D.' : 'PREJ is a software development company in Kosovo. Mobile apps, business platforms, AI-assisted systems, connected infrastructure and interactive 3D products.';
-  document.querySelector('meta[property="og:title"]').content = document.title;
-  document.querySelector('meta[property="og:description"]').content = document.querySelector('meta[name="description"]').content;
-  updateMenuLabel();
-  updateProjectCount();
-  if (document.querySelector('#form-status').dataset.state) showStatus(document.querySelector('#form-status').dataset.state);
-  if (persist) { try { localStorage.setItem('prej.language', language); } catch {} }
+const language = document.documentElement.lang;
+const messages = JSON.parse(document.querySelector('#locale-messages').textContent);
+const statusCopy = {[language]: messages};
+// Honor old shared links without letting browser storage override a crawlable URL.
+const legacyLanguage = new URLSearchParams(location.search).get('lang');
+if (['sq','en','de','it'].includes(legacyLanguage)) {
+  const target = new URL(`/${legacyLanguage}/`, location.origin);
+  const params = new URLSearchParams(location.search); params.delete('lang');
+  target.search = params.toString(); target.hash = location.hash;
+  location.replace(target.href);
 }
 const nav = document.querySelector('#site-nav');
 const menu = document.querySelector('.menu-toggle');
 function updateMenuLabel() {
   const open = menu.getAttribute('aria-expanded') === 'true';
-  menu.setAttribute('aria-label', language === 'sq' ? (open ? 'Mbyll menynë' : 'Hap menynë') : (open ? 'Close menu' : 'Open menu'));
+  menu.setAttribute('aria-label', open ? messages.closeMenu : messages.openMenu);
 }
 function closeMenu(returnFocus = false) {
   menu.setAttribute('aria-expanded','false'); nav.classList.remove('is-open'); updateMenuLabel();
@@ -43,15 +27,22 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape' && menu.getAt
 document.addEventListener('click', e => { if (menu.getAttribute('aria-expanded') === 'true' && !e.target.closest('.site-header')) closeMenu(); });
 const mobileLayout = matchMedia('(max-width: 860px)');
 mobileLayout.addEventListener('change', () => closeMenu());
-document.querySelectorAll('[data-lang]').forEach(button => button.addEventListener('click', () => setLanguage(button.dataset.lang)));
-const initialLanguage = new URLSearchParams(location.search).get('lang');
-let savedLanguage = 'en'; try { savedLanguage = localStorage.getItem('prej.language') || 'en'; } catch {}
-setLanguage(initialLanguage || savedLanguage, false);
+document.querySelectorAll('.language-options a').forEach(link => link.addEventListener('click', () => {
+  link.hash = location.hash;
+}));
+document.addEventListener('click', event => document.querySelectorAll('.language-picker[open]').forEach(picker => {
+  if (!picker.contains(event.target)) picker.open = false;
+}));
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape') document.querySelectorAll('.language-picker[open]').forEach(picker => {
+    picker.open = false; picker.querySelector('summary').focus();
+  });
+});
 
 // All projects remain available without JavaScript. Filters update existing semantic cards.
 function updateProjectCount() {
   const count = [...document.querySelectorAll('.portfolio-card')].filter(card => !card.hidden).length;
-  document.querySelector('#project-count').textContent = language === 'sq' ? `${count} projekte të shfaqura` : `${count} projects shown`;
+  document.querySelector('#project-count').textContent = messages.projectsShown.replace('{count}', count);
 }
 function filterProjects(category) {
   document.querySelectorAll('[data-filter]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.filter === category)));
@@ -102,8 +93,10 @@ function projectBrief() {
   return `${t.name}: ${String(values.get('name')).trim()}\n${t.email}: ${String(values.get('email')).trim()}\n${t.project}: ${form.elements.service.selectedOptions[0].textContent}\n\n${t.idea}:\n${String(values.get('message')).trim()}`;
 }
 function validateBrief() {
-  form.elements.name.setCustomValidity(form.elements.name.value.trim() ? '' : (language === 'sq' ? 'Shkruaj emrin.' : 'Please enter your name.'));
-  form.elements.message.setCustomValidity(form.elements.message.value.trim().length >= 10 ? '' : (language === 'sq' ? 'Përshkruaje idenë me të paktën 10 karaktere.' : 'Describe your idea in at least 10 characters.'));
+  form.elements.email.setCustomValidity('');
+  form.elements.email.setCustomValidity(!form.elements.email.value.trim() ? messages.requiredEmail : (form.elements.email.validity.typeMismatch ? messages.invalidEmail : ''));
+  form.elements.name.setCustomValidity(form.elements.name.value.trim() ? '' : messages.requiredName);
+  form.elements.message.setCustomValidity(form.elements.message.value.trim().length >= 10 ? '' : messages.requiredIdea);
   return form.reportValidity();
 }
 function clearBriefFeedback(e) {
@@ -158,3 +151,4 @@ workflowPlay.addEventListener('click', async () => {
     workflowPlay.focus({preventScroll: true});
   }
 });
+
