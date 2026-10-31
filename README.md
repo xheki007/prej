@@ -107,6 +107,17 @@ not itself confirm a contract or execute payment. No client-side registration,
 payment or signing submission is made by `tests/case_browser.py`.
 
 ### Homepage motion
-The original connected-systems images are unchanged. `scripts/hero.py` adds an exact 1280×853 shared image/SVG stage, two light impulses aligned to the photograph's existing conduits, and soft icon illumination. `hero-motion.css` / `hero-motion.js` load only on homepages. A localized native pause/resume button sits below the existing hero note. Fine-hover mouse parallax is limited to ±3px; touch input is untouched. Motion pauses offscreen, when the document is hidden, or when manually paused. Reduced-motion and no-JS retain the original static illustration. Manual pause is page-local, without cookies or storage.
+The original connected-systems images are unchanged. `scripts/hero.py` adds an exact 1280×853 shared image/SVG stage, two light impulses aligned to the photograph's existing conduits, and soft icon illumination. `hero-motion.css` / `hero-motion.js` load only on homepages. Fine-hover mouse parallax is limited to ±3px; touch input is untouched. Motion pauses offscreen or when the document is hidden. Reduced-motion and no-JS retain the original static illustration.
 
-CI runs `tests/hero_browser.py` after all existing browser suites. The separate `hero-motion-previews` artifact contains 12 known-frame PNGs and two short WebM recordings (desktop/mobile). Review actual recordings as well as screenshots before publication; this change adds decoration, not a new content/SEO claim.
+CI runs `tests/hero_browser.py` before all existing browser suites. The separate `hero-motion-previews` artifact contains 12 viewport PNGs and two short WebM recordings (desktop/mobile). Review actual recordings as well as screenshots before publication; this change adds decoration, not a new content/SEO claim.
+
+## Continuous hero motion preference
+The user explicitly requested continuous hero pulses without a visible pause button.
+No animation control is rendered in any locale. The seven-second cycle remains
+infinite while visible; reduced-motion preferences, hidden-tab and offscreen
+pausing, no-JS and unsupported-observer static fallbacks remain.
+This is an accessibility tradeoff: continuous autoplay without a page-level
+pause/stop/hide control does not satisfy WCAG 2.2 SC 2.2.2; reduced-motion support
+alone is not a substitute for that control. No full WCAG conformance is claimed.
+
+Accessibility reference: https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html
