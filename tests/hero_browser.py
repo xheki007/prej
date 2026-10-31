@@ -21,6 +21,18 @@ def show_stage(page):
  }""")
  assert page.locator('.hero').evaluate('(e)=>e.scrollLeft')==0
  assert page.locator('.hero-grid').bounding_box()['x']>=16
+def settle_pause(page):
+ # CSS changes enqueue a pending pause task. Flush style, await animation readiness,
+ # then sample only after the actual timeline is paused (not just the data attribute).
+ page.locator('.hero-light-left').evaluate("""async (e) => {
+   getComputedStyle(e).animationPlayState;
+   await Promise.all(e.getAnimations().map(a=>a.ready));
+ }""")
+ page.wait_for_function("""() => {
+   const e=document.querySelector('.hero-light-left');
+   return getComputedStyle(e).animationPlayState==='paused' &&
+     e.getAnimations().length>0 && e.getAnimations().every(a=>!a.pending && a.playState==='paused');
+ }""")
 def offset(page):
  return page.locator('.hero-light-left').evaluate('(e)=>getComputedStyle(e).strokeDashoffset')
 def motion_diagnostic(page):
@@ -41,7 +53,7 @@ with sync_playwright() as p:
    # Animation timeline changes; test a known moving interval, not its intentional quiet interval.
    stage.locator('svg').evaluate('(e)=>e.getAnimations({subtree:true}).forEach(a=>{a.currentTime=500})')
    first=offset(page);page.wait_for_timeout(160);assert offset(page)!=first,(lang,width,first,motion_diagnostic(page))
-   button=page.locator('.hero-motion-toggle');button.click();state(page,'paused')
+   button=page.locator('.hero-motion-toggle');button.click();state(page,'paused');settle_pause(page)
    first=offset(page);page.wait_for_timeout(160);assert offset(page)==first,(lang,width,first,motion_diagnostic(page))
    assert button.inner_text()==button.get_attribute('data-resume')
    page.locator('footer').scroll_into_view_if_needed();state(page,'paused')
@@ -49,7 +61,7 @@ with sync_playwright() as p:
    assert page.locator('.hero-light-left').evaluate('(e)=>getComputedStyle(e).animationPlayState')=='paused'
    button.focus();page.keyboard.press('Enter');show_stage(page);state(page,'running')
    # Native control owns playback. Seek only: WAAPI play()/pause() would override CSS.
-   button.click();state(page,'paused')
+   button.click();state(page,'paused');settle_pause(page)
    stage.locator('svg').evaluate('(e)=>e.getAnimations({subtree:true}).forEach(a=>{a.currentTime=1500})')
    assert page.locator('.hero').evaluate('(e)=>e.scrollLeft')==0
    assert page.locator('.hero-grid').bounding_box()['x']>=16
