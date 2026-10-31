@@ -28,12 +28,13 @@ def build_services(root,langs):
    for el in list(body):
     if el.tag=='main' or el.tag=='dialog':body.remove(el)
    for el in body.xpath('.//a[starts-with(@href,"#")]'):
+    if el.get('href')=='#top' and 'text-link' in el.get('class',''):continue
     if 'skip-link' not in el.get('class',''):el.set('href',f'/{lang}/'+el.get('href'))
    for el in body.xpath('.//div[@class="language-options"]/a'):
     el.set('href',f'/{el.get("hreflang")}/services/{slug}/')
    main=etree.Element('main',id='main',attrib={'class':'service-main'})
    body.insert(list(body).index(body.find('footer')),main)
-   hero=node(main,'section',class_='service-hero')
+   hero=node(main,'section',class_='service-hero',id='top')
    wrap=node(hero,'div',class_='container')
    breadcrumbs=node(wrap,'nav',class_='service-breadcrumbs',aria_label=ui['home']+' / '+ui['services'])
    node(breadcrumbs,'a',ui['home'],href=f'/{lang}/');node(breadcrumbs,'span','/',aria_hidden='true');node(breadcrumbs,'a',ui['services'],href=f'/{lang}/#capabilities');node(breadcrumbs,'span','/',aria_hidden='true');node(breadcrumbs,'span',service['name'],aria_current='page')

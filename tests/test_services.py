@@ -21,6 +21,8 @@ class ServiceTests(unittest.TestCase):
      self.assertEqual(len(d.xpath('//div[@class="language-options"]/a')),8)
      self.assertTrue(d.xpath('//a[@href=$url]',url=f'/{lang}/#contact'))
      self.assertNotIn('/app.js',path.read_text())
+     self.assertEqual(d.xpath('//footer//a[contains(@class,"text-link")]/@href'),['#top'])
+     self.assertTrue(d.xpath('//*[@id="top"]'))
      for url in d.xpath('//@href|//@src'):
       if url.startswith('/'):
        u=urlsplit(url);target=ROOT/u.path.lstrip('/');target=target/'index.html' if target.is_dir() else target
