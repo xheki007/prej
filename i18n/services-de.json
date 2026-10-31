@@ -84,7 +84,7 @@
       ]
     },
     "web-platform-development": {
-      "name": "Individuelle Webanwendungen & Kundenportale",
+      "name": "Individuelle Web-Apps & Kundenportale",
       "title": "Kundenportal & Buchungssystem entwickeln lassen | PREJ",
       "description": "Individuelle Webanwendungen, Kundenportale, Buchungssysteme und Verwaltungssoftware. PREJ zeigt mit Home of Dance, wie Oberfläche und Geschäftsablauf zusammenpassen.",
       "intro": "Unternehmenssoftware sollte einen Arbeitsprozess verständlicher machen und nicht nur eine Tabelle in den Browser verlagern. PREJ entwickelt Webplattformen, Portale und Verwaltungsoberflächen rund um die beteiligten Menschen, Datensätze und Entscheidungen. Unsere Arbeit mit React, Next.js und TypeScript verbindet die sichtbare Oberfläche mit den zugrunde liegenden Daten und APIs. So kann das Produkt einen vollständigen Arbeitsablauf auf Desktop- und mobilen Bildschirmen unterstützen.",

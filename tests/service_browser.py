@@ -45,7 +45,8 @@ with sync_playwright() as p:
      faqs.last.locator('summary').click()
      faqs.last.locator('a').click();assert page.url==base+f'/{lang}/services/api-integrations/'
      page.go_back();assert page.url==base+path
-    page.evaluate('window.scrollTo(0,0)')
+    page.evaluate("window.scrollTo({top:0,left:0,behavior:'instant'})")
+    page.wait_for_function('window.scrollY===0')
     page.screenshot(path=str(out/f'service-{service}-{lang}-{width}.png'),full_page=width==390)
     # Language switching must keep this service, not silently return to the home page.
     target='en' if lang!='en' else 'sq'
