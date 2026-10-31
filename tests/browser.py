@@ -3,7 +3,7 @@ from pathlib import Path
 import json,os,shutil
 out=Path('../prej-seo-review');out.mkdir(exist_ok=True)
 with sync_playwright() as p:
- browser=p.chromium.launch(headless=True,executable_path=os.environ.get('CHROMIUM_PATH') or shutil.which('chromium'),args=['--no-sandbox'])
+ browser=p.chromium.launch(headless=True,executable_path=os.environ.get('CHROMIUM_PATH'),args=['--no-sandbox'])
  for size in [(1440,1000),(390,844),(320,700)]:
   page=browser.new_page(viewport={'width':size[0],'height':size[1]},reduced_motion='reduce')
   errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
@@ -21,10 +21,12 @@ with sync_playwright() as p:
    page.locator('[data-filter="all"]').click();assert page.locator('.portfolio-card:visible').count()==7
    page.locator('.project-details').first.locator('summary').click();assert page.locator('.project-details').first.get_attribute('open') is not None
    page.locator('[data-open-brief]').click();assert page.locator('dialog').is_visible()
+   page.locator('#brief-form button[type=submit]').click();assert page.locator('[name=name]').evaluate('(el) => el.validationMessage')
    page.locator('[name=name]').fill('Test');page.locator('[name=email]').fill('test@example.com');page.locator('[name=message]').fill('A sample software project.')
    # Force clipboard fallback to verify usable manual-copy flow, without external sends.
    page.evaluate("Object.defineProperty(navigator,'clipboard',{value:{writeText:()=>Promise.reject(new Error('test denial'))},configurable:true})")
    page.locator('#copy-brief').click();assert page.locator('#manual-copy').is_visible();assert 'Test' in page.locator('#manual-brief').input_value()
+   page.screenshot(path=str(out/f'{lang}-{size[0]}-form.png'))
    page.locator('.close-dialog').click();assert not page.locator('dialog').is_visible()
    page.locator('[data-open-brief]').click();page.keyboard.press('Escape');assert not page.locator('dialog').is_visible()
    assert not errors,errors

@@ -21,6 +21,7 @@ class SiteTests(unittest.TestCase):
     self.assertFalse(doc.xpath('//@data-sq'))
     self.assertEqual(len(doc.xpath('//div[contains(@class,"language-switch")]//a')),8)
     self.assertNotIn('github.io',file.read_text())
+    self.assertEqual(doc.xpath('//script[@src]/@src'),['/app.js?v=4'])
     for attr in ('href','src','poster','data-src'):
      for url in doc.xpath('//@'+attr):
       if url.startswith('/'):

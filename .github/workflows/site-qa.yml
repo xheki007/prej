@@ -1,0 +1,48 @@
+name: Site QA
+on:
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+concurrency:
+  group: site-qa-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+jobs:
+  static-and-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12'
+      - name: Install test dependencies
+        run: |
+          python -m pip install -r requirements-dev.txt
+          python -m playwright install --with-deps chromium
+      - name: Build and static checks
+        run: |
+          python scripts/build.py
+          git diff --exit-code
+          python -m unittest discover -s tests
+          node --check app.js
+      - name: Desktop and mobile browser journeys
+        run: |
+          python -m http.server 4174 > /tmp/site-qa-http.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          for attempt in $(seq 1 30); do
+            curl --fail --silent http://localhost:4174/en/ > /dev/null && break
+            sleep 1
+          done
+          python tests/browser.py
+      - name: Preserve review screenshots
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: site-qa-screenshots
+          path: ../prej-seo-review/*.png
+          if-no-files-found: warn
+          retention-days: 1
