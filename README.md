@@ -121,3 +121,11 @@ pause/stop/hide control does not satisfy WCAG 2.2 SC 2.2.2; reduced-motion suppo
 alone is not a substitute for that control. No full WCAG conformance is claimed.
 
 Accessibility reference: https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html
+
+## Approved favicon
+The approved turquoise PREJ monogram on navy is used on all 21 rendered pages
+(root plus 20 canonical pages). `/assets/favicon-v2.png` is 48×48;
+`/assets/apple-touch-icon-v2.png` is 180×180. `/favicon.ico` contains16/32/48px
+legacy variants. The new filenames avoid reuse of the previous icon cache.
+The original favicon is retained for rollback. Search engines and browsers
+control when cached tab/search icons refresh; immediate Google display is not promised.

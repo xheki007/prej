@@ -60,7 +60,9 @@ def build(lang):
    v=el.get(attr)
    if v and (v.startswith('assets/') or v.split('?')[0] in ['style.css','portfolio.css','workflow-video.css','app.js']):el.set(attr,'/'+v)
  for el in doc.xpath('//img[contains(@src,"prej-logo-dark.png")]'):el.set('src','/assets/prej-logo-dark.webp');el.set('width','624');el.set('height','208')
- doc.xpath('//link[@rel="icon"]')[0].set('href','/assets/favicon.png')
+ icon=doc.xpath('//link[@rel="icon"]')[0]
+ icon.set('href','/assets/favicon-v2.png');icon.set('type','image/png');icon.set('sizes','48x48')
+ etree.SubElement(head,'link',rel='apple-touch-icon',sizes='180x180',href='/assets/apple-touch-icon-v2.png')
  hero=doc.xpath('//img[contains(@src,"connected-systems.png")]')[0]
  hero.set('src','/assets/connected-systems-1280.webp');hero.set('srcset','/assets/connected-systems-640.webp 640w, /assets/connected-systems-1280.webp 1280w');hero.set('sizes','(max-width: 580px) 100vw, 65vw');hero.set('fetchpriority','high')
  add_hero_motion(doc,hero,lang)
