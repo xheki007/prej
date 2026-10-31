@@ -25,6 +25,8 @@ with sync_playwright() as p:
     assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'),f'Overflow {path} {width}'
     assert page.locator('main').inner_text().strip(),path
     assert page.locator('a[href="/'+lang+'/#contact"]').count()>0
+    # Capture the fresh navigation before any history restoration or FAQ scrolling.
+    page.screenshot(path=str(out/f'service-{service}-{lang}-{width}.png'),full_page=width==390)
     # Shared chrome must remain keyboard-operable and announce current language.
     picker=page.locator('header .language-picker')
     picker.locator('summary').click();assert picker.locator('a[hreflang]').count()==4
@@ -33,11 +35,18 @@ with sync_playwright() as p:
     if width<860:
      page.locator('.menu-toggle').click();assert page.locator('.menu-toggle').get_attribute('aria-expanded')=='true'
      page.keyboard.press('Escape');assert page.locator('.menu-toggle').get_attribute('aria-expanded')=='false'
-    faq=page.locator('.service-faq details').first
-    faq.locator('summary').click();assert faq.get_attribute('open') is not None
-    faq.locator('summary').click();assert faq.get_attribute('open') is None
-    page.evaluate('window.scrollTo(0,0)')
-    page.screenshot(path=str(out/f'service-{service}-{lang}-{width}.png'),full_page=width==390)
+    faqs=page.locator('.service-faq details')
+    assert faqs.count()==5
+    for i in range(faqs.count()):
+     faq=faqs.nth(i)
+     faq.locator('summary').click();assert faq.get_attribute('open') is not None
+     assert faq.locator('p').is_visible()
+     assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'),f'FAQ overflow {path} {width}'
+     faq.locator('summary').click();assert faq.get_attribute('open') is None
+    if service=='web-platform-development':
+     faqs.last.locator('summary').click()
+     faqs.last.locator('a').click();assert page.url==base+f'/{lang}/services/api-integrations/'
+     page.go_back();assert page.url==base+path
     # Language switching must keep this service, not silently return to the home page.
     target='en' if lang!='en' else 'sq'
     picker.locator('summary').click();picker.locator(f'a[hreflang="{target}"]').click()

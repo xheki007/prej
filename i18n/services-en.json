@@ -25,9 +25,9 @@
   },
   "services": {
     "mobile-app-development": {
-      "name": "Mobile app development",
-      "title": "Mobile App Development for Android & iOS | PREJ",
-      "description": "Plan and build React Native mobile apps with PREJ in Kosovo: user journeys, maps, notifications and backend integration, with clearly scoped release stages.",
+      "name": "Mobile app development for Android & iOS",
+      "title": "Android & iOS App Development, React Native | PREJ",
+      "description": "Custom mobile app development with React Native: Android and iOS planning, MVPs, booking journeys and backend integration. Discuss scope and cost factors with PREJ.",
       "intro": "A mobile product needs more than a collection of screens. People must be able to start a task, understand its status and recover when something interrupts it. PREJ develops Android and iOS applications with React Native and Expo, connecting the mobile experience to the APIs and operational tools behind it. We begin with the people using the product and the real conditions in which they will use it.",
       "sections": [
         {
@@ -41,6 +41,14 @@
         {
           "title": "Separate a pilot from a public release",
           "text": "A useful pilot answers specific questions with a limited audience. A store release adds a separate set of requirements, device checks and publishing steps. We agree which platforms and flows belong to each stage rather than treating an Android build as proof of an iOS release. Hosting, external services, app-store accounts and ongoing support are discussed explicitly for the particular project."
+        },
+        {
+          "title": "From an app idea to a testable MVP",
+          "text": "An MVP is the first useful version of a product, not a fixed package. For a booking or service app, we identify the essential user journey, the staff actions behind it and the information needed at each step. Features such as notifications, location and account access are included only when they support that journey. This helps separate a working first release from a long list of possible additions."
+        },
+        {
+          "title": "Choose between a mobile app and a responsive web application",
+          "text": "A responsive website may be enough for a service that customers use occasionally. A mobile app can be appropriate when device capabilities or repeated on-the-go use matter. We compare the task, supported devices, network conditions and publishing requirements before choosing the delivery format. Cross-platform development can share parts of the code, but Android and iOS still need their own checks."
         }
       ],
       "deliverables": [
@@ -60,13 +68,25 @@
         {
           "q": "What should I bring to the first discussion?",
           "a": "A short explanation of the users and their main task is enough to start. Existing screens, systems, platform preferences and operational constraints help us turn that conversation into a realistic first scope."
+        },
+        {
+          "q": "How much does a custom mobile app cost?",
+          "a": "The main factors are user roles, screens and workflows, backend readiness, device features and the level of testing required. Store preparation and external services may add separate work or charges. A useful estimate needs an agreed feature list, supported platforms and acceptance criteria rather than a single price based only on the number of screens."
+        },
+        {
+          "q": "Does a React Native app automatically include Android and iOS releases?",
+          "a": "No. Shared code does not replace platform-specific testing, signing, store accounts and review. We agree which platform and delivery stage the project includes. An Android pilot is not evidence of a completed iOS release, and public store acceptance remains subject to the platform’s review."
+        },
+        {
+          "q": "What happens after the app is delivered?",
+          "a": "The handover should identify the source code, deployment setup, dependencies and known limitations covered by the project. Monitoring, updates, operating-system changes and support need a separate agreed scope. Ownership, access and recurring third-party costs should be clarified in the proposal, not assumed."
         }
       ]
     },
     "web-platform-development": {
-      "name": "Web & business platforms",
-      "title": "Web & Business Platform Development | PREJ",
-      "description": "Custom web portals, dashboards and business workflows with PREJ. React, Next.js and TypeScript development with clear roles, data flows and honest delivery stages.",
+      "name": "Custom web applications & customer portals",
+      "title": "Custom Web Applications, Portals & Booking Systems | PREJ",
+      "description": "Business websites, customer portals, booking systems and admin software tailored to your workflow. Explore PREJ’s Home of Dance project and development approach.",
       "intro": "Business software should make a working process easier to understand, not simply move a spreadsheet into a browser. PREJ builds web platforms, portals and administrative workspaces around the people, records and decisions involved. Our work with React, Next.js and TypeScript connects the visible interface to the underlying data and APIs, so the product can support a complete workflow on desktop and mobile screens.",
       "sections": [
         {
@@ -80,6 +100,14 @@
         {
           "title": "Build for review and handover",
           "text": "We choose technology around the product and its maintenance needs, then develop the agreed workflows in increments. Reviews cover the full path from data entry to the resulting screen or record. Account access, error messages and responsive layouts are part of that work. External services, migration work, deployment and support are scoped for the project rather than assumed to be included in every platform."
+        },
+        {
+          "title": "Business website, customer portal or booking system?",
+          "text": "A company website presents services and helps visitors make contact. A customer portal adds accounts, records and actions for each user. A booking system also needs rules for availability, requests and confirmation. We distinguish these needs before development, so the site does not promise a confirmed reservation when the business still needs to review it. Home of Dance shows how public course requests connect to office administration."
+        },
+        {
+          "title": "Replace shared spreadsheets with a controlled workflow",
+          "text": "When several people edit the same spreadsheet, responsibilities and current status can become unclear. A custom web application can bring forms, permissions and record history into one workflow. Before migrating from Excel, we inspect the data, agree field mappings and decide which tools should remain. An export and a test migration help expose missing or inconsistent records before a production switch."
         }
       ],
       "deliverables": [
@@ -99,13 +127,25 @@
         {
           "q": "Will a standard template be enough?",
           "a": "Sometimes an existing tool fits the need. We assess the actual workflow before recommending custom development. Where roles, data relationships or review steps require a tailored platform, the scope should explain why those differences matter."
+        },
+        {
+          "q": "How much does a custom website or business platform cost?",
+          "a": "A presentation website and a multi-role business platform have different scopes. Pricing depends on content, design, workflows, permissions, integrations, migration and testing. We first define what the system must do and what is outside the delivery. Hosting, external services and maintenance should be listed separately where applicable; this page is not a fixed-price offer."
+        },
+        {
+          "q": "Can you build booking and course-management software for a school or studio?",
+          "a": "The Home of Dance project demonstrates public course selection and requests connected to a tailored backoffice. A new school or studio may have different rules for availability, attendance, documents and office approval. We compare those rules with existing products before recommending custom development; a ready-made tool may be the more suitable option."
+        },
+        {
+          "q": "Can the platform connect to an app or an existing business system?",
+          "a": "We examine the available API and access rights before defining an integration. Some systems support direct connections, while others require a controlled import or a manual step. The platform’s data ownership, error handling and maintenance responsibilities need to be clear. The API integration service describes how we assess these dependencies."
         }
       ]
     },
     "api-integrations": {
-      "name": "APIs & integrations",
-      "title": "API Development & System Integrations | PREJ",
-      "description": "Connect applications, data and workflows with PREJ. API and backend development using Node.js, NestJS, Python and PostgreSQL, with explicit permissions and error handling.",
+      "name": "API development & business system integration",
+      "title": "API Integration & Custom Backend Development | PREJ",
+      "description": "Connect business systems with custom APIs, backend development and reliable data flows. PREJ scopes access, synchronization, automation and failure handling.",
       "intro": "A connected product depends on clear agreements between systems. An app may create a request, a workspace may review it and another service may return a result. PREJ develops APIs and backend integrations that make those responsibilities explicit. We work with Node.js, NestJS, Python and relational data tools, choosing the implementation around the existing systems, the workflow and the maintenance requirements.",
       "sections": [
         {
@@ -119,6 +159,14 @@
         {
           "title": "Keep data and operational decisions traceable",
           "text": "Integration work is not just moving fields between endpoints. Records need useful relationships, consistent states and clear ownership. We map how information enters the system, how it is validated and what a person needs to inspect when something goes wrong. Third-party access, provider limits, credentials and deployment requirements are identified early. We do not promise an integration before the external system’s supported access has been checked."
+        },
+        {
+          "title": "Connect a website, mobile app and administrative system",
+          "text": "A website can receive a request while a backoffice checks it and a mobile app displays its status. An integration defines how those systems exchange the same record without conflicting updates. We map identifiers, permitted changes and the source of truth before choosing endpoints or connectors. Existing software is connected only through supported access that the account owner is entitled to use."
+        },
+        {
+          "title": "Automate repetitive work with explicit controls",
+          "text": "Data synchronization, notifications and file transfers can reduce repeated manual entry when their rules are clear. A webhook may report an event, but events can arrive late, twice or out of order. We decide how the receiving system validates them, detects duplicates and exposes failures for review. Automation should preserve the business’s approval steps rather than quietly bypass them."
         }
       ],
       "deliverables": [
@@ -138,6 +186,18 @@
         {
           "q": "Do we need to replace our existing database?",
           "a": "Not automatically. We examine the current data model and the new workflow first. A connector, a limited extension or a migration may each be appropriate; the choice should follow the constraints rather than a preferred technology."
+        },
+        {
+          "q": "What determines the cost of an API integration?",
+          "a": "The work depends on the quality of the provider’s documentation, authentication, data mapping, supported operations, error cases and testing access. Provider fees and rate limits can affect the design. We check these dependencies before estimating implementation; a request to “connect two systems” alone does not define a reliable scope."
+        },
+        {
+          "q": "Can you automate a process that currently uses Excel or manual imports?",
+          "a": "First we identify where the data originates, who may change it and which approvals are required. A supported API, a scheduled import or a reviewed file transfer may each be appropriate. We validate sample data and failure cases before replacing the existing process, and keep human review where an incorrect change would be consequential."
+        },
+        {
+          "q": "What if a third-party API changes or becomes unavailable?",
+          "a": "An integration needs a documented response to provider errors, limits and version changes. Depending on the workflow, this can include visible status, bounded retries and a manual recovery step. Ongoing monitoring and maintenance are agreed separately; no connector can guarantee that an external provider will never change or fail."
         }
       ]
     }

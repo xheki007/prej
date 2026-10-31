@@ -10,6 +10,7 @@ def build_cases(root,langs):
   copy=json.loads((root/f'i18n/case-home-of-dance-{lang}.json').read_text())
   doc=html.fromstring((root/lang/'services/web-platform-development/index.html').read_text())
   head=doc.find('head');body=doc.find('body');old=body.find('main');position=list(body).index(old);body.remove(old)
+  for el in head.xpath('./script[@id="service-schema" or @id="service-breadcrumb-schema"]'):head.remove(el)
   main=html.Element('main',id='main',attrib={'class':'case-main'});body.insert(position,main)
   url=f'https://prej-tech.com/{lang}/{CASE_SUFFIX}'
   head.find('title').text=copy['title']

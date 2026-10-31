@@ -25,9 +25,9 @@
   },
   "services": {
     "mobile-app-development": {
-      "name": "Sviluppo di app mobili",
-      "title": "Sviluppo di app mobili per Android e iOS | PREJ",
-      "description": "Progetta e sviluppa app React Native con PREJ in Kosovo: percorsi utente, mappe, notifiche e integrazione backend, con fasi di rilascio definite chiaramente.",
+      "name": "Sviluppo app mobili per Android e iOS",
+      "title": "Sviluppo App Android e iOS con React Native | PREJ",
+      "description": "App mobili su misura con React Native: Android, iOS, MVP, prenotazioni e integrazione backend. Definisci con PREJ funzionalità e fattori di costo.",
       "intro": "Un prodotto mobile richiede più di una raccolta di schermate. Le persone devono poter avviare un’attività, comprenderne lo stato e riprenderla quando qualcosa la interrompe. PREJ sviluppa applicazioni Android e iOS con React Native ed Expo, collegando l’esperienza mobile alle API e agli strumenti operativi che la supportano. Partiamo dalle persone che utilizzeranno il prodotto e dalle condizioni reali in cui lo faranno.",
       "sections": [
         {
@@ -41,6 +41,14 @@
         {
           "title": "Distinguere un progetto pilota da un rilascio pubblico",
           "text": "Un progetto pilota utile risponde a domande specifiche con un pubblico limitato. La pubblicazione negli store aggiunge requisiti, verifiche sui dispositivi e passaggi di pubblicazione distinti. Concordiamo quali piattaforme e flussi appartengono a ogni fase, senza considerare una build Android come prova di un rilascio iOS. Hosting, servizi esterni, account degli app store e assistenza continuativa vengono discussi esplicitamente per il singolo progetto."
+        },
+        {
+          "title": "Dall’idea a un MVP verificabile",
+          "text": "Un MVP è la prima versione utile del prodotto, non un pacchetto fisso. Per un’app di prenotazione o di servizio definiamo il percorso essenziale dell’utente, le azioni del personale e i dati necessari in ogni passaggio. Posizione, notifiche e accesso all’account vengono inclusi quando servono a quel percorso. Questo distingue un primo rilascio utilizzabile da una lista di possibili aggiunte."
+        },
+        {
+          "title": "App mobile o applicazione web responsive?",
+          "text": "Un sito responsive può bastare per un servizio usato occasionalmente. Un’app mobile può essere adatta quando contano le funzioni del dispositivo o l’uso frequente in mobilità. Prima di scegliere valutiamo attività, dispositivi, connessione e requisiti di pubblicazione. Lo sviluppo multipiattaforma può condividere parte del codice, ma Android e iOS richiedono verifiche separate."
         }
       ],
       "deliverables": [
@@ -60,13 +68,25 @@
         {
           "q": "Cosa serve per il primo confronto?",
           "a": "Per iniziare basta una breve spiegazione degli utenti e della loro attività principale. Schermate e sistemi esistenti, preferenze di piattaforma e vincoli operativi ci aiutano a trasformare la conversazione in un primo ambito di lavoro realistico."
+        },
+        {
+          "q": "Quanto costa sviluppare un’app mobile su misura?",
+          "a": "I fattori principali sono ruoli, schermate e percorsi, disponibilità del backend, funzioni del dispositivo e test necessari. Preparazione per gli store e servizi esterni possono aggiungere lavoro o costi. Una stima utile richiede funzionalità, piattaforme e criteri di accettazione concordati, non soltanto il numero di schermate."
+        },
+        {
+          "q": "React Native include automaticamente il rilascio per Android e iOS?",
+          "a": "No. Il codice condiviso non sostituisce test specifici, firma, account degli store e revisione del gestore. Piattaforme e fase di consegna vengono concordate esplicitamente. Un progetto pilota Android non dimostra un rilascio iOS completato; l’accettazione nello store pubblico dipende anche dalla sua revisione."
+        },
+        {
+          "q": "Che cosa succede dopo la consegna dell’app?",
+          "a": "La consegna dovrebbe chiarire codice sorgente, configurazione di pubblicazione, dipendenze e limiti compresi nel progetto. Monitoraggio, aggiornamenti, modifiche ai sistemi operativi e assistenza richiedono un ambito concordato separatamente. Diritti, accessi e costi ricorrenti di terzi vanno chiariti nella proposta, non dati per scontati."
         }
       ]
     },
     "web-platform-development": {
-      "name": "Piattaforme web e aziendali",
-      "title": "Sviluppo di piattaforme web e aziendali | PREJ",
-      "description": "Portali web, dashboard e processi aziendali su misura con PREJ. Sviluppo React, Next.js e TypeScript con ruoli, flussi di dati e fasi di consegna trasparenti.",
+      "name": "Applicazioni web su misura e portali clienti",
+      "title": "Sviluppo Portali Clienti e Sistemi di Prenotazione | PREJ",
+      "description": "Siti aziendali, applicazioni web, portali clienti e gestionali su misura. Scopri con Home of Dance come PREJ collega prenotazioni e amministrazione.",
       "intro": "Il software aziendale dovrebbe rendere più comprensibile un processo di lavoro, non limitarsi a spostare un foglio di calcolo nel browser. PREJ realizza piattaforme web, portali e ambienti amministrativi attorno alle persone, ai dati e alle decisioni coinvolte. Il nostro lavoro con React, Next.js e TypeScript collega l’interfaccia visibile ai dati e alle API sottostanti, affinché il prodotto possa supportare un processo completo su schermi desktop e mobili.",
       "sections": [
         {
@@ -80,6 +100,14 @@
         {
           "title": "Sviluppare pensando alla verifica e alla consegna",
           "text": "Scegliamo la tecnologia in base al prodotto e alle sue esigenze di manutenzione, poi sviluppiamo per incrementi i flussi concordati. Le verifiche coprono l’intero percorso, dall’inserimento dei dati alla schermata o al record risultante. Accesso agli account, messaggi di errore e layout responsive fanno parte di questo lavoro. Servizi esterni, migrazioni, messa in produzione e assistenza vengono definiti per il progetto, senza presumere che siano inclusi in ogni piattaforma."
+        },
+        {
+          "title": "Sito aziendale, portale clienti o sistema di prenotazione?",
+          "text": "Un sito aziendale presenta i servizi e facilita il contatto. Un portale clienti aggiunge account, dati e azioni per ciascun utente. Un sistema di prenotazione richiede anche regole per disponibilità, richieste e conferme. Distinguiamo queste esigenze prima dello sviluppo, evitando di promettere una prenotazione confermata quando l’ufficio deve ancora verificarla. Home of Dance mostra il collegamento tra richieste per i corsi e amministrazione."
+        },
+        {
+          "title": "Sostituire Excel con un processo controllato",
+          "text": "Quando più persone modificano lo stesso foglio, responsabilità e stato delle attività possono diventare poco chiari. Un’applicazione web può riunire moduli, permessi e storico dei dati in un unico processo. Prima della migrazione da Excel esaminiamo i dati, concordiamo la corrispondenza dei campi e decidiamo quali strumenti mantenere. Esportazione e migrazione di prova aiutano a rilevare dati mancanti o incoerenti prima del passaggio operativo."
         }
       ],
       "deliverables": [
@@ -99,13 +127,25 @@
         {
           "q": "Può bastare un modello standard?",
           "a": "A volte uno strumento esistente risponde già all’esigenza. Valutiamo il processo effettivo prima di consigliare uno sviluppo su misura. Quando ruoli, relazioni tra i dati o passaggi di revisione richiedono una piattaforma dedicata, l’ambito del progetto deve chiarire perché queste differenze contano."
+        },
+        {
+          "q": "Quanto costa un sito o un gestionale personalizzato?",
+          "a": "Un sito di presentazione e una piattaforma con più ruoli hanno ambiti diversi. Contenuti, design, processi, permessi, integrazioni, migrazione e test determinano il lavoro. Definiamo prima funzioni e limiti della consegna. Hosting, servizi esterni e manutenzione vengono specificati separatamente quando pertinenti; questa pagina non è un’offerta a prezzo fisso."
+        },
+        {
+          "q": "Realizzate software di prenotazione e gestione corsi per scuole o studi?",
+          "a": "Il progetto Home of Dance mostra selezione pubblica dei corsi e richieste collegate a un backoffice su misura. Un’altra scuola o studio può avere regole diverse per disponibilità, presenze, documenti e approvazione dell’ufficio. Confrontiamo questi requisiti con i prodotti esistenti prima di consigliare uno sviluppo personalizzato: una soluzione pronta può essere più adatta."
+        },
+        {
+          "q": "La piattaforma può collegarsi a un’app o a un sistema esistente?",
+          "a": "Prima di definire l’integrazione verifichiamo API disponibili e diritti di accesso. Alcuni sistemi permettono collegamenti diretti, altri richiedono un’importazione controllata o un passaggio manuale. Titolarità dei dati, gestione degli errori e responsabilità di manutenzione devono essere chiare. Il servizio di integrazione API descrive come valutiamo queste dipendenze."
         }
       ]
     },
     "api-integrations": {
-      "name": "API e integrazioni",
-      "title": "Sviluppo di API e integrazione di sistemi | PREJ",
-      "description": "Collega applicazioni, dati e processi con PREJ. Sviluppo di API e backend con Node.js, NestJS, Python e PostgreSQL, con permessi espliciti e gestione degli errori.",
+      "name": "Sviluppo API e integrazione di sistemi aziendali",
+      "title": "Integrazione API, Automazione e Sviluppo Backend | PREJ",
+      "description": "Collega i sistemi aziendali con API su misura, backend e sincronizzazione dati. PREJ definisce accessi, automazione e gestione degli errori prima dello sviluppo.",
       "intro": "Un prodotto integrato dipende da accordi chiari tra i sistemi. Un’app può creare una richiesta, un ambiente di lavoro può esaminarla e un altro servizio può restituire un risultato. PREJ sviluppa API e integrazioni backend che rendono esplicite queste responsabilità. Lavoriamo con Node.js, NestJS, Python e strumenti per dati relazionali, scegliendo l’implementazione in base ai sistemi esistenti, al processo e alle esigenze di manutenzione.",
       "sections": [
         {
@@ -119,6 +159,14 @@
         {
           "title": "Mantenere tracciabili dati e decisioni operative",
           "text": "Il lavoro di integrazione non consiste soltanto nello spostare campi tra endpoint. I record richiedono relazioni utili, stati coerenti e responsabilità chiare. Mappiamo come le informazioni entrano nel sistema, come vengono validate e cosa una persona deve controllare quando qualcosa non funziona. Accessi a servizi terzi, limiti dei fornitori, credenziali e requisiti di distribuzione vengono identificati fin dall’inizio. Non promettiamo un’integrazione prima di aver verificato le modalità di accesso supportate dal sistema esterno."
+        },
+        {
+          "title": "Collegare sito web, app e amministrazione",
+          "text": "Un sito può ricevere una richiesta, il backoffice verificarla e un’app mobile mostrarne lo stato. L’integrazione definisce come scambiare lo stesso dato senza aggiornamenti in conflitto. Prima di scegliere endpoint o connettori mappiamo identificativi, modifiche consentite e fonte principale del dato. Il software esistente viene collegato soltanto tramite accessi supportati che il titolare è autorizzato a utilizzare."
+        },
+        {
+          "title": "Automatizzare il lavoro ripetitivo con controlli espliciti",
+          "text": "Sincronizzazione, notifiche e trasferimenti di file possono ridurre inserimenti manuali quando le regole sono chiare. Un webhook segnala eventi che possono arrivare in ritardo, due volte o fuori ordine. Definiamo come validarli, riconoscere duplicati e rendere visibili gli errori. L’automazione deve mantenere i passaggi di approvazione dell’azienda, non aggirarli senza avviso."
         }
       ],
       "deliverables": [
@@ -138,6 +186,18 @@
         {
           "q": "Dobbiamo sostituire il database esistente?",
           "a": "Non automaticamente. Esaminiamo prima il modello dei dati attuale e il nuovo processo. Un connettore, un’estensione limitata o una migrazione possono essere soluzioni appropriate; la scelta deve dipendere dai vincoli, non dalla preferenza per una tecnologia."
+        },
+        {
+          "q": "Che cosa determina il costo di un’integrazione API?",
+          "a": "Il lavoro dipende da documentazione del fornitore, autenticazione, mappatura dei dati, operazioni supportate, errori e accesso all’ambiente di test. Tariffe e limiti del fornitore possono influire sul progetto. Verifichiamo queste dipendenze prima della stima: la richiesta di collegare due sistemi, da sola, non definisce un ambito affidabile."
+        },
+        {
+          "q": "Si può automatizzare un processo che usa Excel o importazioni manuali?",
+          "a": "Identifichiamo prima origine dei dati, persone autorizzate a modificarli e approvazioni necessarie. Un’API supportata, un’importazione pianificata o un trasferimento verificato possono essere soluzioni adatte. Controlliamo dati campione e casi di errore prima di sostituire il processo, mantenendo una verifica umana dove un errore avrebbe conseguenze rilevanti."
+        },
+        {
+          "q": "Che cosa succede se un’API esterna cambia o non è disponibile?",
+          "a": "L’integrazione deve prevedere una risposta documentata a errori, limiti e cambi di versione del fornitore. Secondo il processo possono servire stato visibile, tentativi limitati e recupero manuale. Monitoraggio e manutenzione continuativi vengono concordati separatamente; nessun connettore può garantire che un fornitore esterno non cambi o non abbia guasti."
         }
       ]
     }

@@ -25,9 +25,9 @@
   },
   "services": {
     "mobile-app-development": {
-      "name": "Mobile App-Entwicklung",
-      "title": "Mobile App-Entwicklung für Android & iOS | PREJ",
-      "description": "Mobile Apps mit React Native planen und entwickeln: PREJ aus Kosovo verbindet Nutzerabläufe, Karten, Benachrichtigungen und Backend mit klar definierten Release-Stufen.",
+      "name": "Mobile App-Entwicklung für Android & iOS",
+      "title": "App entwickeln lassen: Android, iOS & React Native | PREJ",
+      "description": "Individuelle App-Entwicklung mit React Native: Android, iOS, MVP, Buchungsabläufe und Backend-Anbindung. Mit PREJ Umfang und Kostenfaktoren Ihres Projekts klären.",
       "intro": "Ein mobiles Produkt braucht mehr als eine Sammlung von Bildschirmen. Menschen müssen eine Aufgabe beginnen, ihren Status verstehen und nach einer Unterbrechung fortfahren können. PREJ entwickelt Android- und iOS-Anwendungen mit React Native und Expo und verbindet das mobile Erlebnis mit den dahinterliegenden APIs und betrieblichen Werkzeugen. Ausgangspunkt sind die Menschen, die das Produkt nutzen, und die tatsächlichen Bedingungen ihres Alltags.",
       "sections": [
         {
@@ -41,6 +41,14 @@
         {
           "title": "Pilotphase und öffentliche Veröffentlichung unterscheiden",
           "text": "Ein sinnvoller Pilot beantwortet konkrete Fragen mit einem begrenzten Nutzerkreis. Eine Veröffentlichung im App-Store bringt eigene Anforderungen, Geräteprüfungen und Veröffentlichungsschritte mit sich. Wir vereinbaren, welche Plattformen und Abläufe zu welcher Phase gehören, statt einen Android-Build als Nachweis einer iOS-Veröffentlichung zu betrachten. Hosting, externe Dienste, App-Store-Konten und laufende Betreuung werden für das jeweilige Projekt ausdrücklich besprochen."
+        },
+        {
+          "title": "Von der App-Idee zum prüfbaren MVP",
+          "text": "Ein MVP ist die erste nützliche Produktversion und kein festes Paket. Für eine Buchungs- oder Service-App bestimmen wir den wichtigsten Nutzerablauf, die nötigen Arbeitsschritte im Betrieb und die Daten an jedem Übergang. Funktionen wie Standort, Benachrichtigungen und Kontozugang gehören nur dann dazu, wenn sie diesen Ablauf unterstützen. So wird eine brauchbare erste Version von späteren Erweiterungen abgegrenzt."
+        },
+        {
+          "title": "Mobile App oder responsive Webanwendung?",
+          "text": "Für einen gelegentlich genutzten Service kann eine responsive Website ausreichen. Eine mobile App kommt infrage, wenn Gerätefunktionen oder die regelmäßige Nutzung unterwegs wichtig sind. Vor der Entscheidung betrachten wir Aufgabe, Endgeräte, Netzverbindung und Veröffentlichung. Plattformübergreifende Entwicklung kann Code gemeinsam nutzen; Android und iOS benötigen trotzdem eigene Prüfungen."
         }
       ],
       "deliverables": [
@@ -60,13 +68,25 @@
         {
           "q": "Was sollte ich zum ersten Gespräch mitbringen?",
           "a": "Für den Einstieg reicht eine kurze Beschreibung der Nutzer und ihrer wichtigsten Aufgabe. Bestehende Oberflächen und Systeme, bevorzugte Plattformen sowie betriebliche Rahmenbedingungen helfen uns, daraus einen realistischen ersten Umfang abzuleiten."
+        },
+        {
+          "q": "Was kostet es, eine individuelle App entwickeln zu lassen?",
+          "a": "Entscheidend sind Rollen, Bildschirme und Abläufe, der vorhandene Backend-Stand, Gerätefunktionen und der Testumfang. Store-Vorbereitung und externe Dienste können zusätzliche Arbeit oder Gebühren verursachen. Für eine belastbare Einschätzung brauchen wir einen vereinbarten Funktionsumfang, Zielplattformen und Abnahmekriterien, nicht nur eine Anzahl von Screens."
+        },
+        {
+          "q": "Sind bei React Native automatisch Android- und iOS-Veröffentlichungen enthalten?",
+          "a": "Nein. Gemeinsamer Code ersetzt weder plattformspezifische Tests noch Signierung, Store-Konten und Prüfung durch den Anbieter. Wir vereinbaren Plattform und Lieferstufe ausdrücklich. Ein Android-Pilot belegt keine fertige iOS-Veröffentlichung; die Freigabe in einem öffentlichen Store liegt beim jeweiligen Betreiber."
+        },
+        {
+          "q": "Was passiert nach der Übergabe der App?",
+          "a": "Die Übergabe sollte den vereinbarten Quellcode, das Deployment, Abhängigkeiten und bekannte Grenzen nachvollziehbar machen. Monitoring, Updates, Änderungen am Betriebssystem und Support brauchen einen gesondert vereinbarten Umfang. Nutzungsrechte, Zugänge und laufende Kosten externer Dienste werden im Angebot geklärt und nicht stillschweigend vorausgesetzt."
         }
       ]
     },
     "web-platform-development": {
-      "name": "Web- & Business-Plattformen",
-      "title": "Entwicklung von Web- & Business-Plattformen | PREJ",
-      "description": "Individuelle Webportale, Dashboards und Geschäftsabläufe mit PREJ. Entwicklung mit React, Next.js und TypeScript, klaren Rollen, Datenflüssen und transparenten Projektstufen.",
+      "name": "Individuelle Web-Apps & Kundenportale",
+      "title": "Kundenportal & Buchungssystem entwickeln lassen | PREJ",
+      "description": "Individuelle Webanwendungen, Kundenportale, Buchungssysteme und Verwaltungssoftware. PREJ zeigt mit Home of Dance, wie Oberfläche und Geschäftsablauf zusammenpassen.",
       "intro": "Unternehmenssoftware sollte einen Arbeitsprozess verständlicher machen und nicht nur eine Tabelle in den Browser verlagern. PREJ entwickelt Webplattformen, Portale und Verwaltungsoberflächen rund um die beteiligten Menschen, Datensätze und Entscheidungen. Unsere Arbeit mit React, Next.js und TypeScript verbindet die sichtbare Oberfläche mit den zugrunde liegenden Daten und APIs. So kann das Produkt einen vollständigen Arbeitsablauf auf Desktop- und mobilen Bildschirmen unterstützen.",
       "sections": [
         {
@@ -80,6 +100,14 @@
         {
           "title": "Prüfung und Übergabe von Anfang an mitdenken",
           "text": "Wir wählen die Technologie passend zum Produkt und seinem Wartungsbedarf und entwickeln die vereinbarten Abläufe anschließend schrittweise. Die Überprüfung umfasst den gesamten Weg von der Dateneingabe bis zur resultierenden Ansicht oder zum Datensatz. Kontozugriff, Fehlermeldungen und responsive Layouts gehören dazu. Externe Dienste, Datenmigration, Bereitstellung und Betreuung werden projektspezifisch vereinbart und nicht pauschal als Bestandteil jeder Plattform vorausgesetzt."
+        },
+        {
+          "title": "Unternehmenswebsite, Kundenportal oder Buchungssystem?",
+          "text": "Eine Unternehmenswebsite stellt Leistungen vor und erleichtert die Kontaktaufnahme. Ein Kundenportal ergänzt Konten, Datensätze und Aktionen je Nutzer. Ein Buchungssystem benötigt zusätzlich Regeln für Verfügbarkeit, Anfragen und Bestätigung. Diese Anforderungen trennen wir vor der Entwicklung, damit die Oberfläche keine bestätigte Buchung verspricht, wenn das Büro noch prüfen muss. Home of Dance zeigt die Verbindung von Online-Kursanmeldung und Verwaltung."
+        },
+        {
+          "title": "Excel ablösen und Abläufe nachvollziehbar machen",
+          "text": "Wenn mehrere Personen dieselbe Tabelle bearbeiten, werden Zuständigkeiten und Bearbeitungsstände schnell unübersichtlich. Eine individuelle Webanwendung kann Formulare, Berechtigungen und Datensatzverläufe verbinden. Vor einer Excel-Ablösung prüfen wir die Daten, vereinbaren Feldzuordnungen und bestimmen, welche Werkzeuge bleiben. Export und Testmigration helfen, fehlende oder widersprüchliche Angaben vor der Umstellung zu erkennen."
         }
       ],
       "deliverables": [
@@ -99,13 +127,25 @@
         {
           "q": "Reicht eine Standardvorlage aus?",
           "a": "Manchmal passt ein vorhandenes Werkzeug zum Bedarf. Wir prüfen den tatsächlichen Arbeitsablauf, bevor wir eine individuelle Entwicklung empfehlen. Wenn Rollen, Datenbeziehungen oder Prüfschritte eine maßgeschneiderte Plattform erfordern, sollte die Leistungsbeschreibung erklären, warum diese Unterschiede relevant sind."
+        },
+        {
+          "q": "Was kostet eine individuelle Website oder Geschäftsplattform?",
+          "a": "Eine Präsentationswebsite und eine Plattform mit mehreren Nutzerrollen haben unterschiedliche Anforderungen. Inhalt, Design, Abläufe, Berechtigungen, Schnittstellen, Migration und Tests bestimmen den Aufwand. Zuerst klären wir Funktionen und Leistungsgrenzen. Hosting, externe Dienste und Wartung werden bei Bedarf gesondert ausgewiesen; diese Seite ist kein Festpreisangebot."
+        },
+        {
+          "q": "Entwickeln Sie Buchungs- und Kursverwaltungssoftware für Tanzschulen oder Studios?",
+          "a": "Das Projekt Home of Dance zeigt öffentliche Kursauswahl und Anfragen mit einem individuellen Backoffice. Andere Schulen oder Studios können andere Regeln für Verfügbarkeit, Anwesenheit, Dokumente und Freigaben haben. Wir vergleichen diese Anforderungen mit vorhandenen Produkten, bevor wir Individualsoftware empfehlen. Eine Standardlösung kann die passendere Wahl sein."
+        },
+        {
+          "q": "Kann das Kundenportal mit einer App oder bestehender Software verbunden werden?",
+          "a": "Vor der Planung einer Schnittstelle prüfen wir verfügbare APIs und Zugriffsrechte. Manche Systeme erlauben direkte Verbindungen, andere benötigen einen kontrollierten Import oder einen manuellen Schritt. Datenhoheit, Fehlerbehandlung und Wartungszuständigkeiten müssen klar sein. Auf unserer Seite zur API-Integration beschreiben wir die Prüfung dieser Abhängigkeiten."
         }
       ]
     },
     "api-integrations": {
-      "name": "APIs & Integrationen",
-      "title": "API-Entwicklung & Systemintegrationen | PREJ",
-      "description": "Anwendungen, Daten und Abläufe mit PREJ verbinden. API- und Backend-Entwicklung mit Node.js, NestJS, Python und PostgreSQL, klaren Berechtigungen und Fehlerbehandlung.",
+      "name": "API-Entwicklung & Integrationen",
+      "title": "Schnittstelle programmieren lassen & API-Integration | PREJ",
+      "description": "Geschäftssysteme verbinden: individuelle APIs, Backend-Entwicklung und Datenabgleich mit PREJ. Zugriffe, Automatisierung und Fehlerfälle vor der Umsetzung klären.",
       "intro": "Ein vernetztes Produkt braucht klare Vereinbarungen zwischen seinen Systemen. Eine App kann eine Anfrage anlegen, ein Arbeitsbereich sie prüfen und ein weiterer Dienst ein Ergebnis zurückliefern. PREJ entwickelt APIs und Backend-Integrationen, die diese Zuständigkeiten eindeutig machen. Wir arbeiten mit Node.js, NestJS, Python und relationalen Datenwerkzeugen und richten die Umsetzung an den bestehenden Systemen, dem Arbeitsablauf und den Wartungsanforderungen aus.",
       "sections": [
         {
@@ -119,6 +159,14 @@
         {
           "title": "Daten und betriebliche Entscheidungen nachvollziehbar halten",
           "text": "Integrationsarbeit bedeutet mehr, als Felder zwischen Endpunkten zu übertragen. Datensätze brauchen sinnvolle Beziehungen, konsistente Zustände und klare Zuständigkeiten. Wir beschreiben, wie Informationen ins System gelangen, wie sie validiert werden und was ein Mensch bei einem Fehler prüfen muss. Drittanbieterzugänge, Anbieterlimits, Zugangsdaten und Bereitstellungsanforderungen werden frühzeitig geklärt. Wir versprechen keine Integration, bevor die unterstützten Zugriffsmöglichkeiten des externen Systems geprüft wurden."
+        },
+        {
+          "title": "Website, mobile App und Verwaltung verbinden",
+          "text": "Eine Website nimmt eine Anfrage entgegen, das Backoffice prüft sie und eine mobile App zeigt den Status. Die Schnittstelle legt fest, wie alle Systeme denselben Datensatz austauschen, ohne sich gegenseitig zu überschreiben. Vor der Implementierung klären wir Kennungen, erlaubte Änderungen und das führende System. Bestehende Software wird nur über unterstützte und rechtmäßig verfügbare Zugänge angebunden."
+        },
+        {
+          "title": "Wiederkehrende Arbeit kontrolliert automatisieren",
+          "text": "Datensynchronisation, Benachrichtigungen und Dateiübertragungen können wiederholte Eingaben reduzieren, wenn die Regeln klar sind. Ein Webhook meldet Ereignisse, die jedoch verspätet, doppelt oder in anderer Reihenfolge eintreffen können. Wir legen fest, wie das Zielsystem sie prüft, Duplikate erkennt und Fehler zur Bearbeitung sichtbar macht. Automatisierung soll Freigaben des Betriebs erhalten und nicht unbemerkt umgehen."
         }
       ],
       "deliverables": [
@@ -138,6 +186,18 @@
         {
           "q": "Müssen wir unsere bestehende Datenbank ersetzen?",
           "a": "Nicht automatisch. Zuerst betrachten wir das aktuelle Datenmodell und den neuen Arbeitsablauf. Ein Konnektor, eine begrenzte Erweiterung oder eine Migration können jeweils geeignet sein. Die Entscheidung sollte sich nach den Rahmenbedingungen richten, nicht nach einer bevorzugten Technologie."
+        },
+        {
+          "q": "Was bestimmt die Kosten einer API-Integration?",
+          "a": "Dokumentationsqualität, Authentifizierung, Datenzuordnung, unterstützte Vorgänge, Fehlerfälle und Testzugänge bestimmen den Aufwand. Anbietergebühren und Zugriffslimits können die Architektur beeinflussen. Wir prüfen diese Abhängigkeiten vor der Schätzung; der Wunsch, zwei Systeme zu verbinden, beschreibt allein noch keinen belastbaren Leistungsumfang."
+        },
+        {
+          "q": "Lässt sich ein Ablauf mit Excel oder manuellen Importen automatisieren?",
+          "a": "Zuerst klären wir Herkunft der Daten, Änderungsrechte und notwendige Freigaben. Eine unterstützte API, ein geplanter Import oder eine geprüfte Dateiübertragung können jeweils sinnvoll sein. Beispieldaten und Fehlerfälle werden geprüft, bevor der bisherige Ablauf ersetzt wird. Bei folgenreichen Änderungen bleibt eine menschliche Prüfung erhalten."
+        },
+        {
+          "q": "Was passiert, wenn sich eine fremde API ändert oder ausfällt?",
+          "a": "Eine Integration braucht einen dokumentierten Umgang mit Anbieterfehlern, Limits und Versionswechseln. Je nach Vorgang gehören sichtbare Statusanzeigen, begrenzte Wiederholungen und ein manueller Wiederanlauf dazu. Laufende Überwachung und Wartung werden gesondert vereinbart. Kein Connector kann garantieren, dass ein externer Anbieter unverändert und immer verfügbar bleibt."
         }
       ]
     }

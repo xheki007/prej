@@ -25,9 +25,9 @@
   },
   "services": {
     "mobile-app-development": {
-      "name": "Zhvillim aplikacionesh mobile",
-      "title": "Zhvillim aplikacionesh mobile për Android dhe iOS | PREJ",
-      "description": "Planifikoni dhe ndërtoni aplikacione React Native me PREJ në Kosovë: rrjedha përdorimi, harta, njoftime dhe integrim backend, me faza të qarta publikimi.",
+      "name": "Zhvillim aplikacionesh mobile për Android dhe iOS",
+      "title": "Zhvillim aplikacionesh Android & iOS në Kosovë | PREJ",
+      "description": "Aplikacione mobile sipas nevojës me React Native: Android, iOS, MVP, rezervime dhe lidhje backend. Diskutoni funksionet dhe faktorët e kostos me PREJ.",
       "intro": "Një produkt mobile kërkon më shumë se një grup ekranesh. Përdoruesit duhet të mund ta nisin një detyrë, ta kuptojnë gjendjen e saj dhe të vazhdojnë kur diçka e ndërpret. PREJ zhvillon aplikacione Android dhe iOS me React Native dhe Expo, duke lidhur përvojën mobile me API-të dhe mjetet operative që e mbështesin. Nisim nga njerëzit që do ta përdorin produktin dhe kushtet reale në të cilat do të punojnë me të.",
       "sections": [
         {
@@ -41,6 +41,14 @@
         {
           "title": "Dallojmë pilotin nga publikimi për publikun",
           "text": "Një pilot i dobishëm u përgjigjet pyetjeve konkrete me një grup të kufizuar përdoruesish. Publikimi në dyqanet e aplikacioneve shton kërkesa, kontrolle pajisjesh dhe hapa të veçantë publikimi. Biem dakord cilat platforma dhe rrjedha i përkasin secilës fazë, pa e trajtuar një build Android si provë të një publikimi iOS. Hostimi, shërbimet e jashtme, llogaritë në dyqanet e aplikacioneve dhe mbështetja e vazhdueshme diskutohen shprehimisht për projektin konkret."
+        },
+        {
+          "title": "Nga ideja e aplikacionit te një MVP i testueshëm",
+          "text": "MVP është versioni i parë i dobishëm i produktit, jo një paketë fikse. Për një aplikacion rezervimesh ose shërbimesh përcaktojmë rrjedhën kryesore të përdoruesit, veprimet e stafit dhe të dhënat e nevojshme në çdo hap. Vendndodhja, njoftimet dhe hyrja në llogari përfshihen kur ndihmojnë këtë rrjedhë. Kështu ndahet një version fillestar funksional nga lista e zgjerimeve të mundshme."
+        },
+        {
+          "title": "Aplikacion mobile apo aplikacion web që përshtatet me ekranin?",
+          "text": "Një webfaqe që përshtatet me ekranin mund të mjaftojë për shërbime që përdoren rrallë. Aplikacioni mobile mund të ketë kuptim kur nevojiten veçoritë e pajisjes ose përdorimi i shpeshtë në lëvizje. Para zgjedhjes shqyrtojmë detyrën, pajisjet, lidhjen me rrjetin dhe kërkesat e publikimit. Kodi ndërplatformësh mund të ndahet pjesërisht, por Android dhe iOS kërkojnë kontrolle të veçanta."
         }
       ],
       "deliverables": [
@@ -60,13 +68,25 @@
         {
           "q": "Çfarë duhet të sjell në diskutimin e parë?",
           "a": "Për të filluar mjafton një shpjegim i shkurtër për përdoruesit dhe detyrën e tyre kryesore. Ekranet dhe sistemet ekzistuese, preferencat e platformës dhe kufizimet operative na ndihmojnë ta kthejmë bisedën në një fushëveprim fillestar realist."
+        },
+        {
+          "q": "Sa kushton zhvillimi i një aplikacioni mobile?",
+          "a": "Kostoja ndikohet nga rolet, ekranet dhe rrjedhat, gatishmëria e backend-it, funksionet e pajisjes dhe testet e nevojshme. Përgatitja për dyqanet e aplikacioneve dhe shërbimet e jashtme mund të kërkojnë punë ose tarifa shtesë. Vlerësimi kërkon funksione, platforma dhe kritere pranimi të dakorduara, jo vetëm numrin e ekraneve."
+        },
+        {
+          "q": "A përfshin React Native automatikisht publikimin në Android dhe iOS?",
+          "a": "Jo. Kodi i përbashkët nuk zëvendëson testet sipas platformës, nënshkrimin, llogaritë e dyqaneve dhe shqyrtimin nga ofruesi. Platforma dhe faza e dorëzimit dakordohen veçmas. Një pilot Android nuk provon përfundimin e versionit iOS; pranimi në dyqan publik varet edhe nga shqyrtimi i platformës."
+        },
+        {
+          "q": "Çfarë ndodh pas dorëzimit të aplikacionit?",
+          "a": "Dorëzimi duhet të sqarojë kodin burimor, konfigurimin e publikimit, varësitë dhe kufizimet e përfshira në projekt. Monitorimi, përditësimet, ndryshimet e sistemit operativ dhe mbështetja kërkojnë fushëveprim të dakorduar veçmas. Pronësia, qasjet dhe kostot e vazhdueshme të palëve të treta sqarohen në ofertë, jo me supozim."
         }
       ]
     },
     "web-platform-development": {
-      "name": "Platforma web dhe biznesi",
-      "title": "Zhvillim platformash web dhe biznesi | PREJ",
-      "description": "Portale web, panele dhe rrjedha biznesi sipas nevojës me PREJ. Zhvillim me React, Next.js dhe TypeScript, me role, rrjedha të dhënash dhe faza të qarta dorëzimi.",
+      "name": "Aplikacione web dhe portale klientësh sipas nevojës",
+      "title": "Webfaqe, Aplikacione Web & Sisteme Rezervimesh | PREJ",
+      "description": "Zhvillim webfaqesh biznesi, portalesh klientësh, sistemesh rezervimesh dhe softueri administrimi në Kosovë. Shikoni projektin Home of Dance nga PREJ.",
       "intro": "Softueri i biznesit duhet ta bëjë më të kuptueshëm një proces pune, jo thjesht ta zhvendosë një tabelë në shfletues. PREJ ndërton platforma web, portale dhe hapësira administrative rreth njerëzve, regjistrave dhe vendimeve të përfshira. Puna jonë me React, Next.js dhe TypeScript e lidh ndërfaqen e dukshme me të dhënat dhe API-të që qëndrojnë pas saj, në mënyrë që produkti të mbështesë një rrjedhë të plotë pune në ekranet e kompjuterit dhe telefonit.",
       "sections": [
         {
@@ -80,6 +100,14 @@
         {
           "title": "Ndërtojmë duke menduar për rishikimin dhe dorëzimin",
           "text": "Zgjedhim teknologjinë sipas produktit dhe nevojave të tij për mirëmbajtje, pastaj zhvillojmë gradualisht rrjedhat e dakorduara. Rishikimet përfshijnë të gjithë rrugën, nga futja e të dhënave te ekrani ose regjistri që rezulton. Qasja në llogari, mesazhet e gabimeve dhe paraqitja e përshtatshme për madhësi të ndryshme ekranesh janë pjesë e kësaj pune. Shërbimet e jashtme, migrimi, vendosja në prodhim dhe mbështetja përcaktohen për projektin, pa u supozuar se përfshihen në çdo platformë."
+        },
+        {
+          "title": "Webfaqe biznesi, portal klientësh apo sistem rezervimesh?",
+          "text": "Një webfaqe prezanton shërbimet dhe lehtëson kontaktin. Portali i klientëve shton llogari, të dhëna dhe veprime sipas përdoruesit. Sistemi i rezervimeve kërkon edhe rregulla për disponueshmërinë, kërkesat dhe konfirmimin. Këto nevoja i ndajmë para zhvillimit, që faqja të mos premtojë rezervim të konfirmuar kur zyra ende duhet ta shqyrtojë. Home of Dance tregon lidhjen mes kërkesave për kurse dhe administrimit."
+        },
+        {
+          "title": "Zëvendësimi i Excel-it me një proces të kontrolluar",
+          "text": "Kur disa persona punojnë në të njëjtën tabelë, përgjegjësitë dhe statusi mund të bëhen të paqarta. Një aplikacion web mund të bashkojë formularët, lejet dhe historikun e të dhënave në një rrjedhë. Para kalimit nga Excel shqyrtojmë të dhënat, përcaktojmë përputhjen e fushave dhe mjetet që duhen ruajtur. Eksporti dhe migrimi provues ndihmojnë të zbulohen mungesat ose mospërputhjet para kalimit në përdorim."
         }
       ],
       "deliverables": [
@@ -99,13 +127,25 @@
         {
           "q": "A mjafton një shabllon standard?",
           "a": "Ndonjëherë një mjet ekzistues e përmbush nevojën. Vlerësojmë rrjedhën reale të punës para se të rekomandojmë zhvillim sipas porosisë. Kur rolet, marrëdhëniet mes të dhënave apo hapat e rishikimit kërkojnë një platformë të përshtatur, fushëveprimi duhet të shpjegojë pse këto dallime kanë rëndësi."
+        },
+        {
+          "q": "Sa kushton një webfaqe apo platformë biznesi e personalizuar?",
+          "a": "Një webfaqe prezantuese dhe një platformë me disa role kanë kërkesa të ndryshme. Kostoja varet nga përmbajtja, dizajni, rrjedhat, lejet, integrimet, migrimi dhe testet. Fillimisht përcaktojmë funksionet dhe çfarë mbetet jashtë dorëzimit. Hostimi, shërbimet e jashtme dhe mirëmbajtja sqarohen veçmas kur zbatohen; kjo faqe nuk është ofertë me çmim fiks."
+        },
+        {
+          "q": "A ndërtoni sisteme rezervimesh dhe menaxhimi kursesh për shkolla ose studio?",
+          "a": "Home of Dance demonstron zgjedhjen publike të kurseve dhe kërkesat e lidhura me një backoffice të personalizuar. Një shkollë ose studio tjetër mund të ketë rregulla të ndryshme për disponueshmërinë, vijueshmërinë, dokumentet dhe miratimin nga zyra. I krahasojmë me produktet ekzistuese para rekomandimit; një zgjidhje e gatshme mund të përshtatet më mirë."
+        },
+        {
+          "q": "A mund të lidhet platforma me një aplikacion ose sistem ekzistues?",
+          "a": "Para përcaktimit të integrimit kontrollojmë API-n e disponueshme dhe të drejtat e qasjes. Disa sisteme lejojnë lidhje të drejtpërdrejtë, ndërsa të tjerat kërkojnë import të kontrolluar ose hap manual. Pronësia e të dhënave, trajtimi i gabimeve dhe përgjegjësitë e mirëmbajtjes duhet të jenë të qarta. Shërbimi ynë i integrimit API shpjegon këto varësi."
         }
       ]
     },
     "api-integrations": {
-      "name": "API dhe integrime",
-      "title": "Zhvillim API-sh dhe integrim sistemesh | PREJ",
-      "description": "Lidhni aplikacionet, të dhënat dhe proceset me PREJ. Zhvillim API-sh dhe backend me Node.js, NestJS, Python dhe PostgreSQL, me leje të qarta dhe trajtim gabimesh.",
+      "name": "Zhvillim API dhe integrim sistemesh biznesi",
+      "title": "Integrim API, Automatizim & Zhvillim Backend | PREJ",
+      "description": "Lidhni sistemet e biznesit me API, zhvillim backend dhe sinkronizim të dhënash. PREJ sqaron qasjet, automatizimin dhe trajtimin e gabimeve para zbatimit.",
       "intro": "Një produkt i lidhur varet nga marrëveshje të qarta mes sistemeve. Një aplikacion mund të krijojë një kërkesë, një hapësirë pune mund ta shqyrtojë dhe një shërbim tjetër mund të kthejë një rezultat. PREJ zhvillon API dhe integrime backend që i bëjnë të qarta këto përgjegjësi. Punojmë me Node.js, NestJS, Python dhe mjete për të dhëna relacionale, duke zgjedhur implementimin sipas sistemeve ekzistuese, rrjedhës së punës dhe kërkesave të mirëmbajtjes.",
       "sections": [
         {
@@ -119,6 +159,14 @@
         {
           "title": "I mbajmë të gjurmueshme të dhënat dhe vendimet operative",
           "text": "Puna e integrimit nuk është vetëm zhvendosje fushash mes pikave fundore. Regjistrat kanë nevojë për lidhje të dobishme, gjendje të qëndrueshme dhe përgjegjësi të qarta. Hartëzojmë si hyn informacioni në sistem, si validohet dhe çfarë duhet të kontrollojë një person kur diçka shkon keq. Qasja te shërbimet e palëve të treta, kufijtë e ofruesve, kredencialet dhe kërkesat e vendosjes identifikohen herët. Nuk premtojmë integrim para se të jetë kontrolluar qasja që mbështet sistemi i jashtëm."
+        },
+        {
+          "title": "Lidhja e webfaqes, aplikacionit dhe administrimit",
+          "text": "Webfaqja mund të pranojë një kërkesë, backoffice ta shqyrtojë dhe aplikacioni mobile të shfaqë statusin. Integrimi përcakton si shkëmbehet e njëjta e dhënë pa ndryshime kundërshtuese. Para zgjedhjes së lidhjeve përcaktojmë identifikuesit, ndryshimet e lejuara dhe burimin kryesor të informacionit. Softueri ekzistues lidhet vetëm përmes qasjes së mbështetur që pronari ka të drejtë ta përdorë."
+        },
+        {
+          "title": "Automatizim procesesh me kontrolle të qarta",
+          "text": "Sinkronizimi, njoftimet dhe transferimi i skedarëve mund të zvogëlojnë futjen e përsëritur të të dhënave kur rregullat janë të qarta. Një webhook mund të dërgojë ngjarje me vonesë, dy herë ose jashtë rendit. Përcaktojmë si sistemi pranues i kontrollon, zbulon dublimet dhe shfaq gabimet për shqyrtim. Automatizimi duhet të ruajë miratimet e biznesit, jo t’i anashkalojë pa u vënë re."
         }
       ],
       "deliverables": [
@@ -138,6 +186,18 @@
         {
           "q": "A duhet ta zëvendësojmë bazën ekzistuese të të dhënave?",
           "a": "Jo automatikisht. Së pari shqyrtojmë modelin aktual të të dhënave dhe rrjedhën e re të punës. Një lidhës, një zgjerim i kufizuar apo një migrim mund të jenë zgjidhje të përshtatshme; zgjedhja duhet të ndjekë kufizimet, jo preferencën për një teknologji."
+        },
+        {
+          "q": "Nga çfarë varet kostoja e një integrimi API?",
+          "a": "Puna varet nga dokumentacioni i ofruesit, autentikimi, përputhja e të dhënave, veprimet e mbështetura, gabimet dhe qasja për testim. Tarifat dhe kufijtë e ofruesit mund të ndikojnë në zgjidhje. Këto kontrollohen para vlerësimit; kërkesa për të lidhur dy sisteme nuk mjafton për të përcaktuar një fushëveprim të besueshëm."
+        },
+        {
+          "q": "A mund të automatizohet një proces që përdor Excel ose importe manuale?",
+          "a": "Fillimisht përcaktojmë burimin e të dhënave, kush lejohet t’i ndryshojë dhe çfarë miratimesh kërkohen. Mund të përshtatet një API e mbështetur, import i planifikuar ose transferim skedarësh me shqyrtim. Kontrollojmë të dhëna provuese dhe rastet e gabimeve para zëvendësimit, duke ruajtur shqyrtimin njerëzor për ndryshime me pasoja."
+        },
+        {
+          "q": "Çfarë ndodh kur API-ja e jashtme ndryshon ose nuk punon?",
+          "a": "Integrimi kërkon mënyrë të dokumentuar për gabimet, kufizimet dhe ndryshimet e versionit. Sipas procesit, kjo mund të përfshijë status të dukshëm, riprovime të kufizuara dhe rikuperim manual. Monitorimi dhe mirëmbajtja e vazhdueshme dakordohen veçmas; asnjë lidhje nuk garanton që ofruesi i jashtëm nuk ndryshon ose nuk dështon."
         }
       ]
     }
