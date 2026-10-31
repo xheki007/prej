@@ -2,6 +2,7 @@
 from pathlib import Path
 import json
 from lxml import html,etree
+from services import build_services,SLUGS
 ROOT=Path(__file__).resolve().parents[1]
 LANGS={'sq':('Shqip','🇦🇱'),'en':('English','🇬🇧'),'de':('Deutsch','🇩🇪'),'it':('Italiano','🇮🇹')}
 META={
@@ -60,17 +61,29 @@ def build(lang):
  doc.xpath('//link[@rel="icon"]')[0].set('href','/assets/favicon.png')
  hero=doc.xpath('//img[contains(@src,"connected-systems.png")]')[0]
  hero.set('src','/assets/connected-systems-1280.webp');hero.set('srcset','/assets/connected-systems-640.webp 640w, /assets/connected-systems-1280.webp 1280w');hero.set('sizes','(max-width: 580px) 100vw, 65vw');hero.set('fetchpriority','high')
- doc.xpath('//noscript/a')[0].text='▶ '+translations['Watch the film']+' · 60s'
+ video=doc.get_element_by_id('workflow-video')
+ video.set('data-src',f'/assets/prej-workflow-v2-{lang}-48s.mp4')
+ video.set('poster',f'/assets/prej-workflow-v2-{lang}-poster.webp')
+ video.set('width','1280');video.set('height','720')
+ for link in doc.xpath('//a[contains(@href,"prej-workflow-60s.mp4")]'):
+  link.set('href',f'/assets/prej-workflow-v2-{lang}-48s.mp4')
+ doc.xpath('//noscript/a')[0].text='▶ '+translations['Watch the film']+' · 48s'
+ service_content=json.loads((ROOT/f'i18n/services-{lang}.json').read_text())
+ for card,slug in zip(doc.xpath('//article[contains(concat(" ",normalize-space(@class)," ")," capability ")]'),SLUGS):
+  link=etree.SubElement(card,'a',{'class':'text-link service-detail-link','href':f'/{lang}/services/{slug}/'})
+  link.text=service_content['ui']['readService']+' →'
  result='<!doctype html>\n'+html.tostring(doc,encoding='unicode',method='html')+'\n'
  (ROOT/lang).mkdir(exist_ok=True);(ROOT/lang/'index.html').write_text(result)
  return result
 for lang in LANGS:
  result=build(lang)
  if lang=='en':(ROOT/'index.html').write_text(result)
+build_services(ROOT,LANGS)
 (ROOT/'robots.txt').write_text('User-agent: *\nAllow: /\nDisallow: /i18n/\nDisallow: /scripts/\nDisallow: /tests/\nDisallow: /docs/\n\nSitemap: https://prej-tech.com/sitemap.xml\n')
 ns='http://www.sitemaps.org/schemas/sitemap/0.9';xh='http://www.w3.org/1999/xhtml'
 root=etree.Element('{'+ns+'}urlset',nsmap={None:ns,'xhtml':xh})
 for lang in LANGS:
- node=etree.SubElement(root,'{'+ns+'}url');etree.SubElement(node,'{'+ns+'}loc').text=f'https://prej-tech.com/{lang}/'
- for alt in [*LANGS,'x-default']:etree.SubElement(node,'{'+xh+'}link',rel='alternate',hreflang=alt,href=f'https://prej-tech.com/{alt if alt!="x-default" else "en"}/')
+ for suffix in ['']+[f'services/{slug}/' for slug in SLUGS]:
+  entry=etree.SubElement(root,'{'+ns+'}url');etree.SubElement(entry,'{'+ns+'}loc').text=f'https://prej-tech.com/{lang}/{suffix}'
+  for alt in [*LANGS,'x-default']:etree.SubElement(entry,'{'+xh+'}link',rel='alternate',hreflang=alt,href=f'https://prej-tech.com/{alt if alt!="x-default" else "en"}/{suffix}')
 (ROOT/'sitemap.xml').write_bytes(etree.tostring(root,xml_declaration=True,encoding='UTF-8',pretty_print=True))

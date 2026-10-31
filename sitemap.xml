@@ -9,12 +9,60 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/en/"/>
   </url>
   <url>
+    <loc>https://prej-tech.com/sq/services/mobile-app-development/</loc>
+    <xhtml:link rel="alternate" hreflang="sq" href="https://prej-tech.com/sq/services/mobile-app-development/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prej-tech.com/en/services/mobile-app-development/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prej-tech.com/de/services/mobile-app-development/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://prej-tech.com/it/services/mobile-app-development/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/en/services/mobile-app-development/"/>
+  </url>
+  <url>
+    <loc>https://prej-tech.com/sq/services/web-platform-development/</loc>
+    <xhtml:link rel="alternate" hreflang="sq" href="https://prej-tech.com/sq/services/web-platform-development/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prej-tech.com/en/services/web-platform-development/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prej-tech.com/de/services/web-platform-development/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://prej-tech.com/it/services/web-platform-development/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/en/services/web-platform-development/"/>
+  </url>
+  <url>
+    <loc>https://prej-tech.com/sq/services/api-integrations/</loc>
+    <xhtml:link rel="alternate" hreflang="sq" href="https://prej-tech.com/sq/services/api-integrations/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prej-tech.com/en/services/api-integrations/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prej-tech.com/de/services/api-integrations/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://prej-tech.com/it/services/api-integrations/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/en/services/api-integrations/"/>
+  </url>
+  <url>
     <loc>https://prej-tech.com/en/</loc>
     <xhtml:link rel="alternate" hreflang="sq" href="https://prej-tech.com/sq/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://prej-tech.com/en/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://prej-tech.com/de/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://prej-tech.com/it/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/en/"/>
+  </url>
+  <url>
+    <loc>https://prej-tech.com/en/services/mobile-app-development/</loc>
+    <xhtml:link rel="alternate" hreflang="sq" href="https://prej-tech.com/sq/services/mobile-app-development/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prej-tech.com/en/services/mobile-app-development/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prej-tech.com/de/services/mobile-app-development/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://prej-tech.com/it/services/mobile-app-development/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/en/services/mobile-app-development/"/>
+  </url>
+  <url>
+    <loc>https://prej-tech.com/en/services/web-platform-development/</loc>
+    <xhtml:link rel="alternate" hreflang="sq" href="https://prej-tech.com/sq/services/web-platform-development/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prej-tech.com/en/services/web-platform-development/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prej-tech.com/de/services/web-platform-development/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://prej-tech.com/it/services/web-platform-development/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/en/services/web-platform-development/"/>
+  </url>
+  <url>
+    <loc>https://prej-tech.com/en/services/api-integrations/</loc>
+    <xhtml:link rel="alternate" hreflang="sq" href="https://prej-tech.com/sq/services/api-integrations/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prej-tech.com/en/services/api-integrations/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prej-tech.com/de/services/api-integrations/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://prej-tech.com/it/services/api-integrations/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/en/services/api-integrations/"/>
   </url>
   <url>
     <loc>https://prej-tech.com/de/</loc>
@@ -25,11 +73,59 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/en/"/>
   </url>
   <url>
+    <loc>https://prej-tech.com/de/services/mobile-app-development/</loc>
+    <xhtml:link rel="alternate" hreflang="sq" href="https://prej-tech.com/sq/services/mobile-app-development/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prej-tech.com/en/services/mobile-app-development/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prej-tech.com/de/services/mobile-app-development/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://prej-tech.com/it/services/mobile-app-development/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/en/services/mobile-app-development/"/>
+  </url>
+  <url>
+    <loc>https://prej-tech.com/de/services/web-platform-development/</loc>
+    <xhtml:link rel="alternate" hreflang="sq" href="https://prej-tech.com/sq/services/web-platform-development/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prej-tech.com/en/services/web-platform-development/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prej-tech.com/de/services/web-platform-development/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://prej-tech.com/it/services/web-platform-development/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/en/services/web-platform-development/"/>
+  </url>
+  <url>
+    <loc>https://prej-tech.com/de/services/api-integrations/</loc>
+    <xhtml:link rel="alternate" hreflang="sq" href="https://prej-tech.com/sq/services/api-integrations/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prej-tech.com/en/services/api-integrations/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prej-tech.com/de/services/api-integrations/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://prej-tech.com/it/services/api-integrations/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/en/services/api-integrations/"/>
+  </url>
+  <url>
     <loc>https://prej-tech.com/it/</loc>
     <xhtml:link rel="alternate" hreflang="sq" href="https://prej-tech.com/sq/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://prej-tech.com/en/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://prej-tech.com/de/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://prej-tech.com/it/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/en/"/>
+  </url>
+  <url>
+    <loc>https://prej-tech.com/it/services/mobile-app-development/</loc>
+    <xhtml:link rel="alternate" hreflang="sq" href="https://prej-tech.com/sq/services/mobile-app-development/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prej-tech.com/en/services/mobile-app-development/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prej-tech.com/de/services/mobile-app-development/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://prej-tech.com/it/services/mobile-app-development/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/en/services/mobile-app-development/"/>
+  </url>
+  <url>
+    <loc>https://prej-tech.com/it/services/web-platform-development/</loc>
+    <xhtml:link rel="alternate" hreflang="sq" href="https://prej-tech.com/sq/services/web-platform-development/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prej-tech.com/en/services/web-platform-development/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prej-tech.com/de/services/web-platform-development/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://prej-tech.com/it/services/web-platform-development/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/en/services/web-platform-development/"/>
+  </url>
+  <url>
+    <loc>https://prej-tech.com/it/services/api-integrations/</loc>
+    <xhtml:link rel="alternate" hreflang="sq" href="https://prej-tech.com/sq/services/api-integrations/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prej-tech.com/en/services/api-integrations/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prej-tech.com/de/services/api-integrations/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://prej-tech.com/it/services/api-integrations/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/en/services/api-integrations/"/>
   </url>
 </urlset>

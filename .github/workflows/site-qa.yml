@@ -28,6 +28,7 @@ jobs:
           git diff --exit-code
           python -m unittest discover -s tests
           node --check app.js
+          node --check service.js
       - name: Desktop and mobile browser journeys
         run: |
           python -m http.server 4174 > /tmp/site-qa-http.log 2>&1 &
@@ -38,6 +39,7 @@ jobs:
             sleep 1
           done
           python tests/browser.py
+          python tests/service_browser.py
       - name: Preserve review screenshots
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4

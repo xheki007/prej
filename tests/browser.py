@@ -7,9 +7,12 @@ with sync_playwright() as p:
  for size in [(1440,1000),(390,844),(320,700)]:
   page=browser.new_page(viewport={'width':size[0],'height':size[1]},reduced_motion='reduce')
   errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
+  media_requests=[];page.on('request',lambda r:media_requests.append(r.url) if '.mp4' in r.url else None)
   for lang in ('sq','en','de','it'):
+   media_requests.clear()
    page.goto(f'http://localhost:4174/{lang}/');page.wait_for_load_state('networkidle')
    assert page.locator('html').get_attribute('lang')==lang
+   assert not media_requests, 'Video requested before explicit play'
    assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'),f'Overflow {size} {lang}'
    page.locator('header .language-picker summary').click();assert page.locator('header .language-options a').count()==4
    page.screenshot(path=str(out/f'{lang}-{size[0]}.png'))
@@ -29,6 +32,20 @@ with sync_playwright() as p:
    page.screenshot(path=str(out/f'{lang}-{size[0]}-form.png'))
    page.locator('.close-dialog').click();assert not page.locator('dialog').is_visible()
    page.locator('[data-open-brief]').click();page.keyboard.press('Escape');assert not page.locator('dialog').is_visible()
+   page.locator('.workflow-play').click()
+   page.wait_for_function('Number.isFinite(document.querySelector("#workflow-video").duration)')
+   assert abs(page.locator('#workflow-video').evaluate('(v) => v.duration')-48)<0.1
+   page.wait_for_function('document.querySelector("#workflow-video").currentTime > 0.1')
+   assert page.locator('#workflow-video').evaluate('(v) => !v.paused')
+   assert page.locator('#workflow-video').get_attribute('src')==f'/assets/prej-workflow-v2-{lang}-48s.mp4'
+   assert not page.locator('#workflow-video-error').is_visible()
+   page.screenshot(path=str(out/f'{lang}-{size[0]}-video.png'))
+   target='en' if lang!='en' else 'sq'
+   page.locator('header .language-picker summary').click()
+   page.locator(f'header a[hreflang="{target}"]').click()
+   assert page.locator('#workflow-video').get_attribute('data-src')==f'/assets/prej-workflow-v2-{target}-48s.mp4'
+   assert page.locator('#workflow-video').get_attribute('src') is None
+   assert page.locator('#workflow-video').evaluate('(v) => v.paused && v.currentTime === 0')
    assert not errors,errors
   page.goto('http://localhost:4174/?lang=sq#work');page.wait_for_url('**/sq/#work')
   page.goto('http://localhost:4174/de/?lang=it&utm_source=test#contact');page.wait_for_url('**/it/?utm_source=test#contact')

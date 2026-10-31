@@ -1,0 +1,145 @@
+{
+  "ui": {
+    "services": "Services",
+    "home": "Home",
+    "projects": "Projects",
+    "contact": "Contact",
+    "language": "Language",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "eyebrow": "Software engineering · Kosovo",
+    "overview": "What we can build together",
+    "deliverables": "A scope you can review",
+    "process": "From requirements to a working system",
+    "evidence": "Related development work",
+    "questions": "Practical questions",
+    "related": "Explore our other services",
+    "ctaTitle": "Start with the workflow, not a feature list.",
+    "ctaText": "Tell us who will use the product, what they need to do and which systems already exist. We will discuss the scope, constraints and next useful step.",
+    "cta": "Discuss your project",
+    "projectLink": "Explore this project and its current stage",
+    "back": "Back to all capabilities",
+    "footer": "Engineering with intent.",
+    "location": "Mitrovica, Kosovo",
+    "readService": "Explore this service"
+  },
+  "services": {
+    "mobile-app-development": {
+      "name": "Mobile app development",
+      "title": "Mobile App Development for Android & iOS | PREJ",
+      "description": "Plan and build React Native mobile apps with PREJ in Kosovo: user journeys, maps, notifications and backend integration, with clearly scoped release stages.",
+      "intro": "A mobile product needs more than a collection of screens. People must be able to start a task, understand its status and recover when something interrupts it. PREJ develops Android and iOS applications with React Native and Expo, connecting the mobile experience to the APIs and operational tools behind it. We begin with the people using the product and the real conditions in which they will use it.",
+      "sections": [
+        {
+          "title": "Design the journey around a real task",
+          "text": "Booking a service, following an assignment or checking a status each involves different decisions. We map the important states before implementation: the first visit, an action in progress, a changed request and a completed task. That makes the scope easier to review and gives the interface a clear purpose. Permissions, account roles and the information visible to each user belong in that discussion, not as an afterthought."
+        },
+        {
+          "title": "Connect the app to the whole system",
+          "text": "Where the product calls for them, mobile work can include maps, location, notifications and backend integration. We define which information the app reads, which actions change it and how the administrative workspace stays in step. An interface should not promise that an action succeeded before the system has confirmed it. Network interruptions and rejected requests need understandable responses and a way to continue."
+        },
+        {
+          "title": "Separate a pilot from a public release",
+          "text": "A useful pilot answers specific questions with a limited audience. A store release adds a separate set of requirements, device checks and publishing steps. We agree which platforms and flows belong to each stage rather than treating an Android build as proof of an iOS release. Hosting, external services, app-store accounts and ongoing support are discussed explicitly for the particular project."
+        }
+      ],
+      "deliverables": [
+        "A documented set of user journeys, roles and acceptance criteria.",
+        "Reviewable mobile interfaces connected to the agreed API flows.",
+        "Testing of priority journeys and a handover plan for the agreed stage."
+      ],
+      "processText": "We first clarify the problem and the smallest useful product. We then work through interfaces and implementation in reviewable increments, checking the complete journey rather than isolated screens. The handover makes known limitations visible, so the next decision is based on evidence. You work directly with Xhevdet Ferizi on the technical direction; AI tools assist the engineering workflow, while decisions and accountability remain human.",
+      "projectName": "PREJ TaxiApp",
+      "projectId": "project-taxi",
+      "projectText": "PREJ TaxiApp connects dedicated rider and driver apps with dispatch oversight and administration. Its booking, location, trip-status and cash-fare workflows illustrate why the mobile interface and backend must be designed together. The current portfolio describes Android pilot builds and documented ride-flow testing. Public commercial rollout and iOS release remain separate delivery stages; this is development evidence, not a claim of a live commercial fleet.",
+      "faq": [
+        {
+          "q": "Can an existing backend be used?",
+          "a": "We start by reviewing its available interfaces, authentication, data model and limitations. Integration scope depends on what the existing system supports. If changes are needed, they should be agreed before the mobile app relies on them."
+        },
+        {
+          "q": "What should I bring to the first discussion?",
+          "a": "A short explanation of the users and their main task is enough to start. Existing screens, systems, platform preferences and operational constraints help us turn that conversation into a realistic first scope."
+        }
+      ]
+    },
+    "web-platform-development": {
+      "name": "Web & business platforms",
+      "title": "Web & Business Platform Development | PREJ",
+      "description": "Custom web portals, dashboards and business workflows with PREJ. React, Next.js and TypeScript development with clear roles, data flows and honest delivery stages.",
+      "intro": "Business software should make a working process easier to understand, not simply move a spreadsheet into a browser. PREJ builds web platforms, portals and administrative workspaces around the people, records and decisions involved. Our work with React, Next.js and TypeScript connects the visible interface to the underlying data and APIs, so the product can support a complete workflow on desktop and mobile screens.",
+      "sections": [
+        {
+          "title": "Give each role a clear workspace",
+          "text": "An administrator, a member of staff and an external account holder usually need different information and actions. We clarify those roles, permissions and handovers before building the interface. A useful dashboard helps someone decide what to do next; it is not just a wall of numbers. Navigation, forms and record views should reflect the task and explain what has changed after an action."
+        },
+        {
+          "title": "Turn repeated operations into deliberate flows",
+          "text": "Scheduling, attendance, document handling, order tracking or communication can involve several linked steps. We identify the source of each record, the fields that need validation and the exceptions that require human review. This is particularly important when a change affects another team member or an exported document. The aim is a maintainable working process with visible boundaries, not an unexplained collection of automations."
+        },
+        {
+          "title": "Build for review and handover",
+          "text": "We choose technology around the product and its maintenance needs, then develop the agreed workflows in increments. Reviews cover the full path from data entry to the resulting screen or record. Account access, error messages and responsive layouts are part of that work. External services, migration work, deployment and support are scoped for the project rather than assumed to be included in every platform."
+        }
+      ],
+      "deliverables": [
+        "A mapped workflow with user roles, records and acceptance criteria.",
+        "Responsive pages, forms and administrative views for the agreed scope.",
+        "Connected data flows, priority journey checks and a documented handover."
+      ],
+      "processText": "We begin by understanding how the work happens today and where it becomes difficult. Together we define a first useful scope, identify dependencies and agree how progress will be reviewed. Architecture, product design and engineering are handled as parts of one system. Human review remains central even when AI assists implementation. Known limitations and the next delivery stage are recorded instead of hidden behind a polished interface.",
+      "projectName": "Home of Dance",
+      "projectId": "project-dance",
+      "projectText": "Home of Dance is a development implementation connecting students, families, trainers and courses. Scheduling, attendance, contracts and invoicing come together in a back office designed around a dance school’s daily work. The portfolio identifies role permissions, audit records, privacy workflows and two-factor authentication in the implementation. This demonstrates the kind of connected workflow PREJ works on; it is not presented as an independently verified business outcome.",
+      "faq": [
+        {
+          "q": "Can we start with one part of our process?",
+          "a": "Yes. A bounded workflow can be a better first stage than replacing every tool at once. We examine its dependencies and agree what must connect now, what can remain manual and what belongs in a later phase."
+        },
+        {
+          "q": "Will a standard template be enough?",
+          "a": "Sometimes an existing tool fits the need. We assess the actual workflow before recommending custom development. Where roles, data relationships or review steps require a tailored platform, the scope should explain why those differences matter."
+        }
+      ]
+    },
+    "api-integrations": {
+      "name": "APIs & integrations",
+      "title": "API Development & System Integrations | PREJ",
+      "description": "Connect applications, data and workflows with PREJ. API and backend development using Node.js, NestJS, Python and PostgreSQL, with explicit permissions and error handling.",
+      "intro": "A connected product depends on clear agreements between systems. An app may create a request, a workspace may review it and another service may return a result. PREJ develops APIs and backend integrations that make those responsibilities explicit. We work with Node.js, NestJS, Python and relational data tools, choosing the implementation around the existing systems, the workflow and the maintenance requirements.",
+      "sections": [
+        {
+          "title": "Define the contract before connecting the pieces",
+          "text": "We establish which system owns each record, what an operation is allowed to change and which response the caller can rely on. Request validation, authentication and role-based permissions are part of that contract. Clear boundaries make it easier to connect a mobile app, a web portal and an administrative workspace without letting each interface invent a different version of the same business rule."
+        },
+        {
+          "title": "Treat failure as part of the workflow",
+          "text": "A remote service can be unavailable, a submitted file can be invalid and the same request can arrive more than once. We discuss these cases alongside the successful path. Depending on the integration, the design may need duplicate protection, deliberate retry rules or a visible human review step. The right behaviour depends on the operation; retrying a status lookup is not the same as repeating a state-changing action."
+        },
+        {
+          "title": "Keep data and operational decisions traceable",
+          "text": "Integration work is not just moving fields between endpoints. Records need useful relationships, consistent states and clear ownership. We map how information enters the system, how it is validated and what a person needs to inspect when something goes wrong. Third-party access, provider limits, credentials and deployment requirements are identified early. We do not promise an integration before the external system’s supported access has been checked."
+        }
+      ],
+      "deliverables": [
+        "An interface and data-flow map with ownership and access boundaries.",
+        "Agreed endpoints or connectors with validation and explicit responses.",
+        "Priority success and failure checks, integration notes and a handover plan."
+      ],
+      "processText": "The starting point is a concrete workflow and the interfaces already available. We review the dependencies, agree a bounded integration and implement it in steps that can be checked independently. Tests should cover the states that affect the user or operator, not only whether an endpoint returns a response. Human engineering judgment remains responsible for permissions and release decisions; AI assistance does not remove those responsibilities.",
+      "projectName": "TORQENIX",
+      "projectId": "project-torqenix",
+      "projectText": "TORQENIX is a B2B ECU file-service platform for professional workshops. Dealer accounts, original-file uploads, order tracking, messages and a credit ledger connect to an administrator-led review and release workflow. It provides a concrete example of files, permissions and state changes that need to agree across an application. Calibration is performed outside the platform, and live bank payments are not yet enabled. Those boundaries remain explicit in the portfolio.",
+      "faq": [
+        {
+          "q": "Can you connect a third-party service?",
+          "a": "First we verify its documented API, permitted access and the account capabilities available to you. Authentication, provider restrictions and operational requirements determine what is feasible. Unsupported access is not replaced with a hidden workaround."
+        },
+        {
+          "q": "Do we need to replace our existing database?",
+          "a": "Not automatically. We examine the current data model and the new workflow first. A connector, a limited extension or a migration may each be appropriate; the choice should follow the constraints rather than a preferred technology."
+        }
+      ]
+    }
+  }
+}
