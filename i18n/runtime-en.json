@@ -1,0 +1,17 @@
+{
+  "copied": "Project brief copied. Paste it into an email to ferizixhevdet@gmail.com.",
+  "manual": "Automatic copying is unavailable. Select and copy the text below.",
+  "draft": "Opening your email app. Review and send the draft there; no message has been sent by this site.",
+  "name": "Name",
+  "email": "Email",
+  "project": "Project",
+  "idea": "Idea / challenge",
+  "subject": "Project enquiry",
+  "openMenu": "Open menu",
+  "closeMenu": "Close menu",
+  "projectsShown": "{count} projects shown",
+  "requiredName": "Please enter your name.",
+  "requiredIdea": "Describe your idea in at least 10 characters.",
+  "requiredEmail": "Please enter your email address.",
+  "invalidEmail": "Please enter a valid email address."
+}

@@ -1,0 +1,17 @@
+{
+  "copied": "Përshkrimi u kopjua. Ngjite në një email për ferizixhevdet@gmail.com.",
+  "manual": "Kopjimi automatik nuk është i disponueshëm. Përzgjidhe dhe kopjoje tekstin më poshtë.",
+  "draft": "Po hapet aplikacioni i emailit. Kontrollo dhe dërgoje draftin atje; faqja nuk ka dërguar mesazh.",
+  "name": "Emri",
+  "email": "Email",
+  "project": "Projekti",
+  "idea": "Ideja / problemi",
+  "subject": "Kërkesë për projekt",
+  "openMenu": "Hap menynë",
+  "closeMenu": "Mbyll menynë",
+  "projectsShown": "{count} projekte të shfaqura",
+  "requiredName": "Shkruaj emrin.",
+  "requiredIdea": "Përshkruaje idenë me të paktën 10 karaktere.",
+  "requiredEmail": "Shkruaj adresën e emailit.",
+  "invalidEmail": "Shkruaj një adresë të vlefshme emaili."
+}

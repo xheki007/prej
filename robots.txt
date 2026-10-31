@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /i18n/
+Disallow: /scripts/
+Disallow: /tests/
+Disallow: /docs/
+
+Sitemap: https://prej-tech.com/sitemap.xml

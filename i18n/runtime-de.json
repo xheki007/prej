@@ -1,0 +1,17 @@
+{
+  "copied": "Die Projektbeschreibung wurde kopiert. Fügen Sie sie in eine E-Mail an ferizixhevdet@gmail.com ein.",
+  "manual": "Automatisches Kopieren ist nicht verfügbar. Wählen Sie den folgenden Text aus und kopieren Sie ihn.",
+  "draft": "Ihr E-Mail-Programm wird geöffnet. Prüfen und versenden Sie den Entwurf dort; diese Website hat keine Nachricht versendet.",
+  "name": "Name",
+  "email": "E-Mail",
+  "project": "Projekt",
+  "idea": "Idee / Herausforderung",
+  "subject": "Projektanfrage",
+  "openMenu": "Menü öffnen",
+  "closeMenu": "Menü schließen",
+  "projectsShown": "{count} Projekte angezeigt",
+  "requiredName": "Bitte geben Sie Ihren Namen ein.",
+  "requiredIdea": "Beschreiben Sie Ihre Idee mit mindestens 10 Zeichen.",
+  "requiredEmail": "Bitte geben Sie Ihre E-Mail-Adresse ein.",
+  "invalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein."
+}
