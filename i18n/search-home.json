@@ -1,0 +1,58 @@
+{
+  "en": {
+    "title": "Custom Software, Web & App Development in Kosovo | PREJ",
+    "description": "PREJ in Mitrovica, Kosovo develops business websites, customer portals, mobile apps and API integrations. Explore real projects and discuss your workflow.",
+    "h1": [
+      "Custom software.",
+      "Connected business."
+    ],
+    "intro": "Custom software development from Mitrovica, Kosovo: business websites, customer portals, booking systems and mobile apps connected to your data. We turn a defined business process into a clear, testable product.",
+    "cards": [
+      "Android and iOS app development with React Native: user journeys, maps, notifications and backend connections, scoped for the agreed release.",
+      "Business websites, customer portals, booking systems and admin dashboards built around the people and processes they serve.",
+      "API integration and backend development to connect applications, synchronize records and reduce repetitive data entry."
+    ]
+  },
+  "de": {
+    "title": "Individuelle Software, Web- & App-Entwicklung | PREJ Kosovo",
+    "description": "PREJ aus Mitrovica, Kosovo entwickelt Unternehmenswebsites, Kundenportale, mobile Apps und API-Integrationen. Entdecken Sie Projekte und besprechen Sie Ihren Ablauf.",
+    "h1": [
+      "Software nach Maß.",
+      "Vernetzte Abläufe."
+    ],
+    "intro": "Individuelle Softwareentwicklung aus Mitrovica, Kosovo: Unternehmenswebsites, Kundenportale, Buchungssysteme und mobile Apps mit Anbindung an Ihre Daten. Aus einem konkreten Geschäftsablauf entsteht ein klar prüfbares Produkt.",
+    "cards": [
+      "App-Entwicklung für Android und iOS mit React Native: Nutzerabläufe, Karten, Benachrichtigungen und Backend-Anbindung für die vereinbarte Release-Stufe.",
+      "Unternehmenswebsites, Kundenportale, Buchungssysteme und Verwaltungsoberflächen, die zu den Menschen und Abläufen im Betrieb passen.",
+      "API-Integration und Backend-Entwicklung, um Anwendungen zu verbinden, Datensätze abzugleichen und wiederholte Dateneingaben zu reduzieren."
+    ]
+  },
+  "sq": {
+    "title": "Softuer i personalizuar, Webfaqe & Aplikacione | PREJ Kosovë",
+    "description": "PREJ në Mitrovicë, Kosovë zhvillon webfaqe biznesi, portale klientësh, aplikacione mobile dhe integrime API. Shikoni projektet dhe diskutoni sistemin tuaj.",
+    "h1": [
+      "Softuer sipas nevojës.",
+      "Biznes i lidhur."
+    ],
+    "intro": "Zhvillim softueri të personalizuar nga Mitrovica, Kosovë: webfaqe biznesi, portale klientësh, sisteme rezervimesh dhe aplikacione mobile të lidhura me të dhënat tuaja. Një proces konkret biznesi e kthejmë në produkt të qartë dhe të testueshëm.",
+    "cards": [
+      "Zhvillim aplikacionesh Android dhe iOS me React Native: rrjedha përdorimi, harta, njoftime dhe lidhje backend për fazën e dakorduar të publikimit.",
+      "Webfaqe biznesi, portale klientësh, sisteme rezervimesh dhe panele administrimi të ndërtuara rreth njerëzve dhe proceseve që i përdorin.",
+      "Integrim API dhe zhvillim backend për lidhjen e aplikacioneve, sinkronizimin e të dhënave dhe zvogëlimin e futjes së përsëritur të tyre."
+    ]
+  },
+  "it": {
+    "title": "Software su Misura, Siti Web e App | PREJ Kosovo",
+    "description": "PREJ a Mitrovica, Kosovo sviluppa siti aziendali, portali clienti, app mobili e integrazioni API. Esplora i progetti e parliamo del tuo processo di lavoro.",
+    "h1": [
+      "Software su misura.",
+      "Processi connessi."
+    ],
+    "intro": "Sviluppo software su misura da Mitrovica, Kosovo: siti aziendali, portali clienti, sistemi di prenotazione e app mobili collegati ai tuoi dati. Trasformiamo un processo aziendale definito in un prodotto chiaro e verificabile.",
+    "cards": [
+      "Sviluppo app Android e iOS con React Native: percorsi utente, mappe, notifiche e collegamenti backend per la fase di rilascio concordata.",
+      "Siti aziendali, portali clienti, sistemi di prenotazione e pannelli amministrativi costruiti intorno alle persone e ai processi che li utilizzano.",
+      "Integrazione API e sviluppo backend per collegare applicazioni, sincronizzare dati e ridurre gli inserimenti ripetitivi."
+    ]
+  }
+}

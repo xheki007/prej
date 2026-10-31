@@ -7,11 +7,7 @@ from cases import build_cases,CASE_SUFFIX
 from hero import add_hero_motion
 ROOT=Path(__file__).resolve().parents[1]
 LANGS={'sq':('Shqip','🇦🇱'),'en':('English','🇬🇧'),'de':('Deutsch','🇩🇪'),'it':('Italiano','🇮🇹')}
-META={
-'en':('PREJ — Software development in Kosovo','PREJ builds mobile apps, business platforms, AI-assisted systems and interactive 3D products. Software engineering from Mitrovica, Kosovo.'),
-'sq':('PREJ — Zhvillim softuerik në Kosovë','PREJ ndërton aplikacione mobile, platforma biznesi, sisteme të asistuara nga AI dhe produkte interaktive 3D. Inxhinieri softuerike nga Mitrovica, Kosovë.'),
-'de':('PREJ — Softwareentwicklung aus Kosovo','PREJ entwickelt mobile Apps, Business-Plattformen, KI-gestützte Systeme und interaktive 3D-Produkte. Softwareentwicklung aus Mitrovica, Kosovo.'),
-'it':('PREJ — Sviluppo software dal Kosovo','PREJ sviluppa app mobili, piattaforme aziendali, sistemi assistiti dall’IA e prodotti interattivi 3D. Ingegneria software da Mitrovica, Kosovo.')}
+SEARCH_HOME=json.loads((ROOT/'i18n/search-home.json').read_text())
 
 def build(lang):
  doc=html.fromstring((ROOT/'i18n/template.html').read_text())
@@ -31,7 +27,12 @@ def build(lang):
   if len(el)==0 and el.text and el.text.strip() in translations:
    el.text=translations[el.text.strip()]
  doc.set('lang',lang)
- title,description=META[lang];url=f'https://prej-tech.com/{lang}/'
+ search=SEARCH_HOME[lang]
+ for span,text in zip(doc.xpath('//h1/span'),search['h1']):span.text=text
+ doc.xpath('//p[contains(concat(" ",normalize-space(@class)," ")," hero-intro ")]')[0].text=search['intro']
+ for card,text in zip(doc.xpath('//article[contains(concat(" ",normalize-space(@class)," ")," capability ")]'),search['cards']):card.find('p').text=text
+ search=SEARCH_HOME[lang]
+ title,description=search['title'],search['description'];url=f'https://prej-tech.com/{lang}/'
  doc.find('head/title').text=title
  for query,value in [('//meta[@name="description"]',description),('//meta[@property="og:title"]',title),('//meta[@property="og:description"]',description),('//meta[@property="og:url"]',url),('//meta[@property="og:image"]','https://prej-tech.com/assets/connected-systems.png')]:doc.xpath(query)[0].set('content',value)
  doc.xpath('//link[@rel="canonical"]')[0].set('href',url)

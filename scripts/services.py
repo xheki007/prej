@@ -22,6 +22,10 @@ def build_services(root,langs):
    for el in doc.xpath('//link[@hreflang]'):
     code=el.get('hreflang');el.set('href',f'https://prej-tech.com/{"en" if code=="x-default" else code}/services/{slug}/')
    for el in head.xpath('./script[@src or @id="locale-messages"]'):head.remove(el)
+   schema={'@context':'https://schema.org','@type':'Service','name':service['name'],'description':service['description'],'url':url,'serviceType':service['name'],'provider':{'@type':'Organization','name':'PREJ','url':'https://prej-tech.com/'}}
+   node(head,'script',json.dumps(schema,ensure_ascii=False),id='service-schema',type='application/ld+json')
+   crumbs={'@context':'https://schema.org','@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':1,'name':ui['home'],'item':f'https://prej-tech.com/{lang}/'},{'@type':'ListItem','position':2,'name':ui['services'],'item':f'https://prej-tech.com/{lang}/#capabilities'},{'@type':'ListItem','position':3,'name':service['name'],'item':url}]}
+   node(head,'script',json.dumps(crumbs,ensure_ascii=False),id='service-breadcrumb-schema',type='application/ld+json')
    for el in head.xpath('./link[contains(@href,"hero-motion.css")]'):head.remove(el)
    node(head,'link',rel='stylesheet',href='/service.css?v=2')
    node(head,'script',src='/service.js?v=1',defer='defer')
@@ -61,6 +65,8 @@ def build_services(root,langs):
    faq=node(contentWrap,'section',class_='service-faq');node(faq,'h2',ui['questions'])
    for item in service['faq']:
     details=node(faq,'details');node(details,'summary',item['q']);node(details,'p',item['a'])
+    if slug=='web-platform-development' and item is service['faq'][-1]:
+     node(details,'a',content['services']['api-integrations']['name']+' →',class_='text-link',href=f'/{lang}/services/api-integrations/')
    related=node(contentWrap,'section',class_='service-related');node(related,'h2',ui['related']);links=node(related,'div',class_='service-related-grid')
    for other in SLUGS:
     if other!=slug:
