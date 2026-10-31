@@ -29,6 +29,7 @@ jobs:
           python -m unittest discover -s tests
           node --check app.js
           node --check service.js
+          node --check hero-motion.js
       - name: Desktop and mobile browser journeys
         run: |
           python -m http.server 4174 > /tmp/site-qa-http.log 2>&1 &
@@ -38,6 +39,7 @@ jobs:
             curl --fail --silent http://localhost:4174/en/ > /dev/null && break
             sleep 1
           done
+          python tests/hero_browser.py
           python tests/browser.py
           python tests/service_browser.py
           python tests/case_browser.py
@@ -58,5 +60,14 @@ jobs:
         with:
           name: case-study-qa-screenshots
           path: qa-screenshots/case-*.png
+          if-no-files-found: warn
+          retention-days: 1
+
+      - name: Preserve hero motion previews
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: hero-motion-previews
+          path: qa-hero/
           if-no-files-found: warn
           retention-days: 1

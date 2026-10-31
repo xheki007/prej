@@ -4,6 +4,7 @@ import json
 from lxml import html,etree
 from services import build_services,SLUGS
 from cases import build_cases,CASE_SUFFIX
+from hero import add_hero_motion
 ROOT=Path(__file__).resolve().parents[1]
 LANGS={'sq':('Shqip','🇦🇱'),'en':('English','🇬🇧'),'de':('Deutsch','🇩🇪'),'it':('Italiano','🇮🇹')}
 META={
@@ -62,6 +63,7 @@ def build(lang):
  doc.xpath('//link[@rel="icon"]')[0].set('href','/assets/favicon.png')
  hero=doc.xpath('//img[contains(@src,"connected-systems.png")]')[0]
  hero.set('src','/assets/connected-systems-1280.webp');hero.set('srcset','/assets/connected-systems-640.webp 640w, /assets/connected-systems-1280.webp 1280w');hero.set('sizes','(max-width: 580px) 100vw, 65vw');hero.set('fetchpriority','high')
+ add_hero_motion(doc,hero,lang)
  video=doc.get_element_by_id('workflow-video')
  video.set('data-src',f'/assets/prej-workflow-v2-{lang}-48s.mp4')
  video.set('poster',f'/assets/prej-workflow-v2-{lang}-poster.webp')
