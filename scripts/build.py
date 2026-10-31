@@ -61,7 +61,13 @@ def build(lang):
  doc.xpath('//link[@rel="icon"]')[0].set('href','/assets/favicon.png')
  hero=doc.xpath('//img[contains(@src,"connected-systems.png")]')[0]
  hero.set('src','/assets/connected-systems-1280.webp');hero.set('srcset','/assets/connected-systems-640.webp 640w, /assets/connected-systems-1280.webp 1280w');hero.set('sizes','(max-width: 580px) 100vw, 65vw');hero.set('fetchpriority','high')
- doc.xpath('//noscript/a')[0].text='▶ '+translations['Watch the film']+' · 60s'
+ video=doc.get_element_by_id('workflow-video')
+ video.set('data-src',f'/assets/prej-workflow-v2-{lang}-48s.mp4')
+ video.set('poster',f'/assets/prej-workflow-v2-{lang}-poster.webp')
+ video.set('width','1280');video.set('height','720')
+ for link in doc.xpath('//a[contains(@href,"prej-workflow-60s.mp4")]'):
+  link.set('href',f'/assets/prej-workflow-v2-{lang}-48s.mp4')
+ doc.xpath('//noscript/a')[0].text='▶ '+translations['Watch the film']+' · 48s'
  service_content=json.loads((ROOT/f'i18n/services-{lang}.json').read_text())
  for card,slug in zip(doc.xpath('//article[contains(concat(" ",normalize-space(@class)," ")," capability ")]'),SLUGS):
   link=etree.SubElement(card,'a',{'class':'text-link service-detail-link','href':f'/{lang}/services/{slug}/'})

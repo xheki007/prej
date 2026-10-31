@@ -25,7 +25,7 @@ The catalogue describes seven projects: PREJ TaxiApp, Home of Dance, TORQENIX, A
 
 Motion uses finite entrances and hover effects, honors `prefers-reduced-motion`, and does not hide content when JavaScript is unavailable. The eight AI agent roles assist the human engineering lead; they are not represented as employees or independent reviewers.
 
-The 60-second workflow film is an illustrative animation with a generic rear-view character, English captions and an original ambient score. It contains no personal portrait or client records. Only its lightweight poster loads with the page; JavaScript attaches the MP4 source after the visitor presses Play. Playback uses native controls, works inline on mobile and has a direct-file fallback when JavaScript is unavailable or playback fails. The title, button, description and accessibility labels follow the site's English / Albanian language selection.
+The approved 48-second workflow film uses PREJ motion graphics, original instrumental music and localized on-screen text, without narration or subtitle tracks. Each SQ/EN/DE/IT page selects its matching MP4 and poster through a versioned filename. Only the poster loads initially; JavaScript attaches the media source after Play. Native controls, inline mobile playback and localized direct-file fallbacks remain available. The earlier film is retained only as a rollback asset.
 
 
 ## Multilingual static build
@@ -63,8 +63,8 @@ only the company name and existing public contact/location facts.
 
 Image derivatives retain the original artwork and original assets remain in
 the repository: responsive WebP hero at 640/1280px, lossless 624px WebP logo,
-and 48px PNG favicon. The illustrative workflow film remains English-captioned,
-explicitly labelled as such in every locale, and loads only after Play.
+and 48px PNG favicon. The illustrative workflow film has matching localized on-screen text and music,
+explicitly labelled in every locale, and loads only after Play.
 
 ## Service pages
 Each locale now includes three substantial service pages under

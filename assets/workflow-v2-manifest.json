@@ -1,0 +1,30 @@
+{
+  "en": {
+    "file": "prej-workflow-v2-en-48s.mp4",
+    "sha256": "b7fd2533241b932cd816a3702178fd787186f0d987df2415b9052e83ded5d137",
+    "bytes": 1589140,
+    "duration_seconds": 48,
+    "poster": "prej-workflow-v2-en-poster.webp"
+  },
+  "sq": {
+    "file": "prej-workflow-v2-sq-48s.mp4",
+    "sha256": "95acf9ed54886fb3e017b371de957d4b471c1217cbe8dde6115d6a98e2c2fe00",
+    "bytes": 1661349,
+    "duration_seconds": 48,
+    "poster": "prej-workflow-v2-sq-poster.webp"
+  },
+  "de": {
+    "file": "prej-workflow-v2-de-48s.mp4",
+    "sha256": "086a238ff0b3241eaef1ac95682bedc136d2947f2048f1592b5d7e9b28eaa290",
+    "bytes": 1653091,
+    "duration_seconds": 48,
+    "poster": "prej-workflow-v2-de-poster.webp"
+  },
+  "it": {
+    "file": "prej-workflow-v2-it-48s.mp4",
+    "sha256": "563734e309c820b29c4b7f70f1504b6751f2fc97b35047a3108e0198a66e64cc",
+    "bytes": 1642071,
+    "duration_seconds": 48,
+    "poster": "prej-workflow-v2-it-poster.webp"
+  }
+}
