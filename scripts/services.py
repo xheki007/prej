@@ -22,7 +22,7 @@ def build_services(root,langs):
    for el in doc.xpath('//link[@hreflang]'):
     code=el.get('hreflang');el.set('href',f'https://prej-tech.com/{"en" if code=="x-default" else code}/services/{slug}/')
    for el in head.xpath('./script[@src or @id="locale-messages"]'):head.remove(el)
-   node(head,'link',rel='stylesheet',href='/service.css?v=1')
+   node(head,'link',rel='stylesheet',href='/service.css?v=2')
    node(head,'script',src='/service.js?v=1',defer='defer')
    node(head,'script',json.dumps({'openMenu':ui['openMenu'],'closeMenu':ui['closeMenu']},ensure_ascii=False),id='service-messages',type='application/json')
    for el in list(body):
@@ -54,6 +54,9 @@ def build_services(root,langs):
    for text in service['deliverables']:node(ul,'li',text)
    node(delivery,'h3',ui['process']);node(delivery,'p',service['processText'])
    proof=node(contentWrap,'section',class_='service-proof');node(proof,'p',ui['evidence'],class_='eyebrow');node(proof,'h2',service['projectName']);node(proof,'p',service['projectText']);node(proof,'a',ui['projectLink']+' ↗',class_='text-link',href=f'/{lang}/#{service["projectId"]}')
+   if slug=='web-platform-development':
+    case=json.loads((root/f'i18n/case-home-of-dance-{lang}.json').read_text())
+    node(proof,'a',case['readCase']+' →',class_='text-link case-proof-link',href=f'/{lang}/projects/home-of-dance/')
    faq=node(contentWrap,'section',class_='service-faq');node(faq,'h2',ui['questions'])
    for item in service['faq']:
     details=node(faq,'details');node(details,'summary',item['q']);node(details,'p',item['a'])

@@ -1,0 +1,58 @@
+{
+  "title": "Software per scuole di danza: il progetto Home of Dance | PREJ",
+  "description": "Il progetto PREJ per Home of Dance: backoffice su misura, richieste di iscrizione, presenze, fatture e firma elettronica dei contratti, con verifica della segreteria.",
+  "eyebrow": "Caso di studio · Piattaforma web su misura",
+  "name": "Home of Dance",
+  "h1": "Un backoffice integrato e iscrizioni online per Home of Dance",
+  "intro": "PREJ ha sviluppato un’applicazione web su misura per Home of Dance, a supporto dell’organizzazione delle attività della scuola di danza. Il progetto unisce un backoffice interno e un percorso pubblico di scelta dei corsi e iscrizione per le sedi della scuola a Breisach e Freiburg. La ricerca dei corsi, i dati dei partecipanti e la verifica amministrativa fanno parte di un unico flusso di lavoro collegato, mentre la responsabilità della conferma resta alla segreteria.",
+  "scopeTitle": "Cosa collega la piattaforma",
+  "scope": [
+    "Ricerca pubblica dei corsi e richieste di iscrizione",
+    "Pianificazione dei corsi, presenze ed elenchi di lavoro della segreteria",
+    "Contratti, firma elettronica e gestione delle fatture"
+  ],
+  "workflowTitle": "Dalla scelta del corso alla verifica della richiesta",
+  "workflowIntro": "Il percorso pubblico inizia dalla scelta di un corso adatto, non da un modulo di contatto generico. I visitatori possono filtrare il catalogo per sede, stile di danza, età e tipo di corso. Gli stati di disponibilità e lista d’attesa chiariscono quale passo successivo è possibile, e la selezione può comprendere più corsi. Questi controlli collegano l’interfaccia pubblica all’offerta della scuola senza trattare ogni richiesta come se fosse la stessa operazione.",
+  "bookingCaption": "Catalogo pubblico originale in tedesco di Home of Dance, mostrato senza dati dei partecipanti. Prezzi e disponibilità dei corsi possono cambiare.",
+  "bookingAlt": "Catalogo pubblico dei corsi di Home of Dance con filtri per sede, stile di danza, età e tipo di corso",
+  "requestTitle": "Informazioni strutturate e un passaggio di conferma esplicito",
+  "requestText": "Il percorso di iscrizione distingue le richieste di iscrizione vincolante, le richieste di prova, le richieste di informazioni e quelle per la lista d’attesa. Raccoglie le informazioni necessarie al relativo flusso, inclusi i recapiti del partecipante e del genitore o tutore, i dati del contratto o della modifica, il mese di inizio, la tariffa e l’indirizzo. Le preferenze di pagamento comprendono l’addebito diretto SEPA e il bonifico bancario. Le informazioni sulla privacy sono separate dal consenso facoltativo alla pubblicazione di foto o video, evitando di riunire scelte diverse in un’unica autorizzazione presunta.",
+  "boundaryTitle": "Una richiesta non è una conferma immediata",
+  "boundaryText": "Le richieste inviate vengono esaminate dalla segreteria di Home of Dance. Il contratto diventa efficace solo dopo la sua conferma. La scelta di un corso, di una tariffa o di un metodo di pagamento non significa di per sé che il posto sia confermato o che sia stato riscosso un pagamento. Questa distinzione fa parte del percorso pubblico ed è importante anche nel descrivere le funzioni del software.",
+  "requestCaption": "Interfaccia pubblica originale in tedesco per le richieste, con i campi di partecipante e genitore o tutore vuoti. Non sono mostrati dati privati.",
+  "requestAlt": "Modulo pubblico di iscrizione di Home of Dance in tedesco, con i campi di contatto del partecipante e del genitore o tutore vuoti",
+  "backofficeTitle": "Il lato operativo del sistema",
+  "backofficeIntro": "Dietro le pagine pubbliche, il backoffice riunisce gli strumenti intorno alle attività operative della scuola. Il caso di studio descrive le funzioni presenti nell’applicazione, senza affermare risultati misurati in termini di tempo risparmiato o prestazioni commerciali.",
+  "modules": [
+    {
+      "title": "Corsi e presenze",
+      "text": "Le schede dei corsi comprendono orario, sede, sala e stato. Un piano settimanale supporta la visualizzazione del calendario, mentre le presenze sono organizzate per corso e data. L’interfaccia amministrativa mantiene così un legame concreto con l’attività programmata, anziché lasciare calendario e registri di partecipazione su schermate scollegate."
+    },
+    {
+      "title": "Verifica di iscrizioni e prenotazioni",
+      "text": "L’elenco di lavoro della segreteria supporta stato, tipo di richiesta, area, responsabilità, decisione del responsabile e ricerca. Il personale può esaminare iscrizioni e prenotazioni in arrivo nel loro contesto amministrativo. La presenza di un modulo pubblico non elimina questo passaggio di verifica né implica l’accettazione automatica di ogni richiesta inviata."
+    },
+    {
+      "title": "Contratti e fatture",
+      "text": "I flussi dei contratti comprendono preparazione dei PDF, caricamento, verifica e controlli di fatturazione. La firma elettronica dei contratti fa inoltre parte delle funzionalità contrattuali della piattaforma. La gestione delle fatture comprende viste per mese e stato, distinguendo quelle saldate da quelle aperte. Si tratta di funzioni software: questo caso di studio non garantisce la validità legale delle firme né afferma che siano state collaudate transazioni di pagamento."
+    }
+  ],
+  "designTitle": "Un’unica piattaforma, responsabilità distinte",
+  "designText": "Il progetto collega le scelte dell’interfaccia pubblica alle informazioni necessarie alla segreteria per gestirle. I visitatori hanno bisogno di un percorso chiaro verso il corso adatto e di una spiegazione precisa del significato della loro richiesta. Il backoffice richiede dati strutturati, stati di verifica e il contesto dei relativi corsi, contratti e fatture. Rendere visibili queste responsabilità è una scelta progettuale concreta: una schermata di prenotazione curata non deve nascondere chi debba confermare la richiesta o quale sia il passo successivo.",
+  "evidenceTitle": "Cosa mostra questo caso di studio",
+  "evidenceText": "Le schermate pubbliche mostrano il catalogo dei corsi e l’interfaccia delle richieste senza informazioni private sui partecipanti. La descrizione delle funzioni copre il percorso pubblico osservato e le funzionalità del backoffice, con la firma elettronica confermata come caratteristica del progetto. Durante la verifica per questo caso di studio non sono state inviate iscrizioni, effettuati pagamenti o apposte firme reali. Dalle interfacce non vengono dedotti indicatori di prestazione, testimonianze o affermazioni di funzionamento completamente autonomo.",
+  "publicLink": "Esplora il catalogo pubblico dei corsi",
+  "serviceLink": "Scopri il nostro servizio di sviluppo di piattaforme web",
+  "portfolioLink": "Torna al catalogo dei progetti PREJ",
+  "readCase": "Leggi il caso di studio Home of Dance",
+  "relatedTitle": "Stai progettando una piattaforma aziendale integrata?",
+  "relatedText": "Se il tuo processo unisce una richiesta pubblica a una verifica interna, inizia mappando le decisioni, i dati e le persone coinvolte. PREJ può discutere l’ambito di un portale o backoffice su misura per quel flusso, compresi i passaggi che devono restare sotto controllo umano.",
+  "cta": "Parliamo del tuo progetto",
+  "home": "Home",
+  "projects": "Progetti",
+  "language": "Lingua",
+  "status": "Piattaforma web su misura",
+  "portfolioSummary": "Un backoffice su misura e un percorso pubblico di iscrizione ai corsi per Home of Dance. La ricerca dei corsi, i dati di partecipanti e genitori o tutori, le presenze, i contratti, la firma elettronica e la gestione delle fatture collegano il percorso pubblico della richiesta alla verifica della segreteria.",
+  "portfolioBoundary": "Le richieste di iscrizione vengono esaminate dalla segreteria della scuola; il contratto diventa efficace solo dopo la sua conferma. Le schermate pubbliche del caso di studio non contengono dati privati dei partecipanti.",
+  "serviceProof": "Per Home of Dance, PREJ ha sviluppato un backoffice su misura collegato alla scelta pubblica dei corsi e alle richieste di iscrizione. La piattaforma comprende pianificazione dei corsi, presenze, elenchi di lavoro della segreteria, gestione dei contratti con firma elettronica e viste delle fatture. Le richieste vengono esaminate dalla segreteria della scuola; la scelta di un corso o di un metodo di pagamento non conferma di per sé un contratto né riscuote un pagamento. Il caso di studio presenta schermate dell’interfaccia pubblica senza dati privati dei partecipanti."
+}

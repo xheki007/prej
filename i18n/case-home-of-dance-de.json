@@ -1,0 +1,58 @@
+{
+  "title": "Tanzschulsoftware: Home of Dance als Projektbeispiel | PREJ",
+  "description": "Ein PREJ-Projekt für Home of Dance: individuelles Backoffice, Online-Anfragen, Anwesenheit, Rechnungen und elektronische Vertragsunterzeichnung mit Prüfung durch das Büro.",
+  "eyebrow": "Projektbeispiel · Individuelle Webplattform",
+  "name": "Home of Dance",
+  "h1": "Individuelles Backoffice und Online-Anmeldung für Home of Dance",
+  "intro": "Für Home of Dance entwickelte PREJ eine individuelle Webanwendung für die Organisation des Tanzschulbetriebs. Das Projekt verbindet ein internes Backoffice mit einer öffentlichen Kursauswahl und Online-Anmeldung für die Standorte der Tanzschule in Breisach und Freiburg. Kurssuche, Teilnehmerangaben und administrative Prüfung sind Teil eines zusammenhängenden Ablaufs. Die Verantwortung für die Bestätigung bleibt beim Büro.",
+  "scopeTitle": "Was die Plattform verbindet",
+  "scope": [
+    "Öffentliche Kurssuche und Anmeldeanfragen",
+    "Kursplanung, Anwesenheit und Arbeitslisten für das Büro",
+    "Verträge, elektronische Unterzeichnung und Rechnungsverwaltung"
+  ],
+  "workflowTitle": "Von der Kurssuche zur geprüften Anfrage",
+  "workflowIntro": "Der öffentliche Ablauf beginnt mit der Auswahl eines passenden Kurses, nicht mit einem allgemeinen Kontaktformular. Interessierte können das Angebot nach Standort, Tanzstil, Alter und Kursart eingrenzen. Verfügbarkeits- und Wartelistenanzeigen zeigen, welcher nächste Schritt möglich ist. Die Auswahl kann mehrere Kurse umfassen. Diese Funktionen verbinden die öffentliche Oberfläche mit dem Kursangebot der Tanzschule, ohne jede Anfrage als denselben Vorgang zu behandeln.",
+  "bookingCaption": "Öffentlicher Kurskatalog von Home of Dance in der deutschen Originaloberfläche, ohne Teilnehmerdaten. Kurspreise und Verfügbarkeit können sich ändern.",
+  "bookingAlt": "Öffentlicher Kurskatalog von Home of Dance mit Filtern für Standort, Tanzstil, Alter und Kursart",
+  "requestTitle": "Strukturierte Angaben und eine klare Grenze zur Bestätigung",
+  "requestText": "Die Anmeldung unterscheidet zwischen Anfragen zur verbindlichen Anmeldung, Probestundenanfragen, allgemeinen Anfragen und Wartelistenanfragen. Sie erfasst die für den jeweiligen Ablauf benötigten Angaben: Kontaktdaten von Teilnehmenden und Erziehungsberechtigten, Vertrags- oder Änderungsangaben, Startmonat, Tarif und Adresse. Als Zahlungsarten können SEPA-Lastschrift und Überweisung ausgewählt werden. Datenschutzhinweise sind von der freiwilligen Einwilligung zur Veröffentlichung von Fotos oder Videos getrennt. Unterschiedliche Entscheidungen werden damit nicht pauschal zusammengefasst.",
+  "boundaryTitle": "Eine Anfrage ist noch keine sofortige Bestätigung",
+  "boundaryText": "Eingereichte Anfragen werden vom Büro von Home of Dance geprüft. Ein Vertrag kommt erst durch die Bestätigung des Büros zustande. Die Auswahl eines Kurses, Tarifs oder Zahlungsmittels bedeutet für sich allein weder eine bestätigte Platzvergabe noch einen erfolgten Zahlungseinzug. Diese Unterscheidung gehört zum öffentlichen Ablauf und ist auch bei der Beschreibung der Software wichtig.",
+  "requestCaption": "Öffentliche Anfrageoberfläche im deutschen Original mit leeren Feldern für Teilnehmende und Erziehungsberechtigte. Es werden keine privaten Datensätze gezeigt.",
+  "requestAlt": "Öffentliches deutsches Anmeldeformular von Home of Dance mit leeren Kontaktfeldern für Teilnehmende und Erziehungsberechtigte",
+  "backofficeTitle": "Die Arbeitsoberfläche hinter dem System",
+  "backofficeIntro": "Hinter den öffentlichen Seiten bündelt das Backoffice die Werkzeuge für die organisatorischen Aufgaben der Tanzschule. Dieses Projektbeispiel beschreibt die vorhandenen Funktionen der Anwendung. Es enthält keine gemessenen Aussagen zu Zeitersparnis oder wirtschaftlichem Erfolg.",
+  "modules": [
+    {
+      "title": "Kurse und Anwesenheit",
+      "text": "Kursdatensätze enthalten Zeit, Standort, Raum und Status. Ein Wochenplan unterstützt die Stundenplanansicht, während die Anwesenheit nach Kurs und Datum organisiert ist. Dadurch bleibt die Verwaltungsoberfläche mit dem geplanten Unterricht verbunden, statt Stundenplan und Teilnahmedaten als voneinander unabhängige Ansichten zu behandeln."
+    },
+    {
+      "title": "Anmeldungen und Buchungen prüfen",
+      "text": "Die Arbeitsliste des Büros bietet Status, Anfrageart, Bereich, Zuständigkeit, Inhaberentscheidung und Suche. Mitarbeitende können eingehende Anmeldungen und Buchungen im administrativen Zusammenhang prüfen. Ein öffentliches Formular ersetzt diesen Prüfschritt nicht und bedeutet nicht, dass jede eingereichte Anfrage automatisch angenommen wird."
+    },
+    {
+      "title": "Verträge und Rechnungen",
+      "text": "Die Vertragsabläufe umfassen PDF-Vorbereitung, Upload, Prüfung und Abrechnungssteuerung. Auch die elektronische Vertragsunterzeichnung gehört zu den Vertragsfunktionen der Plattform. Die Rechnungsverwaltung bietet Monats- und Statusansichten mit beglichenen und offenen Vorgängen. Dies sind Softwarefunktionen; das Projektbeispiel gibt keine Zusicherung zur Rechtswirksamkeit von Unterschriften und behauptet nicht, dass Zahlungsvorgänge getestet wurden."
+    }
+  ],
+  "designTitle": "Eine Plattform, klar getrennte Zuständigkeiten",
+  "designText": "Das Projekt verbindet die Auswahlmöglichkeiten der öffentlichen Oberfläche mit den Informationen, die das Büro für die Bearbeitung benötigt. Interessierte brauchen einen klaren Weg zum passenden Kurs und eine präzise Erklärung, was ihre Anfrage bedeutet. Das Backoffice benötigt strukturierte Datensätze, Prüfstatus und den zugehörigen Kurs-, Vertrags- und Rechnungskontext. Diese Zuständigkeiten sichtbar zu halten, ist eine praktische Gestaltungsentscheidung: Eine ansprechende Buchungsoberfläche sollte nicht verbergen, wer die Anfrage bestätigen muss oder welcher Schritt als Nächstes folgt.",
+  "evidenceTitle": "Was dieses Projektbeispiel zeigt",
+  "evidenceText": "Die öffentlichen Screenshots zeigen den Kurskatalog und die Anfrageoberfläche ohne private Teilnehmerinformationen. Die Funktionsbeschreibung umfasst den beobachteten öffentlichen Ablauf und die Bestandsaufnahme des Backoffice; die elektronische Unterzeichnung wurde als Projektfunktion bestätigt. Bei der Prüfung für dieses Projektbeispiel wurden keine echte Anmeldung, Zahlung oder Unterschrift übermittelt. Aus den Oberflächen werden keine Leistungskennzahlen, Kundenstimmen oder Aussagen über einen vollständig autonomen Betrieb abgeleitet.",
+  "publicLink": "Öffentlichen Kurskatalog ansehen",
+  "serviceLink": "Unsere Entwicklung von Webplattformen entdecken",
+  "portfolioLink": "Zurück zur PREJ-Projektübersicht",
+  "readCase": "Projektbeispiel Home of Dance lesen",
+  "relatedTitle": "Planen Sie eine vernetzte Geschäftsplattform?",
+  "relatedText": "Wenn Ihr Prozess öffentliche Anfragen mit interner Prüfung verbindet, beginnen Sie mit den beteiligten Entscheidungen, Datensätzen und Personen. PREJ bespricht mit Ihnen den Umfang eines passenden Portals oder Backoffice für diesen Ablauf – einschließlich der Grenzen, an denen die Kontrolle beim Menschen bleiben sollte.",
+  "cta": "Ihr Projekt besprechen",
+  "home": "Startseite",
+  "projects": "Projekte",
+  "language": "Sprache",
+  "status": "Individuelle Webplattform",
+  "portfolioSummary": "Ein individuelles Backoffice und eine öffentliche Online-Kursanmeldung für Home of Dance. Kurssuche, Angaben zu Teilnehmenden und Erziehungsberechtigten, Anwesenheit, Verträge, elektronische Unterzeichnung und Rechnungsverwaltung verbinden den öffentlichen Anfrageprozess mit der Prüfung durch das Büro.",
+  "portfolioBoundary": "Anmeldeanfragen werden vom Büro der Tanzschule geprüft; ein Vertrag kommt erst durch dessen Bestätigung zustande. Die öffentlichen Screenshots im Projektbeispiel enthalten keine privaten Teilnehmerdatensätze.",
+  "serviceProof": "Für Home of Dance entwickelte PREJ ein individuelles Backoffice, das mit einer öffentlichen Kursauswahl und Anmeldeanfragen verbunden ist. Die Plattform umfasst Kursplanung, Anwesenheit, Arbeitslisten für das Büro, Vertragsverwaltung mit elektronischer Unterzeichnung und Rechnungsansichten. Anfragen werden vom Büro der Tanzschule geprüft; die Auswahl eines Kurses oder Zahlungsmittels bestätigt für sich allein weder einen Vertrag noch löst sie einen Zahlungseinzug aus. Das Projektbeispiel zeigt öffentliche Oberflächen ohne private Teilnehmerdatensätze."
+}

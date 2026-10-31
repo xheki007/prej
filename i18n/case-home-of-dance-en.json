@@ -1,0 +1,58 @@
+{
+  "title": "Dance-School Software: Home of Dance Case Study | PREJ",
+  "description": "A PREJ project for Home of Dance: custom backoffice, public course requests, attendance, invoices and electronic contract signing, with office-reviewed registration.",
+  "eyebrow": "Project case study · Custom web platform",
+  "name": "Home of Dance",
+  "h1": "A connected backoffice and online registration for Home of Dance",
+  "intro": "PREJ developed a custom web application for Home of Dance to support the organisation of its dance-school operations. The project brings together an internal backoffice and a public course-selection and registration experience for the school’s locations in Breisach and Freiburg. Course discovery, participant information and administrative review are parts of one connected workflow, while the office retains responsibility for confirmation.",
+  "scopeTitle": "What the platform connects",
+  "scope": [
+    "Public course discovery and registration requests",
+    "Course planning, attendance and office worklists",
+    "Contracts, electronic signing and invoice administration"
+  ],
+  "workflowTitle": "From finding a course to a reviewed request",
+  "workflowIntro": "The public journey begins with choosing a suitable course, not with a generic contact form. Visitors can narrow the catalogue by location, dance style, age and course type. Availability and waiting-list states help explain which next step is available, and the selection can include more than one course. These controls connect the public interface to the school’s course offering without treating every request as the same transaction.",
+  "bookingCaption": "Original German public course catalogue for Home of Dance, shown without participant records. Course prices and availability may change.",
+  "bookingAlt": "Home of Dance public course catalogue with location, dance-style, age and course-type filters",
+  "requestTitle": "Structured information, with a clear confirmation boundary",
+  "requestText": "The registration experience distinguishes binding-registration requests, trial requests, enquiries and waiting-list requests. It collects the information needed for the relevant workflow, including participant and guardian contact details, contract or change information, start month, tariff and address. Payment preferences include SEPA direct debit and bank transfer. Privacy information is separate from optional consent to publish photos or videos, rather than bundling those different choices into one unchecked assumption.",
+  "boundaryTitle": "A request is not an immediate confirmation",
+  "boundaryText": "Submitted requests are reviewed by the Home of Dance office. A contract takes effect only when the office confirms it. Selecting a course, a tariff or a payment method does not itself mean that a place has been confirmed or a payment has been collected. That distinction is part of the public workflow and remains important when describing what the software does.",
+  "requestCaption": "Original German public request interface with empty participant and guardian fields. No private records are shown.",
+  "requestAlt": "Home of Dance German public registration form with empty participant and guardian contact fields",
+  "backofficeTitle": "The working side of the system",
+  "backofficeIntro": "Behind the public pages, the backoffice groups the tools around the school’s operational tasks. The case study describes the functions present in the application, not a measured claim about time saved or commercial performance.",
+  "modules": [
+    {
+      "title": "Courses and attendance",
+      "text": "Course records include time, location, room and status. A weekly plan supports the timetable view, while attendance is organised by course and date. This gives the administrative interface a concrete connection to the scheduled activity rather than leaving the timetable and participation records as unrelated screens."
+    },
+    {
+      "title": "Registration and booking review",
+      "text": "The office worklist supports status, request type, area, responsibility, owner decision and search. Staff can review incoming registrations and bookings in an administrative context. The presence of a public form does not remove that review step or imply automatic acceptance of every submitted request."
+    },
+    {
+      "title": "Contracts and invoices",
+      "text": "Contract workflows include PDF preparation, upload, review and billing controls. Electronic contract signing is also part of the platform’s contract functionality. Invoice administration includes month and status views, with settled and open states. These are software features; this case study does not make a legal-validity assurance about signatures or claim that payment transactions were tested."
+    }
+  ],
+  "designTitle": "One platform, distinct responsibilities",
+  "designText": "The project connects public-facing choices with the information an office needs to work through them. Visitors need a clear route to the right course and a precise explanation of what their request means. The backoffice needs structured records, review states and the related course, contract and invoice context. Keeping those responsibilities visible is a practical design decision: a polished booking screen should not hide who must confirm the request or what happens next.",
+  "evidenceTitle": "What this case study shows",
+  "evidenceText": "The public screenshots show the course catalogue and request interface without private participant information. The feature description covers the observed public journey and the backoffice inventory, with electronic signing confirmed as a project feature. No live registration, payment or signature was submitted during the case-study review. No performance metrics, testimonials or claims of fully autonomous operation are inferred from the interfaces.",
+  "publicLink": "Explore the public course catalogue",
+  "serviceLink": "Explore our web-platform development service",
+  "portfolioLink": "Back to the PREJ project catalogue",
+  "readCase": "Read the Home of Dance case study",
+  "relatedTitle": "Planning a connected business platform?",
+  "relatedText": "If your process combines a public request with internal review, start by mapping the decisions, records and people involved. PREJ can discuss the scope of a tailored portal or backoffice around that workflow, including the boundaries that should stay under human control.",
+  "cta": "Discuss your project",
+  "home": "Home",
+  "projects": "Projects",
+  "language": "Language",
+  "status": "Custom web platform",
+  "portfolioSummary": "A custom backoffice and public course-registration experience for Home of Dance. Course discovery, participant and guardian information, attendance, contracts, electronic signing and invoice administration connect the public request journey with office review.",
+  "portfolioBoundary": "Registration requests are reviewed by the school office; a contract takes effect only on office confirmation. Public screenshots in the case study contain no private participant records.",
+  "serviceProof": "For Home of Dance, PREJ developed a custom backoffice connected to public course selection and registration requests. The platform includes course planning, attendance, office worklists, contract administration with electronic signing and invoice views. Requests are reviewed by the school office; selecting a course or payment method does not itself confirm a contract or collect payment. The case study presents public interface screenshots without private participant records."
+}

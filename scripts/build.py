@@ -3,6 +3,7 @@ from pathlib import Path
 import json
 from lxml import html,etree
 from services import build_services,SLUGS
+from cases import build_cases,CASE_SUFFIX
 ROOT=Path(__file__).resolve().parents[1]
 LANGS={'sq':('Shqip','🇦🇱'),'en':('English','🇬🇧'),'de':('Deutsch','🇩🇪'),'it':('Italiano','🇮🇹')}
 META={
@@ -72,6 +73,12 @@ def build(lang):
  for card,slug in zip(doc.xpath('//article[contains(concat(" ",normalize-space(@class)," ")," capability ")]'),SLUGS):
   link=etree.SubElement(card,'a',{'class':'text-link service-detail-link','href':f'/{lang}/services/{slug}/'})
   link.text=service_content['ui']['readService']+' →'
+ case_content=json.loads((ROOT/f'i18n/case-home-of-dance-{lang}.json').read_text())
+ dance=doc.xpath('//*[@id="project-dance"]')[0]
+ for cls,key in [('development-status','status'),('project-summary','portfolioSummary'),('project-boundary','portfolioBoundary')]:
+  dance.xpath('.//*[contains(concat(" ",normalize-space(@class)," "),$token)]',token=' '+cls+' ')[0].text=case_content[key]
+ case_link=etree.SubElement(dance.xpath('.//*[contains(@class,"project-expanded")]')[0],'a',{'class':'text-link','href':f'/{lang}/{CASE_SUFFIX}'})
+ case_link.text=case_content['readCase']+' →'
  result='<!doctype html>\n'+html.tostring(doc,encoding='unicode',method='html')+'\n'
  (ROOT/lang).mkdir(exist_ok=True);(ROOT/lang/'index.html').write_text(result)
  return result
@@ -79,11 +86,12 @@ for lang in LANGS:
  result=build(lang)
  if lang=='en':(ROOT/'index.html').write_text(result)
 build_services(ROOT,LANGS)
+build_cases(ROOT,LANGS)
 (ROOT/'robots.txt').write_text('User-agent: *\nAllow: /\nDisallow: /i18n/\nDisallow: /scripts/\nDisallow: /tests/\nDisallow: /docs/\n\nSitemap: https://prej-tech.com/sitemap.xml\n')
 ns='http://www.sitemaps.org/schemas/sitemap/0.9';xh='http://www.w3.org/1999/xhtml'
 root=etree.Element('{'+ns+'}urlset',nsmap={None:ns,'xhtml':xh})
 for lang in LANGS:
- for suffix in ['']+[f'services/{slug}/' for slug in SLUGS]:
+ for suffix in ['']+[f'services/{slug}/' for slug in SLUGS]+[CASE_SUFFIX]:
   entry=etree.SubElement(root,'{'+ns+'}url');etree.SubElement(entry,'{'+ns+'}loc').text=f'https://prej-tech.com/{lang}/{suffix}'
   for alt in [*LANGS,'x-default']:etree.SubElement(entry,'{'+xh+'}link',rel='alternate',hreflang=alt,href=f'https://prej-tech.com/{alt if alt!="x-default" else "en"}/{suffix}')
 (ROOT/'sitemap.xml').write_bytes(etree.tostring(root,xml_declaration=True,encoding='UTF-8',pretty_print=True))

@@ -79,7 +79,29 @@ enquiry form remains the single enquiry implementation.
 
 `service.css` extends the current visual identity; `service.js` handles only
 progressive menu and language-picker behavior. Service content and navigation
-remain usable without JavaScript. The sitemap contains 16 canonical URLs
-(four homepages and twelve service pages), with reciprocal language alternates.
+remain usable without JavaScript. The sitemap contains 20 canonical URLs
+(four homepages, twelve service pages and four Home of Dance case-study pages), with reciprocal language alternates.
 The service copy describes intended project scope and process, not a delivery
 promise or a claim of commercial deployment for portfolio work.
+
+
+## Home of Dance case study
+`/{locale}/projects/home-of-dance/` presents the custom backoffice and public
+course-registration workflow in all four languages. `scripts/cases.py` renders
+it from `i18n/case-home-of-dance-{locale}.json`, using the shared service chrome
+and `case-study.css`. The Home of Dance portfolio entry and web-platform service
+link to the case study. Other project stages remain unchanged.
+
+The project owner confirmed permission for public use of the name, logo and
+privacy-safe interface images. The two approved WebP screenshots show only the
+public German course catalogue and an empty participant/guardian request form;
+they contain no private participant records. Captions explain the original
+interface language and that availability/prices can change. Source interface:
+https://backoffice.homeofdance.de/buchen
+
+The copy is grounded in the inspected public workflow and backoffice inventory;
+electronic contract signing is owner-confirmed functionality, not a legal
+assurance or a claim that a signature transaction was tested. Registration
+requests require office review and confirmation. Course/payment selection does
+not itself confirm a contract or execute payment. No client-side registration,
+payment or signing submission is made by `tests/case_browser.py`.
