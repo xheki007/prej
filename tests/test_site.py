@@ -13,6 +13,7 @@ class SiteTests(unittest.TestCase):
     alternates=dict(zip(doc.xpath('//link[@hreflang]/@hreflang'),doc.xpath('//link[@hreflang]/@href')))
     self.assertEqual(alternates,{**{l:f'https://prej-tech.com/{l}/' for l in LANGS},'x-default':'https://prej-tech.com/en/'})
     self.assertEqual(len(doc.xpath('//h1')),1)
+    self.assertNotIn('60',doc.xpath('//*[@id="workflow-film-title"]')[0].text_content())
     self.assertTrue(doc.xpath('//form[@id="brief-form" and @novalidate]'))
     runtime=json.loads(doc.xpath('//script[@id="locale-messages"]/text()')[0])
     self.assertIn('requiredEmail',runtime)
@@ -25,7 +26,7 @@ class SiteTests(unittest.TestCase):
     for attr in ('href','src','poster','data-src'):
      for url in doc.xpath('//@'+attr):
       if url.startswith('/'):
-       p=ROOT/url.lstrip('/').split('?')[0]
+       p=ROOT/url.lstrip('/').split('?')[0].split('#')[0]
        self.assertTrue(p.exists(),url)
       elif url.startswith('#'): self.assertTrue(doc.xpath('//*[@id=$id]',id=url[1:]),url)
  def test_translation_coverage_and_runtime(self):

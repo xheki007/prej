@@ -1,0 +1,145 @@
+{
+  "ui": {
+    "services": "Servizi",
+    "home": "Home",
+    "projects": "Progetti",
+    "contact": "Contatti",
+    "language": "Lingua",
+    "openMenu": "Apri il menu",
+    "closeMenu": "Chiudi il menu",
+    "eyebrow": "Ingegneria software · Kosovo",
+    "overview": "Cosa possiamo realizzare insieme",
+    "deliverables": "Un ambito di lavoro da valutare insieme",
+    "process": "Dai requisiti a un sistema funzionante",
+    "evidence": "Progetti di sviluppo correlati",
+    "questions": "Domande pratiche",
+    "related": "Scopri gli altri servizi",
+    "ctaTitle": "Partiamo dal processo di lavoro, non da un elenco di funzionalità.",
+    "ctaText": "Raccontaci chi utilizzerà il prodotto, quali attività dovrà svolgere e quali sistemi sono già presenti. Valuteremo l’ambito del progetto, i vincoli e il prossimo passo utile.",
+    "cta": "Parliamo del tuo progetto",
+    "projectLink": "Scopri il progetto e la sua fase attuale",
+    "back": "Torna a tutti i servizi",
+    "footer": "Ingegneria con uno scopo.",
+    "location": "Mitrovica, Kosovo",
+    "readService": "Scopri questo servizio"
+  },
+  "services": {
+    "mobile-app-development": {
+      "name": "Sviluppo di app mobili",
+      "title": "Sviluppo di app mobili per Android e iOS | PREJ",
+      "description": "Progetta e sviluppa app React Native con PREJ in Kosovo: percorsi utente, mappe, notifiche e integrazione backend, con fasi di rilascio definite chiaramente.",
+      "intro": "Un prodotto mobile richiede più di una raccolta di schermate. Le persone devono poter avviare un’attività, comprenderne lo stato e riprenderla quando qualcosa la interrompe. PREJ sviluppa applicazioni Android e iOS con React Native ed Expo, collegando l’esperienza mobile alle API e agli strumenti operativi che la supportano. Partiamo dalle persone che utilizzeranno il prodotto e dalle condizioni reali in cui lo faranno.",
+      "sections": [
+        {
+          "title": "Progettare il percorso attorno a un’attività reale",
+          "text": "Prenotare un servizio, seguire un incarico o controllare uno stato comporta decisioni diverse. Prima dello sviluppo definiamo gli stati importanti: il primo accesso, un’azione in corso, una richiesta modificata e un’attività conclusa. Questo rende più semplice valutare l’ambito del lavoro e dà all’interfaccia uno scopo preciso. Permessi, ruoli degli account e informazioni visibili a ciascun utente fanno parte di questa analisi, non sono dettagli da affrontare solo alla fine."
+        },
+        {
+          "title": "Collegare l’app all’intero sistema",
+          "text": "Quando il prodotto lo richiede, il lavoro mobile può comprendere mappe, posizione, notifiche e integrazione con il backend. Definiamo quali informazioni legge l’app, quali azioni le modificano e come mantenere allineato l’ambiente amministrativo. Un’interfaccia non dovrebbe dichiarare riuscita un’azione prima che il sistema l’abbia confermata. Le interruzioni di rete e le richieste rifiutate richiedono risposte comprensibili e un modo per proseguire."
+        },
+        {
+          "title": "Distinguere un progetto pilota da un rilascio pubblico",
+          "text": "Un progetto pilota utile risponde a domande specifiche con un pubblico limitato. La pubblicazione negli store aggiunge requisiti, verifiche sui dispositivi e passaggi di pubblicazione distinti. Concordiamo quali piattaforme e flussi appartengono a ogni fase, senza considerare una build Android come prova di un rilascio iOS. Hosting, servizi esterni, account degli app store e assistenza continuativa vengono discussi esplicitamente per il singolo progetto."
+        }
+      ],
+      "deliverables": [
+        "Percorsi utente, ruoli e criteri di accettazione documentati.",
+        "Interfacce mobili verificabili, collegate ai flussi API concordati.",
+        "Test dei percorsi prioritari e un piano di consegna per la fase concordata."
+      ],
+      "processText": "Chiariamo prima il problema e la versione più essenziale del prodotto che possa essere utile. Procediamo poi con interfacce e implementazione per incrementi verificabili, controllando il percorso completo anziché singole schermate isolate. La consegna rende espliciti i limiti noti, così la decisione successiva si basa su riscontri concreti. Per la direzione tecnica lavori direttamente con Xhevdet Ferizi; gli strumenti di IA assistono il processo di sviluppo, mentre decisioni e responsabilità restano umane.",
+      "projectName": "PREJ TaxiApp",
+      "projectId": "project-taxi",
+      "projectText": "PREJ TaxiApp collega app dedicate a passeggeri e conducenti con il coordinamento delle corse e l’amministrazione. I flussi di prenotazione, posizione, stato della corsa e pagamento della tariffa in contanti mostrano perché interfaccia mobile e backend debbano essere progettati insieme. Il portfolio attuale descrive build pilota Android e test documentati dei flussi di corsa. Il lancio commerciale pubblico e il rilascio iOS restano fasi di consegna separate: si tratta di riscontri sullo sviluppo, non della dichiarazione di una flotta commerciale operativa.",
+      "faq": [
+        {
+          "q": "È possibile utilizzare un backend esistente?",
+          "a": "Partiamo dall’analisi delle interfacce disponibili, dell’autenticazione, del modello dei dati e dei relativi limiti. L’ambito dell’integrazione dipende da ciò che il sistema esistente supporta. Se servono modifiche, devono essere concordate prima che l’app mobile inizi a dipenderne."
+        },
+        {
+          "q": "Cosa serve per il primo confronto?",
+          "a": "Per iniziare basta una breve spiegazione degli utenti e della loro attività principale. Schermate e sistemi esistenti, preferenze di piattaforma e vincoli operativi ci aiutano a trasformare la conversazione in un primo ambito di lavoro realistico."
+        }
+      ]
+    },
+    "web-platform-development": {
+      "name": "Piattaforme web e aziendali",
+      "title": "Sviluppo di piattaforme web e aziendali | PREJ",
+      "description": "Portali web, dashboard e processi aziendali su misura con PREJ. Sviluppo React, Next.js e TypeScript con ruoli, flussi di dati e fasi di consegna trasparenti.",
+      "intro": "Il software aziendale dovrebbe rendere più comprensibile un processo di lavoro, non limitarsi a spostare un foglio di calcolo nel browser. PREJ realizza piattaforme web, portali e ambienti amministrativi attorno alle persone, ai dati e alle decisioni coinvolte. Il nostro lavoro con React, Next.js e TypeScript collega l’interfaccia visibile ai dati e alle API sottostanti, affinché il prodotto possa supportare un processo completo su schermi desktop e mobili.",
+      "sections": [
+        {
+          "title": "Dare a ogni ruolo un ambiente di lavoro chiaro",
+          "text": "Un amministratore, un membro del personale e il titolare di un account esterno hanno normalmente bisogno di informazioni e azioni differenti. Chiariamo ruoli, permessi e passaggi di responsabilità prima di costruire l’interfaccia. Una dashboard utile aiuta a decidere cosa fare dopo; non è soltanto una parete di numeri. Navigazione, moduli e viste dei dati devono rispecchiare l’attività e spiegare cosa è cambiato dopo un’azione."
+        },
+        {
+          "title": "Trasformare operazioni ripetute in flussi progettati con cura",
+          "text": "Pianificazione, presenze, gestione documentale, monitoraggio degli ordini o comunicazioni possono coinvolgere diversi passaggi collegati. Identifichiamo l’origine di ogni dato, i campi da validare e le eccezioni che richiedono un controllo umano. Questo è particolarmente importante quando una modifica riguarda un altro membro del gruppo o un documento esportato. L’obiettivo è un processo di lavoro manutenibile, con confini visibili, non una raccolta di automazioni dal funzionamento poco chiaro."
+        },
+        {
+          "title": "Sviluppare pensando alla verifica e alla consegna",
+          "text": "Scegliamo la tecnologia in base al prodotto e alle sue esigenze di manutenzione, poi sviluppiamo per incrementi i flussi concordati. Le verifiche coprono l’intero percorso, dall’inserimento dei dati alla schermata o al record risultante. Accesso agli account, messaggi di errore e layout responsive fanno parte di questo lavoro. Servizi esterni, migrazioni, messa in produzione e assistenza vengono definiti per il progetto, senza presumere che siano inclusi in ogni piattaforma."
+        }
+      ],
+      "deliverables": [
+        "Un processo mappato con ruoli utente, dati e criteri di accettazione.",
+        "Pagine responsive, moduli e viste amministrative per l’ambito concordato.",
+        "Flussi di dati collegati, verifiche dei percorsi prioritari e una consegna documentata."
+      ],
+      "processText": "Iniziamo comprendendo come viene svolto oggi il lavoro e dove emergono le difficoltà. Insieme definiamo un primo ambito utile, identifichiamo le dipendenze e concordiamo come verificare i progressi. Architettura, progettazione del prodotto e ingegneria vengono affrontate come parti di un unico sistema. Il controllo umano resta centrale anche quando l’IA assiste l’implementazione. I limiti noti e la fase di consegna successiva vengono documentati, anziché nascosti dietro un’interfaccia curata.",
+      "projectName": "Home of Dance",
+      "projectId": "project-dance",
+      "projectText": "Home of Dance è un’implementazione in fase di sviluppo che collega studenti, famiglie, insegnanti e corsi. Pianificazione, presenze, contratti e fatturazione si integrano in un back office progettato attorno al lavoro quotidiano di una scuola di danza. Il portfolio descrive permessi basati sui ruoli, registri di audit, flussi per la privacy e autenticazione a due fattori presenti nell’implementazione. Questo mostra il tipo di processo integrato su cui lavora PREJ; non viene presentato come un risultato aziendale verificato in modo indipendente.",
+      "faq": [
+        {
+          "q": "Possiamo iniziare da una parte del nostro processo?",
+          "a": "Sì. Un flusso circoscritto può essere un punto di partenza migliore rispetto alla sostituzione di tutti gli strumenti insieme. Ne esaminiamo le dipendenze e concordiamo cosa deve essere collegato subito, cosa può restare manuale e cosa appartiene a una fase successiva."
+        },
+        {
+          "q": "Può bastare un modello standard?",
+          "a": "A volte uno strumento esistente risponde già all’esigenza. Valutiamo il processo effettivo prima di consigliare uno sviluppo su misura. Quando ruoli, relazioni tra i dati o passaggi di revisione richiedono una piattaforma dedicata, l’ambito del progetto deve chiarire perché queste differenze contano."
+        }
+      ]
+    },
+    "api-integrations": {
+      "name": "API e integrazioni",
+      "title": "Sviluppo di API e integrazione di sistemi | PREJ",
+      "description": "Collega applicazioni, dati e processi con PREJ. Sviluppo di API e backend con Node.js, NestJS, Python e PostgreSQL, con permessi espliciti e gestione degli errori.",
+      "intro": "Un prodotto integrato dipende da accordi chiari tra i sistemi. Un’app può creare una richiesta, un ambiente di lavoro può esaminarla e un altro servizio può restituire un risultato. PREJ sviluppa API e integrazioni backend che rendono esplicite queste responsabilità. Lavoriamo con Node.js, NestJS, Python e strumenti per dati relazionali, scegliendo l’implementazione in base ai sistemi esistenti, al processo e alle esigenze di manutenzione.",
+      "sections": [
+        {
+          "title": "Definire il contratto prima di collegare i componenti",
+          "text": "Stabiliamo quale sistema è responsabile di ciascun record, cosa un’operazione è autorizzata a modificare e su quale risposta può fare affidamento chi la richiama. Validazione delle richieste, autenticazione e permessi basati sui ruoli fanno parte di questo contratto. Confini chiari facilitano il collegamento di un’app mobile, un portale web e un ambiente amministrativo, evitando che ogni interfaccia inventi una versione diversa della stessa regola aziendale."
+        },
+        {
+          "title": "Considerare gli errori come parte del processo",
+          "text": "Un servizio remoto può non essere disponibile, un file inviato può non essere valido e la stessa richiesta può arrivare più di una volta. Discutiamo questi casi insieme al percorso di esecuzione riuscita. A seconda dell’integrazione, il progetto può richiedere protezione dai duplicati, regole precise per i nuovi tentativi o un passaggio esplicito di revisione umana. Il comportamento corretto dipende dall’operazione: ripetere una consultazione dello stato non equivale a ripetere un’azione che lo modifica."
+        },
+        {
+          "title": "Mantenere tracciabili dati e decisioni operative",
+          "text": "Il lavoro di integrazione non consiste soltanto nello spostare campi tra endpoint. I record richiedono relazioni utili, stati coerenti e responsabilità chiare. Mappiamo come le informazioni entrano nel sistema, come vengono validate e cosa una persona deve controllare quando qualcosa non funziona. Accessi a servizi terzi, limiti dei fornitori, credenziali e requisiti di distribuzione vengono identificati fin dall’inizio. Non promettiamo un’integrazione prima di aver verificato le modalità di accesso supportate dal sistema esterno."
+        }
+      ],
+      "deliverables": [
+        "Una mappa delle interfacce e dei flussi di dati, con responsabilità e limiti di accesso.",
+        "Endpoint o connettori concordati, con validazione e risposte esplicite.",
+        "Verifiche prioritarie dei casi di successo e di errore, note di integrazione e un piano di consegna."
+      ],
+      "processText": "Il punto di partenza è un processo concreto e le interfacce già disponibili. Esaminiamo le dipendenze, concordiamo un’integrazione circoscritta e la realizziamo per passaggi verificabili separatamente. I test devono coprire gli stati che influiscono sull’utente o sull’operatore, non soltanto verificare che un endpoint restituisca una risposta. Il giudizio tecnico umano resta responsabile dei permessi e delle decisioni di rilascio; l’assistenza dell’IA non elimina queste responsabilità.",
+      "projectName": "TORQENIX",
+      "projectId": "project-torqenix",
+      "projectText": "TORQENIX è una piattaforma B2B di servizi su file ECU per officine professionali. Account dei rivenditori, caricamento dei file originali, monitoraggio degli ordini, messaggi e registro dei crediti si collegano a un processo di revisione e rilascio guidato dall’amministratore. Offre un esempio concreto di file, permessi e cambiamenti di stato che devono essere coerenti nell’intera applicazione. La calibrazione viene eseguita al di fuori della piattaforma e i pagamenti bancari reali non sono ancora abilitati. Questi limiti restano espliciti nel portfolio.",
+      "faq": [
+        {
+          "q": "Potete collegare un servizio di terze parti?",
+          "a": "Verifichiamo prima la sua API documentata, gli accessi consentiti e le funzionalità dell’account a tua disposizione. Autenticazione, restrizioni del fornitore e requisiti operativi determinano ciò che è fattibile. Un accesso non supportato non viene sostituito con un espediente nascosto."
+        },
+        {
+          "q": "Dobbiamo sostituire il database esistente?",
+          "a": "Non automaticamente. Esaminiamo prima il modello dei dati attuale e il nuovo processo. Un connettore, un’estensione limitata o una migrazione possono essere soluzioni appropriate; la scelta deve dipendere dai vincoli, non dalla preferenza per una tecnologia."
+        }
+      ]
+    }
+  }
+}

@@ -65,3 +65,21 @@ Image derivatives retain the original artwork and original assets remain in
 the repository: responsive WebP hero at 640/1280px, lossless 624px WebP logo,
 and 48px PNG favicon. The illustrative workflow film remains English-captioned,
 explicitly labelled as such in every locale, and loads only after Play.
+
+## Service pages
+Each locale now includes three substantial service pages under
+`/{locale}/services/`: `mobile-app-development/`,
+`web-platform-development/`, and `api-integrations/`.
+`i18n/services-{locale}.json` contains their localized copy;
+`scripts/services.py` renders the shared layout after the home pages.
+Homepage capability cards retain their existing project/contact links and add
+service-detail links. Every service page links to related services, the
+relevant portfolio item and the localized home contact section. The existing
+enquiry form remains the single enquiry implementation.
+
+`service.css` extends the current visual identity; `service.js` handles only
+progressive menu and language-picker behavior. Service content and navigation
+remain usable without JavaScript. The sitemap contains 16 canonical URLs
+(four homepages and twelve service pages), with reciprocal language alternates.
+The service copy describes intended project scope and process, not a delivery
+promise or a claim of commercial deployment for portfolio work.

@@ -1,0 +1,145 @@
+{
+  "ui": {
+    "services": "Shërbimet",
+    "home": "Ballina",
+    "projects": "Projektet",
+    "contact": "Kontakti",
+    "language": "Gjuha",
+    "openMenu": "Hap menynë",
+    "closeMenu": "Mbyll menynë",
+    "eyebrow": "Inxhinieri softuerike · Kosovë",
+    "overview": "Çfarë mund të ndërtojmë së bashku",
+    "deliverables": "Fushëveprim që mund ta shqyrtoni",
+    "process": "Nga kërkesat te një sistem funksional",
+    "evidence": "Punë zhvillimi të ndërlidhura",
+    "questions": "Pyetje praktike",
+    "related": "Eksploroni shërbimet tona të tjera",
+    "ctaTitle": "Nisim nga rrjedha e punës, jo nga një listë funksionesh.",
+    "ctaText": "Na tregoni kush do ta përdorë produktin, çfarë duhet të bëjë dhe cilat sisteme ekzistojnë tashmë. Do të diskutojmë fushëveprimin, kufizimet dhe hapin e ardhshëm të dobishëm.",
+    "cta": "Diskutoni projektin tuaj",
+    "projectLink": "Eksploroni projektin dhe fazën e tij aktuale",
+    "back": "Kthehuni te të gjitha shërbimet",
+    "footer": "Inxhinieri me qëllim.",
+    "location": "Mitrovicë, Kosovë",
+    "readService": "Eksploroni këtë shërbim"
+  },
+  "services": {
+    "mobile-app-development": {
+      "name": "Zhvillim aplikacionesh mobile",
+      "title": "Zhvillim aplikacionesh mobile për Android dhe iOS | PREJ",
+      "description": "Planifikoni dhe ndërtoni aplikacione React Native me PREJ në Kosovë: rrjedha përdorimi, harta, njoftime dhe integrim backend, me faza të qarta publikimi.",
+      "intro": "Një produkt mobile kërkon më shumë se një grup ekranesh. Përdoruesit duhet të mund ta nisin një detyrë, ta kuptojnë gjendjen e saj dhe të vazhdojnë kur diçka e ndërpret. PREJ zhvillon aplikacione Android dhe iOS me React Native dhe Expo, duke lidhur përvojën mobile me API-të dhe mjetet operative që e mbështesin. Nisim nga njerëzit që do ta përdorin produktin dhe kushtet reale në të cilat do të punojnë me të.",
+      "sections": [
+        {
+          "title": "Projektojmë rrjedhën rreth një detyre reale",
+          "text": "Rezervimi i një shërbimi, ndjekja e një detyre apo kontrollimi i një statusi kërkojnë vendime të ndryshme. Para implementimit përcaktojmë gjendjet e rëndësishme: vizitën e parë, një veprim në proces, një kërkesë të ndryshuar dhe një detyrë të përfunduar. Kjo e bën fushëveprimin më të lehtë për t’u shqyrtuar dhe i jep ndërfaqes një qëllim të qartë. Lejet, rolet e llogarive dhe informacioni i dukshëm për secilin përdorues janë pjesë e këtij diskutimi, jo çështje që shtohen në fund."
+        },
+        {
+          "title": "Lidhim aplikacionin me të gjithë sistemin",
+          "text": "Kur produkti i kërkon, zhvillimi mobile mund të përfshijë harta, vendndodhje, njoftime dhe integrim me backend. Përcaktojmë cilat informacione lexon aplikacioni, cilat veprime i ndryshojnë ato dhe si mbahet në përputhje hapësira administrative. Ndërfaqja nuk duhet ta paraqesë një veprim si të suksesshëm para se sistemi ta ketë konfirmuar. Ndërprerjet e rrjetit dhe kërkesat e refuzuara kanë nevojë për përgjigje të kuptueshme dhe një mënyrë për të vazhduar."
+        },
+        {
+          "title": "Dallojmë pilotin nga publikimi për publikun",
+          "text": "Një pilot i dobishëm u përgjigjet pyetjeve konkrete me një grup të kufizuar përdoruesish. Publikimi në dyqanet e aplikacioneve shton kërkesa, kontrolle pajisjesh dhe hapa të veçantë publikimi. Biem dakord cilat platforma dhe rrjedha i përkasin secilës fazë, pa e trajtuar një build Android si provë të një publikimi iOS. Hostimi, shërbimet e jashtme, llogaritë në dyqanet e aplikacioneve dhe mbështetja e vazhdueshme diskutohen shprehimisht për projektin konkret."
+        }
+      ],
+      "deliverables": [
+        "Rrjedha përdorimi, role dhe kritere pranimi të dokumentuara.",
+        "Ndërfaqe mobile të rishikueshme, të lidhura me rrjedhat API të dakorduara.",
+        "Testim i rrjedhave prioritare dhe plan dorëzimi për fazën e dakorduar."
+      ],
+      "processText": "Së pari qartësojmë problemin dhe versionin më të vogël të produktit që sjell dobi. Më pas punojmë me ndërfaqet dhe implementimin në hapa të rishikueshëm, duke kontrolluar rrjedhën e plotë dhe jo vetëm ekrane të veçuara. Dorëzimi i bën të dukshme kufizimet e njohura, në mënyrë që vendimi i ardhshëm të mbështetet në prova. Për drejtimin teknik punoni drejtpërdrejt me Xhevdet Ferizin; mjetet AI e asistojnë rrjedhën e zhvillimit, ndërsa vendimet dhe përgjegjësia mbeten njerëzore.",
+      "projectName": "PREJ TaxiApp",
+      "projectId": "project-taxi",
+      "projectText": "PREJ TaxiApp lidh aplikacione të dedikuara për pasagjerët dhe shoferët me mbikëqyrjen e dispeçerisë dhe administrimin. Rrjedhat e rezervimit, vendndodhjes, statusit të udhëtimit dhe pagesës së tarifës me para të gatshme tregojnë pse ndërfaqja mobile dhe backend-i duhet të projektohen së bashku. Portfolioja aktuale përshkruan build-e pilot Android dhe testim të dokumentuar të rrjedhave të udhëtimit. Dalja komerciale publike dhe publikimi iOS mbeten faza të veçanta dorëzimi; këto janë prova zhvillimi, jo pretendim për një flotë komerciale në operim.",
+      "faq": [
+        {
+          "q": "A mund të përdoret një backend ekzistues?",
+          "a": "Nisim duke shqyrtuar ndërfaqet e disponueshme, autentikimin, modelin e të dhënave dhe kufizimet e tij. Fushëveprimi i integrimit varet nga ajo që mbështet sistemi ekzistues. Nëse nevojiten ndryshime, ato duhen dakorduar para se aplikacioni mobile të mbështetet tek to."
+        },
+        {
+          "q": "Çfarë duhet të sjell në diskutimin e parë?",
+          "a": "Për të filluar mjafton një shpjegim i shkurtër për përdoruesit dhe detyrën e tyre kryesore. Ekranet dhe sistemet ekzistuese, preferencat e platformës dhe kufizimet operative na ndihmojnë ta kthejmë bisedën në një fushëveprim fillestar realist."
+        }
+      ]
+    },
+    "web-platform-development": {
+      "name": "Platforma web dhe biznesi",
+      "title": "Zhvillim platformash web dhe biznesi | PREJ",
+      "description": "Portale web, panele dhe rrjedha biznesi sipas nevojës me PREJ. Zhvillim me React, Next.js dhe TypeScript, me role, rrjedha të dhënash dhe faza të qarta dorëzimi.",
+      "intro": "Softueri i biznesit duhet ta bëjë më të kuptueshëm një proces pune, jo thjesht ta zhvendosë një tabelë në shfletues. PREJ ndërton platforma web, portale dhe hapësira administrative rreth njerëzve, regjistrave dhe vendimeve të përfshira. Puna jonë me React, Next.js dhe TypeScript e lidh ndërfaqen e dukshme me të dhënat dhe API-të që qëndrojnë pas saj, në mënyrë që produkti të mbështesë një rrjedhë të plotë pune në ekranet e kompjuterit dhe telefonit.",
+      "sections": [
+        {
+          "title": "I japim çdo roli një hapësirë të qartë pune",
+          "text": "Një administrator, një anëtar i stafit dhe një përdorues me llogari të jashtme zakonisht kanë nevojë për informacione dhe veprime të ndryshme. I qartësojmë këto role, leje dhe kalime përgjegjësish para ndërtimit të ndërfaqes. Një panel i dobishëm e ndihmon përdoruesin të vendosë çfarë të bëjë më pas; nuk është thjesht një mur numrash. Navigimi, formularët dhe pamjet e regjistrave duhet të pasqyrojnë detyrën dhe të shpjegojnë çfarë ka ndryshuar pas një veprimi."
+        },
+        {
+          "title": "I kthejmë veprimet e përsëritura në rrjedha të menduara",
+          "text": "Planifikimi i orareve, vijueshmëria, trajtimi i dokumenteve, ndjekja e porosive apo komunikimi mund të përfshijnë disa hapa të lidhur. Identifikojmë burimin e çdo regjistri, fushat që kërkojnë validim dhe përjashtimet që kanë nevojë për rishikim njerëzor. Kjo është veçanërisht e rëndësishme kur një ndryshim prek një anëtar tjetër të ekipit apo një dokument të eksportuar. Synimi është një proces pune i mirëmbajtshëm me kufij të dukshëm, jo një grumbull automatizimesh të pashpjeguara."
+        },
+        {
+          "title": "Ndërtojmë duke menduar për rishikimin dhe dorëzimin",
+          "text": "Zgjedhim teknologjinë sipas produktit dhe nevojave të tij për mirëmbajtje, pastaj zhvillojmë gradualisht rrjedhat e dakorduara. Rishikimet përfshijnë të gjithë rrugën, nga futja e të dhënave te ekrani ose regjistri që rezulton. Qasja në llogari, mesazhet e gabimeve dhe paraqitja e përshtatshme për madhësi të ndryshme ekranesh janë pjesë e kësaj pune. Shërbimet e jashtme, migrimi, vendosja në prodhim dhe mbështetja përcaktohen për projektin, pa u supozuar se përfshihen në çdo platformë."
+        }
+      ],
+      "deliverables": [
+        "Rrjedhë pune e hartëzuar me role përdoruesish, regjistra dhe kritere pranimi.",
+        "Faqe responsive, formularë dhe pamje administrative për fushëveprimin e dakorduar.",
+        "Rrjedha të lidhura të dhënash, kontrolle të rrugëve prioritare dhe dorëzim i dokumentuar."
+      ],
+      "processText": "Fillojmë duke kuptuar si kryhet puna sot dhe ku shfaqen vështirësitë. Së bashku përcaktojmë një fushëveprim fillestar të dobishëm, identifikojmë varësitë dhe biem dakord si do të shqyrtohet përparimi. Arkitektura, dizajni i produktit dhe inxhinieria trajtohen si pjesë të një sistemi të vetëm. Rishikimi njerëzor mbetet qendror edhe kur AI asiston implementimin. Kufizimet e njohura dhe faza e ardhshme e dorëzimit dokumentohen, në vend që të fshihen pas një ndërfaqeje të kuruar.",
+      "projectName": "Home of Dance",
+      "projectId": "project-dance",
+      "projectText": "Home of Dance është një implementim në zhvillim që lidh nxënësit, familjet, trajnerët dhe kurset. Oraret, vijueshmëria, kontratat dhe faturimi bashkohen në një hapësirë administrative të projektuar rreth punës së përditshme të një shkolle vallëzimi. Portfolioja përshkruan leje sipas roleve, regjistra auditimi, rrjedha privatësie dhe autentikim me dy faktorë në implementim. Kjo tregon llojin e rrjedhës së lidhur të punës me të cilën merret PREJ; nuk paraqitet si rezultat biznesi i verifikuar në mënyrë të pavarur.",
+      "faq": [
+        {
+          "q": "A mund të fillojmë me një pjesë të procesit tonë?",
+          "a": "Po. Një rrjedhë e kufizuar pune mund të jetë fazë fillestare më e mirë sesa zëvendësimi i çdo mjeti njëherësh. Shqyrtojmë varësitë e saj dhe biem dakord çfarë duhet të lidhet tani, çfarë mund të mbetet manuale dhe çfarë i përket një faze të mëvonshme."
+        },
+        {
+          "q": "A mjafton një shabllon standard?",
+          "a": "Ndonjëherë një mjet ekzistues e përmbush nevojën. Vlerësojmë rrjedhën reale të punës para se të rekomandojmë zhvillim sipas porosisë. Kur rolet, marrëdhëniet mes të dhënave apo hapat e rishikimit kërkojnë një platformë të përshtatur, fushëveprimi duhet të shpjegojë pse këto dallime kanë rëndësi."
+        }
+      ]
+    },
+    "api-integrations": {
+      "name": "API dhe integrime",
+      "title": "Zhvillim API-sh dhe integrim sistemesh | PREJ",
+      "description": "Lidhni aplikacionet, të dhënat dhe proceset me PREJ. Zhvillim API-sh dhe backend me Node.js, NestJS, Python dhe PostgreSQL, me leje të qarta dhe trajtim gabimesh.",
+      "intro": "Një produkt i lidhur varet nga marrëveshje të qarta mes sistemeve. Një aplikacion mund të krijojë një kërkesë, një hapësirë pune mund ta shqyrtojë dhe një shërbim tjetër mund të kthejë një rezultat. PREJ zhvillon API dhe integrime backend që i bëjnë të qarta këto përgjegjësi. Punojmë me Node.js, NestJS, Python dhe mjete për të dhëna relacionale, duke zgjedhur implementimin sipas sistemeve ekzistuese, rrjedhës së punës dhe kërkesave të mirëmbajtjes.",
+      "sections": [
+        {
+          "title": "Përcaktojmë kontratën para lidhjes së pjesëve",
+          "text": "Përcaktojmë cili sistem është përgjegjës për secilin regjistër, çfarë lejohet të ndryshojë një operacion dhe në cilën përgjigje mund të mbështetet pala që e thërret. Validimi i kërkesave, autentikimi dhe lejet sipas roleve janë pjesë e kësaj kontrate. Kufijtë e qartë e bëjnë më të lehtë lidhjen e një aplikacioni mobile, një portali web dhe një hapësire administrative, pa e lejuar secilën ndërfaqe të shpikë një version tjetër të të njëjtit rregull biznesi."
+        },
+        {
+          "title": "I trajtojmë dështimet si pjesë të rrjedhës së punës",
+          "text": "Një shërbim i largët mund të mos jetë i disponueshëm, një skedar i dërguar mund të jetë i pavlefshëm dhe e njëjta kërkesë mund të mbërrijë më shumë se një herë. I diskutojmë këto raste krahas rrjedhës së suksesshme. Në varësi të integrimit, dizajni mund të kërkojë mbrojtje nga dublikatat, rregulla të menduara riprovimi apo një hap të dukshëm rishikimi njerëzor. Sjellja e duhur varet nga operacioni; riprovimi i një kërkimi statusi nuk është njësoj si përsëritja e një veprimi që ndryshon gjendjen."
+        },
+        {
+          "title": "I mbajmë të gjurmueshme të dhënat dhe vendimet operative",
+          "text": "Puna e integrimit nuk është vetëm zhvendosje fushash mes pikave fundore. Regjistrat kanë nevojë për lidhje të dobishme, gjendje të qëndrueshme dhe përgjegjësi të qarta. Hartëzojmë si hyn informacioni në sistem, si validohet dhe çfarë duhet të kontrollojë një person kur diçka shkon keq. Qasja te shërbimet e palëve të treta, kufijtë e ofruesve, kredencialet dhe kërkesat e vendosjes identifikohen herët. Nuk premtojmë integrim para se të jetë kontrolluar qasja që mbështet sistemi i jashtëm."
+        }
+      ],
+      "deliverables": [
+        "Hartë e ndërfaqeve dhe rrjedhave të të dhënave, me përgjegjësi dhe kufij qasjeje.",
+        "Pika fundore apo lidhës të dakorduar, me validim dhe përgjigje të qarta.",
+        "Kontrolle prioritare të suksesit dhe dështimit, shënime integrimi dhe plan dorëzimi."
+      ],
+      "processText": "Pikënisja është një rrjedhë konkrete pune dhe ndërfaqet që janë tashmë të disponueshme. Shqyrtojmë varësitë, dakordojmë një integrim të kufizuar dhe e implementojmë në hapa që mund të kontrollohen veçmas. Testet duhet të mbulojnë gjendjet që ndikojnë te përdoruesi apo operatori, jo vetëm nëse një pikë fundore kthen përgjigje. Gjykimi njerëzor inxhinierik mbetet përgjegjës për lejet dhe vendimet e publikimit; asistenca e AI nuk i heq këto përgjegjësi.",
+      "projectName": "TORQENIX",
+      "projectId": "project-torqenix",
+      "projectText": "TORQENIX është një platformë B2B për shërbime skedarësh ECU për servise profesionale. Llogaritë e partnerëve, ngarkimi i skedarëve origjinalë, ndjekja e porosive, mesazhet dhe regjistri i kredive lidhen me një rrjedhë rishikimi dhe lirimi të skedarëve të udhëhequr nga administratori. Ajo ofron një shembull konkret të skedarëve, lejeve dhe ndryshimeve të gjendjes që duhet të përputhen në të gjithë aplikacionin. Kalibrimi kryhet jashtë platformës dhe pagesat bankare reale ende nuk janë aktivizuar. Këta kufij mbeten të qartë në portfolio.",
+      "faq": [
+        {
+          "q": "A mund të lidhni një shërbim të palës së tretë?",
+          "a": "Së pari verifikojmë API-në e tij të dokumentuar, qasjen e lejuar dhe funksionet e llogarisë që keni në dispozicion. Autentikimi, kufizimet e ofruesit dhe kërkesat operative përcaktojnë çfarë është e mundur. Qasja e pambështetur nuk zëvendësohet me një rrugë të fshehtë anashkalimi."
+        },
+        {
+          "q": "A duhet ta zëvendësojmë bazën ekzistuese të të dhënave?",
+          "a": "Jo automatikisht. Së pari shqyrtojmë modelin aktual të të dhënave dhe rrjedhën e re të punës. Një lidhës, një zgjerim i kufizuar apo një migrim mund të jenë zgjidhje të përshtatshme; zgjedhja duhet të ndjekë kufizimet, jo preferencën për një teknologji."
+        }
+      ]
+    }
+  }
+}

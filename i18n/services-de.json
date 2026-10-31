@@ -1,0 +1,145 @@
+{
+  "ui": {
+    "services": "Leistungen",
+    "home": "Startseite",
+    "projects": "Projekte",
+    "contact": "Kontakt",
+    "language": "Sprache",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "eyebrow": "Softwareentwicklung · Kosovo",
+    "overview": "Was wir gemeinsam entwickeln können",
+    "deliverables": "Ein nachvollziehbarer Leistungsumfang",
+    "process": "Von Anforderungen zum funktionierenden System",
+    "evidence": "Einblicke in unsere Entwicklungsarbeit",
+    "questions": "Praktische Fragen",
+    "related": "Entdecken Sie unsere weiteren Leistungen",
+    "ctaTitle": "Beginnen wir mit dem Arbeitsablauf, nicht mit einer Funktionsliste.",
+    "ctaText": "Erzählen Sie uns, wer das Produkt nutzen wird, welche Aufgaben diese Menschen erledigen müssen und welche Systeme bereits vorhanden sind. Gemeinsam besprechen wir den Umfang, die Rahmenbedingungen und den nächsten sinnvollen Schritt.",
+    "cta": "Ihr Projekt besprechen",
+    "projectLink": "Projekt und aktuellen Entwicklungsstand ansehen",
+    "back": "Zurück zu allen Leistungen",
+    "footer": "Entwicklung mit klarem Ziel.",
+    "location": "Mitrovica, Kosovo",
+    "readService": "Mehr zu dieser Leistung"
+  },
+  "services": {
+    "mobile-app-development": {
+      "name": "Mobile App-Entwicklung",
+      "title": "Mobile App-Entwicklung für Android & iOS | PREJ",
+      "description": "Mobile Apps mit React Native planen und entwickeln: PREJ aus Kosovo verbindet Nutzerabläufe, Karten, Benachrichtigungen und Backend mit klar definierten Release-Stufen.",
+      "intro": "Ein mobiles Produkt braucht mehr als eine Sammlung von Bildschirmen. Menschen müssen eine Aufgabe beginnen, ihren Status verstehen und nach einer Unterbrechung fortfahren können. PREJ entwickelt Android- und iOS-Anwendungen mit React Native und Expo und verbindet das mobile Erlebnis mit den dahinterliegenden APIs und betrieblichen Werkzeugen. Ausgangspunkt sind die Menschen, die das Produkt nutzen, und die tatsächlichen Bedingungen ihres Alltags.",
+      "sections": [
+        {
+          "title": "Nutzerabläufe an einer konkreten Aufgabe ausrichten",
+          "text": "Eine Dienstleistung buchen, einen Auftrag verfolgen oder einen Status prüfen: Jede Aufgabe erfordert andere Entscheidungen. Vor der Umsetzung beschreiben wir die wichtigen Zustände – den ersten Besuch, eine laufende Aktion, eine geänderte Anfrage und eine abgeschlossene Aufgabe. So lässt sich der Umfang leichter prüfen, und die Oberfläche erhält einen klaren Zweck. Berechtigungen, Kontorollen und die für einzelne Nutzer sichtbaren Informationen gehören von Anfang an in diese Überlegungen, nicht erst im Nachhinein."
+        },
+        {
+          "title": "Die App mit dem gesamten System verbinden",
+          "text": "Wenn das Produkt es erfordert, kann die mobile Entwicklung Karten, Standortfunktionen, Benachrichtigungen und die Backend-Anbindung umfassen. Wir legen fest, welche Informationen die App liest, welche Aktionen sie verändern und wie die Verwaltungsoberfläche auf dem gleichen Stand bleibt. Eine Oberfläche sollte den Erfolg einer Aktion nicht melden, bevor das System ihn bestätigt hat. Netzwerkunterbrechungen und abgelehnte Anfragen brauchen verständliche Rückmeldungen und einen Weg, die Aufgabe fortzusetzen."
+        },
+        {
+          "title": "Pilotphase und öffentliche Veröffentlichung unterscheiden",
+          "text": "Ein sinnvoller Pilot beantwortet konkrete Fragen mit einem begrenzten Nutzerkreis. Eine Veröffentlichung im App-Store bringt eigene Anforderungen, Geräteprüfungen und Veröffentlichungsschritte mit sich. Wir vereinbaren, welche Plattformen und Abläufe zu welcher Phase gehören, statt einen Android-Build als Nachweis einer iOS-Veröffentlichung zu betrachten. Hosting, externe Dienste, App-Store-Konten und laufende Betreuung werden für das jeweilige Projekt ausdrücklich besprochen."
+        }
+      ],
+      "deliverables": [
+        "Dokumentierte Nutzerabläufe, Rollen und Abnahmekriterien.",
+        "Überprüfbare mobile Oberflächen mit Anbindung an die vereinbarten API-Abläufe.",
+        "Tests der wichtigsten Nutzerabläufe und ein Übergabeplan für die vereinbarte Entwicklungsstufe."
+      ],
+      "processText": "Zuerst klären wir das Problem und den kleinsten sinnvollen Produktumfang. Anschließend entwickeln wir Oberflächen und Umsetzung in überprüfbaren Schritten und betrachten dabei den gesamten Ablauf statt einzelner Bildschirme. Bei der Übergabe machen wir bekannte Einschränkungen sichtbar, damit die nächste Entscheidung auf nachvollziehbaren Ergebnissen beruht. Bei der technischen Ausrichtung arbeiten Sie direkt mit Xhevdet Ferizi zusammen. KI-Werkzeuge unterstützen die Entwicklung; Entscheidungen und Verantwortung bleiben beim Menschen.",
+      "projectName": "PREJ TaxiApp",
+      "projectId": "project-taxi",
+      "projectText": "PREJ TaxiApp verbindet separate Apps für Fahrgäste und Fahrer mit Dispositionsübersicht und Verwaltung. Die Abläufe für Buchung, Standort, Fahrtstatus und Barzahlung zeigen, warum mobile Oberfläche und Backend gemeinsam gestaltet werden müssen. Das aktuelle Portfolio beschreibt Android-Pilotversionen und dokumentierte Tests der Fahrtabläufe. Der öffentliche kommerzielle Start und die iOS-Veröffentlichung bleiben eigenständige Entwicklungsstufen. Dies ist ein Einblick in die Entwicklungsarbeit, keine Behauptung über eine bereits betriebene kommerzielle Flotte.",
+      "faq": [
+        {
+          "q": "Kann ein vorhandenes Backend genutzt werden?",
+          "a": "Zunächst prüfen wir die verfügbaren Schnittstellen, Authentifizierung, das Datenmodell und bekannte Einschränkungen. Der Integrationsumfang hängt davon ab, was das bestehende System unterstützt. Notwendige Änderungen sollten vereinbart werden, bevor die mobile App darauf aufbaut."
+        },
+        {
+          "q": "Was sollte ich zum ersten Gespräch mitbringen?",
+          "a": "Für den Einstieg reicht eine kurze Beschreibung der Nutzer und ihrer wichtigsten Aufgabe. Bestehende Oberflächen und Systeme, bevorzugte Plattformen sowie betriebliche Rahmenbedingungen helfen uns, daraus einen realistischen ersten Umfang abzuleiten."
+        }
+      ]
+    },
+    "web-platform-development": {
+      "name": "Web- & Business-Plattformen",
+      "title": "Entwicklung von Web- & Business-Plattformen | PREJ",
+      "description": "Individuelle Webportale, Dashboards und Geschäftsabläufe mit PREJ. Entwicklung mit React, Next.js und TypeScript, klaren Rollen, Datenflüssen und transparenten Projektstufen.",
+      "intro": "Unternehmenssoftware sollte einen Arbeitsprozess verständlicher machen und nicht nur eine Tabelle in den Browser verlagern. PREJ entwickelt Webplattformen, Portale und Verwaltungsoberflächen rund um die beteiligten Menschen, Datensätze und Entscheidungen. Unsere Arbeit mit React, Next.js und TypeScript verbindet die sichtbare Oberfläche mit den zugrunde liegenden Daten und APIs. So kann das Produkt einen vollständigen Arbeitsablauf auf Desktop- und mobilen Bildschirmen unterstützen.",
+      "sections": [
+        {
+          "title": "Jeder Rolle einen klaren Arbeitsbereich geben",
+          "text": "Administratoren, Mitarbeitende und externe Kontoinhaber benötigen meist unterschiedliche Informationen und Handlungsmöglichkeiten. Wir klären diese Rollen, Berechtigungen und Übergaben, bevor wir die Oberfläche entwickeln. Ein nützliches Dashboard hilft dabei, den nächsten Schritt zu bestimmen; es ist nicht bloß eine Ansammlung von Zahlen. Navigation, Formulare und Datensatzansichten sollten die Aufgabe widerspiegeln und verständlich zeigen, was sich nach einer Aktion verändert hat."
+        },
+        {
+          "title": "Wiederkehrende Vorgänge in durchdachte Abläufe überführen",
+          "text": "Terminplanung, Anwesenheit, Dokumentenbearbeitung, Auftragsverfolgung oder Kommunikation können mehrere miteinander verknüpfte Schritte umfassen. Wir bestimmen die Quelle jedes Datensatzes, die zu prüfenden Felder und die Ausnahmen, die eine menschliche Prüfung erfordern. Das ist besonders wichtig, wenn eine Änderung andere Teammitglieder oder ein exportiertes Dokument betrifft. Ziel ist ein wartbarer Arbeitsprozess mit erkennbaren Grenzen, keine undurchsichtige Sammlung von Automatisierungen."
+        },
+        {
+          "title": "Prüfung und Übergabe von Anfang an mitdenken",
+          "text": "Wir wählen die Technologie passend zum Produkt und seinem Wartungsbedarf und entwickeln die vereinbarten Abläufe anschließend schrittweise. Die Überprüfung umfasst den gesamten Weg von der Dateneingabe bis zur resultierenden Ansicht oder zum Datensatz. Kontozugriff, Fehlermeldungen und responsive Layouts gehören dazu. Externe Dienste, Datenmigration, Bereitstellung und Betreuung werden projektspezifisch vereinbart und nicht pauschal als Bestandteil jeder Plattform vorausgesetzt."
+        }
+      ],
+      "deliverables": [
+        "Ein beschriebener Arbeitsablauf mit Nutzerrollen, Datensätzen und Abnahmekriterien.",
+        "Responsive Seiten, Formulare und Verwaltungsansichten für den vereinbarten Umfang.",
+        "Verknüpfte Datenflüsse, Prüfungen der wichtigsten Abläufe und eine dokumentierte Übergabe."
+      ],
+      "processText": "Zu Beginn verstehen wir, wie die Arbeit heute abläuft und wo Schwierigkeiten entstehen. Gemeinsam bestimmen wir einen ersten sinnvollen Umfang, erkennen Abhängigkeiten und vereinbaren, wie der Fortschritt geprüft wird. Architektur, Produktdesign und Entwicklung betrachten wir als Teile eines Systems. Menschliche Prüfung bleibt zentral, auch wenn KI die Umsetzung unterstützt. Bekannte Einschränkungen und die nächste Entwicklungsstufe werden festgehalten, statt hinter einer ansprechenden Oberfläche verborgen zu bleiben.",
+      "projectName": "Home of Dance",
+      "projectId": "project-dance",
+      "projectText": "Home of Dance ist eine Entwicklungsimplementierung, die Schüler, Familien, Trainer und Kurse miteinander verbindet. Terminplanung, Anwesenheit, Verträge und Rechnungsstellung laufen in einer Verwaltungsoberfläche zusammen, die auf den Alltag einer Tanzschule ausgerichtet ist. Das Portfolio nennt Rollenberechtigungen, Audit-Protokolle, Datenschutzabläufe und Zwei-Faktor-Authentifizierung als Bestandteile der Implementierung. Das zeigt die Art vernetzter Arbeitsabläufe, an denen PREJ arbeitet; es wird nicht als unabhängig bestätigtes Geschäftsergebnis dargestellt.",
+      "faq": [
+        {
+          "q": "Können wir mit einem Teil unseres Prozesses beginnen?",
+          "a": "Ja. Ein klar abgegrenzter Ablauf kann ein sinnvollerer erster Schritt sein, als alle Werkzeuge gleichzeitig zu ersetzen. Wir prüfen seine Abhängigkeiten und vereinbaren, was jetzt verbunden werden muss, was manuell bleiben kann und was in eine spätere Phase gehört."
+        },
+        {
+          "q": "Reicht eine Standardvorlage aus?",
+          "a": "Manchmal passt ein vorhandenes Werkzeug zum Bedarf. Wir prüfen den tatsächlichen Arbeitsablauf, bevor wir eine individuelle Entwicklung empfehlen. Wenn Rollen, Datenbeziehungen oder Prüfschritte eine maßgeschneiderte Plattform erfordern, sollte die Leistungsbeschreibung erklären, warum diese Unterschiede relevant sind."
+        }
+      ]
+    },
+    "api-integrations": {
+      "name": "APIs & Integrationen",
+      "title": "API-Entwicklung & Systemintegrationen | PREJ",
+      "description": "Anwendungen, Daten und Abläufe mit PREJ verbinden. API- und Backend-Entwicklung mit Node.js, NestJS, Python und PostgreSQL, klaren Berechtigungen und Fehlerbehandlung.",
+      "intro": "Ein vernetztes Produkt braucht klare Vereinbarungen zwischen seinen Systemen. Eine App kann eine Anfrage anlegen, ein Arbeitsbereich sie prüfen und ein weiterer Dienst ein Ergebnis zurückliefern. PREJ entwickelt APIs und Backend-Integrationen, die diese Zuständigkeiten eindeutig machen. Wir arbeiten mit Node.js, NestJS, Python und relationalen Datenwerkzeugen und richten die Umsetzung an den bestehenden Systemen, dem Arbeitsablauf und den Wartungsanforderungen aus.",
+      "sections": [
+        {
+          "title": "Den Schnittstellenvertrag vor der Verbindung festlegen",
+          "text": "Wir klären, welches System für einen Datensatz verantwortlich ist, was eine Operation verändern darf und auf welche Antwort sich das aufrufende System verlassen kann. Anfragevalidierung, Authentifizierung und rollenbasierte Berechtigungen gehören zu diesem Vertrag. Klare Grenzen erleichtern es, eine mobile App, ein Webportal und eine Verwaltungsoberfläche zu verbinden, ohne dass jede Oberfläche dieselbe Geschäftsregel anders auslegt."
+        },
+        {
+          "title": "Fehlerfälle als Teil des Ablaufs behandeln",
+          "text": "Ein externer Dienst kann nicht erreichbar, eine eingereichte Datei ungültig oder eine Anfrage mehrfach eintreffen. Wir besprechen diese Fälle ebenso wie den erfolgreichen Ablauf. Je nach Integration kann das Konzept Schutz vor doppelter Verarbeitung, durchdachte Wiederholungsregeln oder einen sichtbaren menschlichen Prüfschritt erfordern. Das richtige Verhalten hängt von der Operation ab: Eine Statusabfrage zu wiederholen ist etwas anderes als eine Aktion erneut auszuführen, die einen Zustand verändert."
+        },
+        {
+          "title": "Daten und betriebliche Entscheidungen nachvollziehbar halten",
+          "text": "Integrationsarbeit bedeutet mehr, als Felder zwischen Endpunkten zu übertragen. Datensätze brauchen sinnvolle Beziehungen, konsistente Zustände und klare Zuständigkeiten. Wir beschreiben, wie Informationen ins System gelangen, wie sie validiert werden und was ein Mensch bei einem Fehler prüfen muss. Drittanbieterzugänge, Anbieterlimits, Zugangsdaten und Bereitstellungsanforderungen werden frühzeitig geklärt. Wir versprechen keine Integration, bevor die unterstützten Zugriffsmöglichkeiten des externen Systems geprüft wurden."
+        }
+      ],
+      "deliverables": [
+        "Eine Übersicht der Schnittstellen und Datenflüsse mit Zuständigkeiten und Zugriffsgrenzen.",
+        "Vereinbarte Endpunkte oder Konnektoren mit Validierung und eindeutigen Antworten.",
+        "Prüfungen der wichtigsten Erfolgs- und Fehlerfälle, Integrationshinweise und ein Übergabeplan."
+      ],
+      "processText": "Ausgangspunkt sind ein konkreter Arbeitsablauf und die bereits verfügbaren Schnittstellen. Wir prüfen Abhängigkeiten, vereinbaren eine klar abgegrenzte Integration und setzen sie in unabhängig überprüfbaren Schritten um. Tests sollten die Zustände abdecken, die Nutzer oder Betreiber betreffen – nicht nur prüfen, ob ein Endpunkt eine Antwort liefert. Menschliches technisches Urteilsvermögen bleibt für Berechtigungen und Freigabeentscheidungen verantwortlich; KI-Unterstützung hebt diese Verantwortung nicht auf.",
+      "projectName": "TORQENIX",
+      "projectId": "project-torqenix",
+      "projectText": "TORQENIX ist eine B2B-Plattform für ECU-Dateidienstleistungen für professionelle Werkstätten. Händlerkonten, Uploads von Originaldateien, Auftragsverfolgung, Nachrichten und ein Guthabenkonto sind mit einem administrativ gesteuerten Prüf- und Freigabeablauf verbunden. Das ist ein konkretes Beispiel für Dateien, Berechtigungen und Zustandsänderungen, die innerhalb einer Anwendung zusammenpassen müssen. Kalibrierungsarbeiten finden außerhalb der Plattform statt; Bankzahlungen im Live-Betrieb sind noch nicht aktiviert. Diese Grenzen bleiben im Portfolio ausdrücklich benannt.",
+      "faq": [
+        {
+          "q": "Können Sie einen Drittanbieterdienst anbinden?",
+          "a": "Zunächst prüfen wir die dokumentierte API, die erlaubten Zugriffsmöglichkeiten und die Funktionen Ihres Kontos. Authentifizierung, Anbieterbeschränkungen und betriebliche Anforderungen bestimmen, was möglich ist. Nicht unterstützte Zugriffe werden nicht durch versteckte Umgehungslösungen ersetzt."
+        },
+        {
+          "q": "Müssen wir unsere bestehende Datenbank ersetzen?",
+          "a": "Nicht automatisch. Zuerst betrachten wir das aktuelle Datenmodell und den neuen Arbeitsablauf. Ein Konnektor, eine begrenzte Erweiterung oder eine Migration können jeweils geeignet sein. Die Entscheidung sollte sich nach den Rahmenbedingungen richten, nicht nach einer bevorzugten Technologie."
+        }
+      ]
+    }
+  }
+}
