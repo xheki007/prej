@@ -1,7 +1,7 @@
 from playwright.sync_api import sync_playwright
 from pathlib import Path
 import json,os,shutil
-out=Path('../prej-seo-review');out.mkdir(exist_ok=True)
+out=Path('qa-screenshots');out.mkdir(exist_ok=True)
 with sync_playwright() as p:
  browser=p.chromium.launch(headless=True,executable_path=os.environ.get('CHROMIUM_PATH'),args=['--no-sandbox'])
  for size in [(1440,1000),(390,844),(320,700)]:
