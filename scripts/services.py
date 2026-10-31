@@ -22,6 +22,7 @@ def build_services(root,langs):
    for el in doc.xpath('//link[@hreflang]'):
     code=el.get('hreflang');el.set('href',f'https://prej-tech.com/{"en" if code=="x-default" else code}/services/{slug}/')
    for el in head.xpath('./script[@src or @id="locale-messages"]'):head.remove(el)
+   for el in head.xpath('./link[contains(@href,"hero-motion.css")]'):head.remove(el)
    node(head,'link',rel='stylesheet',href='/service.css?v=2')
    node(head,'script',src='/service.js?v=1',defer='defer')
    node(head,'script',json.dumps({'openMenu':ui['openMenu'],'closeMenu':ui['closeMenu']},ensure_ascii=False),id='service-messages',type='application/json')

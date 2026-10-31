@@ -105,3 +105,8 @@ assurance or a claim that a signature transaction was tested. Registration
 requests require office review and confirmation. Course/payment selection does
 not itself confirm a contract or execute payment. No client-side registration,
 payment or signing submission is made by `tests/case_browser.py`.
+
+### Homepage motion
+The original connected-systems images are unchanged. `scripts/hero.py` adds an exact 1280×853 shared image/SVG stage, two light impulses aligned to the photograph's existing conduits, and soft icon illumination. `hero-motion.css` / `hero-motion.js` load only on homepages. A localized native pause/resume button sits below the existing hero note. Fine-hover mouse parallax is limited to ±3px; touch input is untouched. Motion pauses offscreen, when the document is hidden, or when manually paused. Reduced-motion and no-JS retain the original static illustration. Manual pause is page-local, without cookies or storage.
+
+CI runs `tests/hero_browser.py` after all existing browser suites. The separate `hero-motion-previews` artifact contains 12 known-frame PNGs and two short WebM recordings (desktop/mobile). Review actual recordings as well as screenshots before publication; this change adds decoration, not a new content/SEO claim.
