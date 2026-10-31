@@ -143,7 +143,7 @@
       ]
     },
     "api-integrations": {
-      "name": "API-Entwicklung & Systemintegration",
+      "name": "API-Entwicklung & Integrationen",
       "title": "Schnittstelle programmieren lassen & API-Integration | PREJ",
       "description": "Geschäftssysteme verbinden: individuelle APIs, Backend-Entwicklung und Datenabgleich mit PREJ. Zugriffe, Automatisierung und Fehlerfälle vor der Umsetzung klären.",
       "intro": "Ein vernetztes Produkt braucht klare Vereinbarungen zwischen seinen Systemen. Eine App kann eine Anfrage anlegen, ein Arbeitsbereich sie prüfen und ein weiterer Dienst ein Ergebnis zurückliefern. PREJ entwickelt APIs und Backend-Integrationen, die diese Zuständigkeiten eindeutig machen. Wir arbeiten mit Node.js, NestJS, Python und relationalen Datenwerkzeugen und richten die Umsetzung an den bestehenden Systemen, dem Arbeitsablauf und den Wartungsanforderungen aus.",

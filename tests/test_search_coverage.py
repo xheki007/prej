@@ -9,6 +9,9 @@ class SearchCoverageTests(unittest.TestCase):
   d=html.fromstring((ROOT/'de/services/web-platform-development/index.html').read_text())
   self.assertEqual(d.xpath('//h1')[0].text_content(),'Individuelle Web-Apps & Kundenportale')
   self.assertIn('Webanwendungen',d.xpath('//meta[@name="description"]/@content')[0])
+ def test_german_api_heading_uses_compact_label(self):
+  d=html.fromstring((ROOT/'de/services/api-integrations/index.html').read_text())
+  self.assertEqual(d.xpath('//h1')[0].text_content(),'API-Entwicklung & Integrationen')
  def test_home_has_specific_service_heading(self):
   terms={'sq':'softuer','en':'software','de':'Software','it':'Software'}
   for lang in LANGS:
