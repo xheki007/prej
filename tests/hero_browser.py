@@ -11,6 +11,8 @@ def state(page, expected):
  page.wait_for_function("(s) => document.querySelector('.hero-motion-stage').dataset.motion === s",arg=expected)
 def offset(page):
  return page.locator('.hero-light-left').evaluate('(e)=>getComputedStyle(e).strokeDashoffset')
+def motion_diagnostic(page):
+ return page.locator('.hero-light-left').evaluate('(e)=>({motion:e.closest(".hero-motion-stage").dataset.motion,css:getComputedStyle(e).animationPlayState,offset:getComputedStyle(e).strokeDashoffset,animations:e.getAnimations().map(a=>({state:a.playState,time:a.currentTime,pending:a.pending}))})')
 with sync_playwright() as p:
  browser=p.chromium.launch(headless=True,executable_path=os.environ.get('CHROMIUM_PATH'),args=['--no-sandbox'])
  for width,height in [(1440,1000),(390,844),(320,700)]:
@@ -25,18 +27,20 @@ with sync_playwright() as p:
    assert abs(a['width']/a['height']-1280/853)<.001
    assert page.evaluate('document.documentElement.scrollWidth <= innerWidth')
    # Animation timeline changes; test a known moving interval, not its intentional quiet interval.
-   stage.locator('svg').evaluate('(e)=>e.getAnimations({subtree:true}).forEach(a=>{a.currentTime=500;a.play()})')
-   first=offset(page);page.wait_for_timeout(160);assert offset(page)!=first
+   stage.locator('svg').evaluate('(e)=>e.getAnimations({subtree:true}).forEach(a=>{a.currentTime=500})')
+   first=offset(page);page.wait_for_timeout(160);assert offset(page)!=first,(lang,width,first,motion_diagnostic(page))
    button=page.locator('.hero-motion-toggle');button.click();state(page,'paused')
-   first=offset(page);page.wait_for_timeout(160);assert offset(page)==first
+   first=offset(page);page.wait_for_timeout(160);assert offset(page)==first,(lang,width,first,motion_diagnostic(page))
    assert button.inner_text()==button.get_attribute('data-resume')
    page.locator('footer').scroll_into_view_if_needed();state(page,'paused')
    stage.scroll_into_view_if_needed();state(page,'paused')
    assert page.locator('.hero-light-left').evaluate('(e)=>getComputedStyle(e).animationPlayState')=='paused'
    button.focus();page.keyboard.press('Enter');stage.scroll_into_view_if_needed();state(page,'running')
-   # Freeze the same visual moment solely in test code for review artifacts.
-   stage.locator('svg').evaluate('(e)=>e.getAnimations({subtree:true}).forEach(a=>{a.pause();a.currentTime=1500})')
+   # Native control owns playback. Seek only: WAAPI play()/pause() would override CSS.
+   button.click();state(page,'paused')
+   stage.locator('svg').evaluate('(e)=>e.getAnimations({subtree:true}).forEach(a=>{a.currentTime=1500})')
    page.locator('.hero').screenshot(path=str(out/f'hero-{lang}-{width}.png'))
+   button.click();stage.scroll_into_view_if_needed();state(page,'running')
    page.locator('footer').scroll_into_view_if_needed();state(page,'paused')
    stage.scroll_into_view_if_needed();state(page,'running')
    # Exercise real visibilitychange handler without a production test hook.
