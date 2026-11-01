@@ -30,6 +30,7 @@ jobs:
           node --check app.js
           node --check service.js
           node --check hero-motion.js
+          node --check background-motion.js
       - name: Desktop and mobile browser journeys
         run: |
           python -m http.server 4174 > /tmp/site-qa-http.log 2>&1 &
@@ -39,6 +40,7 @@ jobs:
             curl --fail --silent http://localhost:4174/en/ > /dev/null && break
             sleep 1
           done
+          python tests/background_browser.py
           python tests/hero_browser.py
           python tests/browser.py
           python tests/service_browser.py

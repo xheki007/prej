@@ -1,0 +1,14 @@
+/* Decorative, section-local data paths: below content, above each opaque background. */
+.ambient-host{position:relative;isolation:isolate}
+.ambient-layer{position:absolute;inset:0;z-index:-1;overflow:hidden;pointer-events:none;user-select:none;contain:strict}
+.ambient-layer svg{display:block;width:100%;height:100%;min-height:100%;overflow:hidden;fill:none;pointer-events:none}
+.ambient-track{stroke:#25bcb7;stroke-width:1;opacity:.085}
+.ambient-pulse{stroke:#32cbc3;stroke-width:1.35;stroke-linecap:round;stroke-dasharray:12 988;opacity:.28;animation:ambient-data-flow 36s linear infinite;animation-play-state:paused}
+.ambient-route-2 .ambient-pulse{animation-duration:44s;animation-delay:-17s}
+.ambient-route-3 .ambient-pulse{animation-duration:40s;animation-delay:-9s}
+.ambient-route-4 .ambient-pulse{animation-duration:48s;animation-delay:-28s}
+.ambient-host[data-ambient-motion="running"]>.ambient-layer .ambient-pulse{animation-play-state:running}
+@keyframes ambient-data-flow{from{stroke-dashoffset:1000}to{stroke-dashoffset:0}}
+@media(max-width:600px){.ambient-route-1,.ambient-route-2{display:none}.ambient-track{opacity:.07}.ambient-pulse{opacity:.22;stroke-width:1.15}}
+@media(prefers-reduced-motion:reduce){.ambient-pulse{animation:none;display:none}.ambient-track{opacity:.055}}
+@media(forced-colors:active),print{.ambient-layer{display:none}}
