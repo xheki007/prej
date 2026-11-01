@@ -2,6 +2,7 @@
 from copy import deepcopy
 from lxml import html
 import json
+from background import add_background
 from services import node
 CASE_SUFFIX='projects/home-of-dance/'
 
@@ -39,4 +40,5 @@ def build_cases(root,langs):
   design=node(content,'section',class_='case-section case-design');node(design,'h2',copy['designTitle']);node(design,'p',copy['designText'])
   evidence=node(content,'section',class_='case-section case-evidence');node(evidence,'h2',copy['evidenceTitle']);node(evidence,'p',copy['evidenceText']);links=node(evidence,'div',class_='case-links');node(links,'a',copy['serviceLink']+' →',class_='text-link',href=f'/{lang}/services/web-platform-development/');node(links,'a',copy['portfolioLink']+' →',class_='text-link',href=f'/{lang}/#project-dance')
   cta=node(main,'section',class_='service-cta');wrap=node(cta,'div',class_='container');node(wrap,'h2',copy['relatedTitle']);node(wrap,'p',copy['relatedText']);node(wrap,'a',copy['cta']+' ↗',class_='button primary',href=f'/{lang}/#contact')
+  add_background(doc)
   path=root/lang/CASE_SUFFIX;path.mkdir(parents=True,exist_ok=True);(path/'index.html').write_text('<!doctype html>\n'+html.tostring(doc,encoding='unicode',method='html')+'\n')

@@ -5,6 +5,7 @@ from lxml import html,etree
 from services import build_services,SLUGS
 from cases import build_cases,CASE_SUFFIX
 from hero import add_hero_motion
+from background import add_background
 ROOT=Path(__file__).resolve().parents[1]
 LANGS={'sq':('Shqip','🇦🇱'),'en':('English','🇬🇧'),'de':('Deutsch','🇩🇪'),'it':('Italiano','🇮🇹')}
 SEARCH_HOME=json.loads((ROOT/'i18n/search-home.json').read_text())
@@ -84,6 +85,7 @@ def build(lang):
   dance.xpath('.//*[contains(concat(" ",normalize-space(@class)," "),$token)]',token=' '+cls+' ')[0].text=case_content[key]
  case_link=etree.SubElement(dance.xpath('.//*[contains(@class,"project-expanded")]')[0],'a',{'class':'text-link','href':f'/{lang}/{CASE_SUFFIX}'})
  case_link.text=case_content['readCase']+' →'
+ add_background(doc)
  result='<!doctype html>\n'+html.tostring(doc,encoding='unicode',method='html')+'\n'
  (ROOT/lang).mkdir(exist_ok=True);(ROOT/lang/'index.html').write_text(result)
  return result

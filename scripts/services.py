@@ -2,6 +2,7 @@
 from copy import deepcopy
 from lxml import html,etree
 import json
+from background import add_background
 SLUGS=('mobile-app-development','web-platform-development','api-integrations')
 
 def node(parent,tag,text=None,**attrs):
@@ -72,4 +73,5 @@ def build_services(root,langs):
     if other!=slug:
      a=node(links,'a',class_='service-related-card',href=f'/{lang}/services/{other}/');node(a,'h3',content['services'][other]['name']);node(a,'span',ui['readService']+' →')
    cta=node(main,'section',class_='service-cta');w=node(cta,'div',class_='container');node(w,'h2',ui['ctaTitle']);node(w,'p',ui['ctaText']);node(w,'a',ui['cta']+' ↗',class_='button primary',href=f'/{lang}/#contact')
+   add_background(doc)
    path=root/lang/'services'/slug;path.mkdir(parents=True,exist_ok=True);(path/'index.html').write_text('<!doctype html>\n'+html.tostring(doc,encoding='unicode',method='html')+'\n')
