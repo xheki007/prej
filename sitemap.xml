@@ -3,10 +3,10 @@
   <url>
     <loc>https://prej-tech.com/sq/</loc>
     <xhtml:link rel="alternate" hreflang="sq" href="https://prej-tech.com/sq/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://prej-tech.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prej-tech.com/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://prej-tech.com/de/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://prej-tech.com/it/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/"/>
   </url>
   <url>
     <loc>https://prej-tech.com/sq/services/mobile-app-development/</loc>
@@ -41,12 +41,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/en/projects/home-of-dance/"/>
   </url>
   <url>
-    <loc>https://prej-tech.com/en/</loc>
+    <loc>https://prej-tech.com/</loc>
     <xhtml:link rel="alternate" hreflang="sq" href="https://prej-tech.com/sq/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://prej-tech.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prej-tech.com/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://prej-tech.com/de/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://prej-tech.com/it/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/"/>
   </url>
   <url>
     <loc>https://prej-tech.com/en/services/mobile-app-development/</loc>
@@ -83,10 +83,10 @@
   <url>
     <loc>https://prej-tech.com/de/</loc>
     <xhtml:link rel="alternate" hreflang="sq" href="https://prej-tech.com/sq/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://prej-tech.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prej-tech.com/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://prej-tech.com/de/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://prej-tech.com/it/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/"/>
   </url>
   <url>
     <loc>https://prej-tech.com/de/services/mobile-app-development/</loc>
@@ -123,10 +123,10 @@
   <url>
     <loc>https://prej-tech.com/it/</loc>
     <xhtml:link rel="alternate" hreflang="sq" href="https://prej-tech.com/sq/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://prej-tech.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prej-tech.com/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://prej-tech.com/de/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://prej-tech.com/it/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prej-tech.com/"/>
   </url>
   <url>
     <loc>https://prej-tech.com/it/services/mobile-app-development/</loc>
