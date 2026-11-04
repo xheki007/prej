@@ -41,7 +41,7 @@ class ServiceTests(unittest.TestCase):
     for key in ['projectId','projectName']:self.assertEqual(translated['services'][slug][key],baseline['services'][slug][key])
  def test_sitemap_contains_all_twenty_canonical_pages(self):
   doc=etree.parse(str(ROOT/'sitemap.xml'));urls=doc.xpath('//*[local-name()="loc"]/text()')
-  expected=[f'https://prej-tech.com/{l}/' for l in LANGS]+[f'https://prej-tech.com/{l}/services/{s}/' for l in LANGS for s in SLUGS]
+  expected=[('https://prej-tech.com/' if l=='en' else f'https://prej-tech.com/{l}/') for l in LANGS]+[f'https://prej-tech.com/{l}/services/{s}/' for l in LANGS for s in SLUGS]
   expected += [f'https://prej-tech.com/{l}/projects/home-of-dance/' for l in LANGS]
   self.assertEqual(set(urls),set(expected));self.assertEqual(len(urls),20)
  def test_homepages_link_to_services(self):

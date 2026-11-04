@@ -54,6 +54,6 @@ with sync_playwright() as p:
  page=browser.new_page(java_script_enabled=False)
  for lang in ('sq','en','de','it'):
   page.goto(f'http://localhost:4174/{lang}/');assert page.locator('.portfolio-card:visible').count()==7
-  page.locator('header .language-picker summary').click();page.locator('header a[hreflang=en]').click();assert page.url.endswith('/en/')
+  page.locator('header .language-picker summary').click();page.locator('header a[hreflang=en]').click();assert page.url=='http://localhost:4174/'
  browser.close()
 print('PASS: 12 locale/viewport journeys, no JS errors or horizontal overflow; filters, cards, picker, modal, copy fallback, legacy URLs, no-JS.')

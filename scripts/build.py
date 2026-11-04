@@ -33,13 +33,13 @@ def build(lang):
  doc.xpath('//p[contains(concat(" ",normalize-space(@class)," ")," hero-intro ")]')[0].text=search['intro']
  for card,text in zip(doc.xpath('//article[contains(concat(" ",normalize-space(@class)," ")," capability ")]'),search['cards']):card.find('p').text=text
  search=SEARCH_HOME[lang]
- title,description=search['title'],search['description'];url=f'https://prej-tech.com/{lang}/'
+ title,description=search['title'],search['description'];url=('https://prej-tech.com/' if lang=='en' else f'https://prej-tech.com/{lang}/')
  doc.find('head/title').text=title
  for query,value in [('//meta[@name="description"]',description),('//meta[@property="og:title"]',title),('//meta[@property="og:description"]',description),('//meta[@property="og:url"]',url),('//meta[@property="og:image"]','https://prej-tech.com/assets/connected-systems.png')]:doc.xpath(query)[0].set('content',value)
  doc.xpath('//link[@rel="canonical"]')[0].set('href',url)
  head=doc.find('head')
  for code in [*LANGS,'x-default']:
-  etree.SubElement(head,'link',rel='alternate',hreflang=code,href=f'https://prej-tech.com/{code if code!="x-default" else "en"}/')
+  etree.SubElement(head,'link',rel='alternate',hreflang=code,href=('https://prej-tech.com/' if code in ('en','x-default') else f'https://prej-tech.com/{code}/'))
  etree.SubElement(head,'meta',property='og:locale',content={'en':'en_GB','sq':'sq_AL','de':'de_DE','it':'it_IT'}[lang])
  structured={'@context':'https://schema.org','@type':'Organization','name':'PREJ','legalName':'PREJ SH.P.K.','url':'https://prej-tech.com/','logo':'https://prej-tech.com/assets/prej-logo-dark.webp','email':'ferizixhevdet@gmail.com','telephone':'+38349475027','address':{'@type':'PostalAddress','addressLocality':'Mitrovica','addressCountry':'XK'}}
  etree.SubElement(head,'script',type='application/ld+json').text=json.dumps(structured,ensure_ascii=False)
@@ -53,7 +53,7 @@ def build(lang):
   flag=etree.SubElement(summary,'span',{'aria-hidden':'true'});flag.text=LANGS[lang][1];flag.tail=' '+LANGS[lang][0]
   links=etree.SubElement(picker,'div',{'class':'language-options'})
   for code,(name,flag) in LANGS.items():
-   a=etree.SubElement(links,'a',href=f'/{code}/',lang=code,hreflang=code)
+   a=etree.SubElement(links,'a',href=('/' if code=='en' else f'/{code}/'),lang=code,hreflang=code)
    if code==lang:a.set('aria-current','page')
    etree.SubElement(a,'span',{'aria-hidden':'true'}).text=flag
    a[-1].tail=' '+name
@@ -99,6 +99,6 @@ ns='http://www.sitemaps.org/schemas/sitemap/0.9';xh='http://www.w3.org/1999/xhtm
 root=etree.Element('{'+ns+'}urlset',nsmap={None:ns,'xhtml':xh})
 for lang in LANGS:
  for suffix in ['']+[f'services/{slug}/' for slug in SLUGS]+[CASE_SUFFIX]:
-  entry=etree.SubElement(root,'{'+ns+'}url');etree.SubElement(entry,'{'+ns+'}loc').text=f'https://prej-tech.com/{lang}/{suffix}'
-  for alt in [*LANGS,'x-default']:etree.SubElement(entry,'{'+xh+'}link',rel='alternate',hreflang=alt,href=f'https://prej-tech.com/{alt if alt!="x-default" else "en"}/{suffix}')
+  entry=etree.SubElement(root,'{'+ns+'}url');etree.SubElement(entry,'{'+ns+'}loc').text=('https://prej-tech.com/' if lang=='en' and not suffix else f'https://prej-tech.com/{lang}/{suffix}')
+  for alt in [*LANGS,'x-default']:etree.SubElement(entry,'{'+xh+'}link',rel='alternate',hreflang=alt,href=('https://prej-tech.com/' if not suffix and alt in ('en','x-default') else f'https://prej-tech.com/{alt if alt!="x-default" else "en"}/{suffix}'))
 (ROOT/'sitemap.xml').write_bytes(etree.tostring(root,xml_declaration=True,encoding='UTF-8',pretty_print=True))
