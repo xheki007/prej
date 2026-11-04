@@ -27,8 +27,8 @@
     "mobile-app-development": {
       "name": "Mobile App-Entwicklung für Android & iOS",
       "title": "App entwickeln lassen: Android, iOS & React Native | PREJ",
-      "description": "Individuelle App-Entwicklung mit React Native: Android, iOS, MVP, Buchungsabläufe und Backend-Anbindung. Mit PREJ Umfang und Kostenfaktoren Ihres Projekts klären.",
-      "intro": "Ein mobiles Produkt braucht mehr als eine Sammlung von Bildschirmen. Menschen müssen eine Aufgabe beginnen, ihren Status verstehen und nach einer Unterbrechung fortfahren können. PREJ entwickelt Android- und iOS-Anwendungen mit React Native und Expo und verbindet das mobile Erlebnis mit den dahinterliegenden APIs und betrieblichen Werkzeugen. Ausgangspunkt sind die Menschen, die das Produkt nutzen, und die tatsächlichen Bedingungen ihres Alltags.",
+      "description": "Android- und iOS-App-Entwicklung für Unternehmen in Europa: React Native, Buchungsprozesse und API-Anbindung. PREJ plant nachvollziehbare MVP-Etappen.",
+      "intro": "Ein mobiles Produkt braucht mehr als eine Sammlung von Bildschirmen. Menschen müssen eine Aufgabe beginnen, ihren Status verstehen und nach einer Unterbrechung fortfahren können. PREJ entwickelt Android- und iOS-Anwendungen mit React Native und Expo und verbindet das mobile Erlebnis mit den dahinterliegenden APIs und betrieblichen Werkzeugen. Ausgangspunkt sind die Menschen, die das Produkt nutzen, und die tatsächlichen Bedingungen ihres Alltags. Für die Zusammenarbeit mit Unternehmen in Europa klären wir Meilensteine, benötigte Zugänge und die Übergabe vor der Umsetzung.",
       "sections": [
         {
           "title": "Nutzerabläufe an einer konkreten Aufgabe ausrichten",
@@ -86,8 +86,8 @@
     "web-platform-development": {
       "name": "Individuelle Web-Apps & Kundenportale",
       "title": "Kundenportal & Buchungssystem entwickeln lassen | PREJ",
-      "description": "Individuelle Webanwendungen, Kundenportale, Buchungssysteme und Verwaltungssoftware. PREJ zeigt mit Home of Dance, wie Oberfläche und Geschäftsablauf zusammenpassen.",
-      "intro": "Unternehmenssoftware sollte einen Arbeitsprozess verständlicher machen und nicht nur eine Tabelle in den Browser verlagern. PREJ entwickelt Webplattformen, Portale und Verwaltungsoberflächen rund um die beteiligten Menschen, Datensätze und Entscheidungen. Unsere Arbeit mit React, Next.js und TypeScript verbindet die sichtbare Oberfläche mit den zugrunde liegenden Daten und APIs. So kann das Produkt einen vollständigen Arbeitsablauf auf Desktop- und mobilen Bildschirmen unterstützen.",
+      "description": "Individuelle Webanwendungen für Unternehmen in Europa: Kundenportale, Buchungssysteme, Dashboards und Verwaltungssoftware. Lernen Sie PREJ kennen.",
+      "intro": "Unternehmenssoftware sollte einen Arbeitsprozess verständlicher machen und nicht nur eine Tabelle in den Browser verlagern. PREJ entwickelt Webplattformen, Portale und Verwaltungsoberflächen rund um die beteiligten Menschen, Datensätze und Entscheidungen. Unsere Arbeit mit React, Next.js und TypeScript verbindet die sichtbare Oberfläche mit den zugrunde liegenden Daten und APIs. So kann das Produkt einen vollständigen Arbeitsablauf auf Desktop- und mobilen Bildschirmen unterstützen. Für die Zusammenarbeit mit Unternehmen in Europa klären wir Meilensteine, benötigte Zugänge und die Übergabe vor der Umsetzung.",
       "sections": [
         {
           "title": "Jeder Rolle einen klaren Arbeitsbereich geben",
@@ -145,8 +145,8 @@
     "api-integrations": {
       "name": "API-Entwicklung & Integrationen",
       "title": "Schnittstelle programmieren lassen & API-Integration | PREJ",
-      "description": "Geschäftssysteme verbinden: individuelle APIs, Backend-Entwicklung und Datenabgleich mit PREJ. Zugriffe, Automatisierung und Fehlerfälle vor der Umsetzung klären.",
-      "intro": "Ein vernetztes Produkt braucht klare Vereinbarungen zwischen seinen Systemen. Eine App kann eine Anfrage anlegen, ein Arbeitsbereich sie prüfen und ein weiterer Dienst ein Ergebnis zurückliefern. PREJ entwickelt APIs und Backend-Integrationen, die diese Zuständigkeiten eindeutig machen. Wir arbeiten mit Node.js, NestJS, Python und relationalen Datenwerkzeugen und richten die Umsetzung an den bestehenden Systemen, dem Arbeitsablauf und den Wartungsanforderungen aus.",
+      "description": "API-Integration und Backend-Entwicklung für Unternehmen in Europa. PREJ verbindet Anwendungen, synchronisiert Daten und prüft Geschäftsabläufe.",
+      "intro": "Ein vernetztes Produkt braucht klare Vereinbarungen zwischen seinen Systemen. Eine App kann eine Anfrage anlegen, ein Arbeitsbereich sie prüfen und ein weiterer Dienst ein Ergebnis zurückliefern. PREJ entwickelt APIs und Backend-Integrationen, die diese Zuständigkeiten eindeutig machen. Wir arbeiten mit Node.js, NestJS, Python und relationalen Datenwerkzeugen und richten die Umsetzung an den bestehenden Systemen, dem Arbeitsablauf und den Wartungsanforderungen aus. Für die Zusammenarbeit mit Unternehmen in Europa klären wir Meilensteine, benötigte Zugänge und die Übergabe vor der Umsetzung.",
       "sections": [
         {
           "title": "Den Schnittstellenvertrag vor der Verbindung festlegen",
