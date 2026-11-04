@@ -1,12 +1,12 @@
 {
   "en": {
-    "title": "Custom Software, Web & App Development in Kosovo | PREJ",
-    "description": "PREJ in Mitrovica, Kosovo develops business websites, customer portals, mobile apps and API integrations. Explore real projects and discuss your workflow.",
+    "title": "Custom Software Development for European Businesses | PREJ",
+    "description": "PREJ develops custom software, web platforms, booking systems, mobile apps and API integrations for businesses across Europe. Based in Kosovo. Explore our work.",
     "h1": [
       "Custom software.",
       "Connected business."
     ],
-    "intro": "Custom software development from Mitrovica, Kosovo: business websites, customer portals, booking systems and mobile apps connected to your data. We turn a defined business process into a clear, testable product.",
+    "intro": "PREJ builds custom software for businesses across Europe from Mitrovica, Kosovo. We develop web platforms, booking systems, mobile apps and API integrations around real workflows, with clear scope, reviewable milestones and a practical handover.",
     "cards": [
       "Android and iOS app development with React Native: user journeys, maps, notifications and backend connections, scoped for the agreed release.",
       "Business websites, customer portals, booking systems and admin dashboards built around the people and processes they serve.",
@@ -14,13 +14,13 @@
     ]
   },
   "de": {
-    "title": "Individuelle Software, Web- & App-Entwicklung | PREJ Kosovo",
-    "description": "PREJ aus Mitrovica, Kosovo entwickelt Unternehmenswebsites, Kundenportale, mobile Apps und API-Integrationen. Entdecken Sie Projekte und besprechen Sie Ihren Ablauf.",
+    "title": "Individuelle Softwareentwicklung für Unternehmen | PREJ",
+    "description": "PREJ entwickelt individuelle Software, Webplattformen, Buchungssysteme und mobile Apps für Unternehmen in Europa. Standort Kosovo. Projekte entdecken.",
     "h1": [
       "Software nach Maß.",
       "Vernetzte Abläufe."
     ],
-    "intro": "Individuelle Softwareentwicklung aus Mitrovica, Kosovo: Unternehmenswebsites, Kundenportale, Buchungssysteme und mobile Apps mit Anbindung an Ihre Daten. Aus einem konkreten Geschäftsablauf entsteht ein klar prüfbares Produkt.",
+    "intro": "PREJ entwickelt individuelle Software für Unternehmen in ganz Europa – von Mitrovica, Kosovo, aus. Wir realisieren Webplattformen, Buchungssysteme, mobile Apps und API-Integrationen für konkrete Abläufe, mit klarem Umfang, prüfbaren Etappen und geplanter Übergabe.",
     "cards": [
       "App-Entwicklung für Android und iOS mit React Native: Nutzerabläufe, Karten, Benachrichtigungen und Backend-Anbindung für die vereinbarte Release-Stufe.",
       "Unternehmenswebsites, Kundenportale, Buchungssysteme und Verwaltungsoberflächen, die zu den Menschen und Abläufen im Betrieb passen.",
@@ -28,13 +28,13 @@
     ]
   },
   "sq": {
-    "title": "Softuer i personalizuar, Webfaqe & Aplikacione | PREJ Kosovë",
-    "description": "PREJ në Mitrovicë, Kosovë zhvillon webfaqe biznesi, portale klientësh, aplikacione mobile dhe integrime API. Shikoni projektet dhe diskutoni sistemin tuaj.",
+    "title": "Zhvillim Softueri për Biznese në Evropë | PREJ",
+    "description": "PREJ zhvillon softuer të personalizuar, platforma web, sisteme rezervimesh, aplikacione mobile dhe integrime API për biznese në Evropë. Me bazë në Kosovë.",
     "h1": [
       "Softuer sipas nevojës.",
       "Biznes i lidhur."
     ],
-    "intro": "Zhvillim softueri të personalizuar nga Mitrovica, Kosovë: webfaqe biznesi, portale klientësh, sisteme rezervimesh dhe aplikacione mobile të lidhura me të dhënat tuaja. Një proces konkret biznesi e kthejmë në produkt të qartë dhe të testueshëm.",
+    "intro": "PREJ zhvillon softuer të personalizuar për biznese në gjithë Evropën, nga Mitrovica, Kosovë. Ndërtojmë platforma web, sisteme rezervimesh, aplikacione mobile dhe integrime API për procese konkrete, me fushëveprim të qartë, hapa të kontrollueshëm dhe dorëzim të dokumentuar.",
     "cards": [
       "Zhvillim aplikacionesh Android dhe iOS me React Native: rrjedha përdorimi, harta, njoftime dhe lidhje backend për fazën e dakorduar të publikimit.",
       "Webfaqe biznesi, portale klientësh, sisteme rezervimesh dhe panele administrimi të ndërtuara rreth njerëzve dhe proceseve që i përdorin.",
@@ -42,13 +42,13 @@
     ]
   },
   "it": {
-    "title": "Software su Misura, Siti Web e App | PREJ Kosovo",
-    "description": "PREJ a Mitrovica, Kosovo sviluppa siti aziendali, portali clienti, app mobili e integrazioni API. Esplora i progetti e parliamo del tuo processo di lavoro.",
+    "title": "Sviluppo Software per Aziende in Europa | PREJ",
+    "description": "PREJ sviluppa software su misura, piattaforme web, sistemi di prenotazione, app mobili e integrazioni API per aziende in Europa. Sede in Kosovo.",
     "h1": [
       "Software su misura.",
       "Processi connessi."
     ],
-    "intro": "Sviluppo software su misura da Mitrovica, Kosovo: siti aziendali, portali clienti, sistemi di prenotazione e app mobili collegati ai tuoi dati. Trasformiamo un processo aziendale definito in un prodotto chiaro e verificabile.",
+    "intro": "PREJ sviluppa software su misura per aziende in tutta Europa dalla sede di Mitrovica, Kosovo. Realizziamo piattaforme web, sistemi di prenotazione, app mobili e integrazioni API per processi concreti, con obiettivi chiari, verifiche periodiche e consegna documentata.",
     "cards": [
       "Sviluppo app Android e iOS con React Native: percorsi utente, mappe, notifiche e collegamenti backend per la fase di rilascio concordata.",
       "Siti aziendali, portali clienti, sistemi di prenotazione e pannelli amministrativi costruiti intorno alle persone e ai processi che li utilizzano.",

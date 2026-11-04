@@ -27,8 +27,8 @@
     "mobile-app-development": {
       "name": "Mobile app development for Android & iOS",
       "title": "Android & iOS App Development, React Native | PREJ",
-      "description": "Custom mobile app development with React Native: Android and iOS planning, MVPs, booking journeys and backend integration. Discuss scope and cost factors with PREJ.",
-      "intro": "A mobile product needs more than a collection of screens. People must be able to start a task, understand its status and recover when something interrupts it. PREJ develops Android and iOS applications with React Native and Expo, connecting the mobile experience to the APIs and operational tools behind it. We begin with the people using the product and the real conditions in which they will use it.",
+      "description": "Android and iOS app development for European businesses. PREJ builds React Native apps, booking journeys and API connections with clear MVP scope and reviews.",
+      "intro": "A mobile product needs more than a collection of screens. People must be able to start a task, understand its status and recover when something interrupts it. PREJ develops Android and iOS applications with React Native and Expo, connecting the mobile experience to the APIs and operational tools behind it. We begin with the people using the product and the real conditions in which they will use it. For European teams, we agree on milestones, access requirements and handover before implementation.",
       "sections": [
         {
           "title": "Design the journey around a real task",
@@ -86,8 +86,8 @@
     "web-platform-development": {
       "name": "Custom web applications & customer portals",
       "title": "Custom Web Applications, Portals & Booking Systems | PREJ",
-      "description": "Business websites, customer portals, booking systems and admin software tailored to your workflow. Explore PREJ’s Home of Dance project and development approach.",
-      "intro": "Business software should make a working process easier to understand, not simply move a spreadsheet into a browser. PREJ builds web platforms, portals and administrative workspaces around the people, records and decisions involved. Our work with React, Next.js and TypeScript connects the visible interface to the underlying data and APIs, so the product can support a complete workflow on desktop and mobile screens.",
+      "description": "Custom web development for businesses across Europe: client portals, booking systems, dashboards and admin tools. Explore PREJ's process and project evidence.",
+      "intro": "Business software should make a working process easier to understand, not simply move a spreadsheet into a browser. PREJ builds web platforms, portals and administrative workspaces around the people, records and decisions involved. Our work with React, Next.js and TypeScript connects the visible interface to the underlying data and APIs, so the product can support a complete workflow on desktop and mobile screens. For European teams, we agree on milestones, access requirements and handover before implementation.",
       "sections": [
         {
           "title": "Give each role a clear workspace",
@@ -145,8 +145,8 @@
     "api-integrations": {
       "name": "API development & business system integration",
       "title": "API Integration & Custom Backend Development | PREJ",
-      "description": "Connect business systems with custom APIs, backend development and reliable data flows. PREJ scopes access, synchronization, automation and failure handling.",
-      "intro": "A connected product depends on clear agreements between systems. An app may create a request, a workspace may review it and another service may return a result. PREJ develops APIs and backend integrations that make those responsibilities explicit. We work with Node.js, NestJS, Python and relational data tools, choosing the implementation around the existing systems, the workflow and the maintenance requirements.",
+      "description": "API integration and backend development for businesses across Europe. PREJ connects applications, synchronizes records and designs testable business workflows.",
+      "intro": "A connected product depends on clear agreements between systems. An app may create a request, a workspace may review it and another service may return a result. PREJ develops APIs and backend integrations that make those responsibilities explicit. We work with Node.js, NestJS, Python and relational data tools, choosing the implementation around the existing systems, the workflow and the maintenance requirements. For European teams, we agree on milestones, access requirements and handover before implementation.",
       "sections": [
         {
           "title": "Define the contract before connecting the pieces",
