@@ -23,7 +23,7 @@ def build_services(root,langs):
    for el in doc.xpath('//link[@hreflang]'):
     code=el.get('hreflang');el.set('href',f'https://prej-tech.com/{"en" if code=="x-default" else code}/services/{slug}/')
    for el in head.xpath('./script[@src or @id="locale-messages"]'):head.remove(el)
-   schema={'@context':'https://schema.org','@type':'Service','name':service['name'],'description':service['description'],'url':url,'serviceType':service['name'],'provider':{'@type':'Organization','name':'PREJ','url':'https://prej-tech.com/'}}
+   schema={'@context':'https://schema.org','@type':'Service','name':service['name'],'description':service['description'],'url':url,'serviceType':service['name'],'areaServed':{'@type':'Continent','name':'Europe'},'provider':{'@type':'Organization','name':'PREJ','url':'https://prej-tech.com/'}}
    node(head,'script',json.dumps(schema,ensure_ascii=False),id='service-schema',type='application/ld+json')
    crumbs={'@context':'https://schema.org','@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':1,'name':ui['home'],'item':f'https://prej-tech.com/{lang}/'},{'@type':'ListItem','position':2,'name':ui['services'],'item':f'https://prej-tech.com/{lang}/#capabilities'},{'@type':'ListItem','position':3,'name':service['name'],'item':url}]}
    node(head,'script',json.dumps(crumbs,ensure_ascii=False),id='service-breadcrumb-schema',type='application/ld+json')
