@@ -27,8 +27,8 @@
     "mobile-app-development": {
       "name": "Zhvillim aplikacionesh mobile për Android dhe iOS",
       "title": "Zhvillim aplikacionesh Android & iOS në Kosovë | PREJ",
-      "description": "Aplikacione mobile sipas nevojës me React Native: Android, iOS, MVP, rezervime dhe lidhje backend. Diskutoni funksionet dhe faktorët e kostos me PREJ.",
-      "intro": "Një produkt mobile kërkon më shumë se një grup ekranesh. Përdoruesit duhet të mund ta nisin një detyrë, ta kuptojnë gjendjen e saj dhe të vazhdojnë kur diçka e ndërpret. PREJ zhvillon aplikacione Android dhe iOS me React Native dhe Expo, duke lidhur përvojën mobile me API-të dhe mjetet operative që e mbështesin. Nisim nga njerëzit që do ta përdorin produktin dhe kushtet reale në të cilat do të punojnë me të.",
+      "description": "Zhvillim aplikacionesh Android dhe iOS për biznese në Evropë: React Native, rezervime dhe integrime API. PREJ përcakton qartë fazat e MVP-së.",
+      "intro": "Një produkt mobile kërkon më shumë se një grup ekranesh. Përdoruesit duhet të mund ta nisin një detyrë, ta kuptojnë gjendjen e saj dhe të vazhdojnë kur diçka e ndërpret. PREJ zhvillon aplikacione Android dhe iOS me React Native dhe Expo, duke lidhur përvojën mobile me API-të dhe mjetet operative që e mbështesin. Nisim nga njerëzit që do ta përdorin produktin dhe kushtet reale në të cilat do të punojnë me të. Për bashkëpunim me biznese në Evropë, i përcaktojmë bashkë hapat, qasjet e nevojshme dhe mënyrën e dorëzimit para zhvillimit.",
       "sections": [
         {
           "title": "Projektojmë rrjedhën rreth një detyre reale",
@@ -86,8 +86,8 @@
     "web-platform-development": {
       "name": "Aplikacione web dhe portale klientësh sipas nevojës",
       "title": "Webfaqe, Aplikacione Web & Sisteme Rezervimesh | PREJ",
-      "description": "Zhvillim webfaqesh biznesi, portalesh klientësh, sistemesh rezervimesh dhe softueri administrimi në Kosovë. Shikoni projektin Home of Dance nga PREJ.",
-      "intro": "Softueri i biznesit duhet ta bëjë më të kuptueshëm një proces pune, jo thjesht ta zhvendosë një tabelë në shfletues. PREJ ndërton platforma web, portale dhe hapësira administrative rreth njerëzve, regjistrave dhe vendimeve të përfshira. Puna jonë me React, Next.js dhe TypeScript e lidh ndërfaqen e dukshme me të dhënat dhe API-të që qëndrojnë pas saj, në mënyrë që produkti të mbështesë një rrjedhë të plotë pune në ekranet e kompjuterit dhe telefonit.",
+      "description": "Zhvillim platformash web për biznese në Evropë: portale klientësh, sisteme rezervimesh, panele dhe softuer administrimi. Shikoni punën e PREJ.",
+      "intro": "Softueri i biznesit duhet ta bëjë më të kuptueshëm një proces pune, jo thjesht ta zhvendosë një tabelë në shfletues. PREJ ndërton platforma web, portale dhe hapësira administrative rreth njerëzve, regjistrave dhe vendimeve të përfshira. Puna jonë me React, Next.js dhe TypeScript e lidh ndërfaqen e dukshme me të dhënat dhe API-të që qëndrojnë pas saj, në mënyrë që produkti të mbështesë një rrjedhë të plotë pune në ekranet e kompjuterit dhe telefonit. Për bashkëpunim me biznese në Evropë, i përcaktojmë bashkë hapat, qasjet e nevojshme dhe mënyrën e dorëzimit para zhvillimit.",
       "sections": [
         {
           "title": "I japim çdo roli një hapësirë të qartë pune",
@@ -145,8 +145,8 @@
     "api-integrations": {
       "name": "Zhvillim API dhe integrim sistemesh biznesi",
       "title": "Integrim API, Automatizim & Zhvillim Backend | PREJ",
-      "description": "Lidhni sistemet e biznesit me API, zhvillim backend dhe sinkronizim të dhënash. PREJ sqaron qasjet, automatizimin dhe trajtimin e gabimeve para zbatimit.",
-      "intro": "Një produkt i lidhur varet nga marrëveshje të qarta mes sistemeve. Një aplikacion mund të krijojë një kërkesë, një hapësirë pune mund ta shqyrtojë dhe një shërbim tjetër mund të kthejë një rezultat. PREJ zhvillon API dhe integrime backend që i bëjnë të qarta këto përgjegjësi. Punojmë me Node.js, NestJS, Python dhe mjete për të dhëna relacionale, duke zgjedhur implementimin sipas sistemeve ekzistuese, rrjedhës së punës dhe kërkesave të mirëmbajtjes.",
+      "description": "Integrim API dhe zhvillim backend për biznese në Evropë. PREJ lidh aplikacionet, sinkronizon të dhënat dhe ndërton rrjedha pune të testueshme.",
+      "intro": "Një produkt i lidhur varet nga marrëveshje të qarta mes sistemeve. Një aplikacion mund të krijojë një kërkesë, një hapësirë pune mund ta shqyrtojë dhe një shërbim tjetër mund të kthejë një rezultat. PREJ zhvillon API dhe integrime backend që i bëjnë të qarta këto përgjegjësi. Punojmë me Node.js, NestJS, Python dhe mjete për të dhëna relacionale, duke zgjedhur implementimin sipas sistemeve ekzistuese, rrjedhës së punës dhe kërkesave të mirëmbajtjes. Për bashkëpunim me biznese në Evropë, i përcaktojmë bashkë hapat, qasjet e nevojshme dhe mënyrën e dorëzimit para zhvillimit.",
       "sections": [
         {
           "title": "Përcaktojmë kontratën para lidhjes së pjesëve",
