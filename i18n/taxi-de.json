@@ -1,0 +1,129 @@
+{
+  "ui": {
+    "skip": "Zum Inhalt springen",
+    "languages": "Sprache",
+    "pages": "Hilfe zu den Anwendungen",
+    "contact": "Kontakt für Apps und Datenschutz",
+    "company": "Unternehmenswebsite",
+    "updated": "Aktualisiert"
+  },
+  "privacy": {
+    "nav": "Datenschutz",
+    "title": "Datenschutz der PREJ-Anwendungen",
+    "intro": "Wie PREJ Taxi für Fahrgäste und PREJ Driver für Fahrer von PREJ SH.P.K. Daten verwenden.",
+    "draftTitle": "Entwurf zur Prüfung vor der Veröffentlichung",
+    "draftText": "Dieses Dokument beschreibt während der Entwicklung geprüfte Funktionen. Die endgültigen Aufbewahrungsfristen, das Löschverfahren und die Dienstleister für den Produktivbetrieb werden noch geprüft. Dies ist noch nicht die endgültige Datenschutzerklärung für die Veröffentlichung bei Google Play.",
+    "sections": [
+      {
+        "id": "data",
+        "title": "Vom Dienst verwendete Daten",
+        "paragraphs": [
+          "Ein Konto verwendet eine Telefonnummer, einen Anzeigenamen und eine Kontokennung. Die Anmeldeprüfung und Gerätesitzungen helfen, den Zugang zu schützen.",
+          "Karten- und Benachrichtigungsdienste können auch technische Daten verarbeiten: IP-Adresse, Geräteinformationen, Diagnosedaten, Karten- oder Installationskennungen und Karteninteraktionen. Das Datenverzeichnis der endgültigen Version muss diese Daten auch dann berücksichtigen, wenn kein gesonderter Analysedienst verwendet wird.",
+          "Für eine Fahrt verarbeitet der Dienst Abholort und Ziel, Zeit, zugewiesenen Fahrer, Status, Fahrpreis, Zahlung und Beleg. Wenn du ein Rechnungsprofil ausfüllst, werden auch die dafür eingegebenen Angaben verarbeitet.",
+          "Bei Fahrern kann der Dienst Bewerbungen, zur Prüfung eingereichte Dokumente, Fahrzeuge und die Flottenzugehörigkeit verarbeiten. Geräteinformationen, Installationskennungen, Benachrichtigungs-Token und Sicherheitsprotokolle unterstützen den Betrieb. Der endgültige Umfang hängt von den in der veröffentlichten Version aktivierten Funktionen ab."
+        ]
+      },
+      {
+        "id": "location",
+        "title": "Standort und Berechtigungen",
+        "paragraphs": [
+          "PREJ Taxi verwendet mit deiner Erlaubnis den Standort während der Nutzung, um einen Abholort festzulegen. Du kannst eine Adresse auch manuell auswählen. Die Fahrgast-App benötigt keine Standortverfolgung im Hintergrund.",
+          "PREJ Driver verwendet den Standort für Angebote in der Nähe, die Fahrtzuweisung und Ankunftsinformationen. Mit gesonderter Erlaubnis kann der Standort auch gesendet werden, während die App im Hintergrund oder geschlossen ist, solange du online bist oder eine aktive Fahrt ausführst. Das Verhalten und das Beenden der Standortverfolgung werden in den abschließenden Tests geprüft.",
+          "Du kannst Standort- und Benachrichtigungsberechtigungen in den Geräteeinstellungen verwalten. Eine Ablehnung schränkt die davon abhängigen Funktionen ein. Die Deinstallation der App löscht weder das Konto noch den Verlauf auf dem Server."
+        ]
+      },
+      {
+        "id": "sharing",
+        "title": "Wer Daten erhält",
+        "paragraphs": [
+          "Fahrgäste und Fahrer sehen die für ihre Fahrt erforderlichen Informationen. Berechtigte Mitarbeiter des Betreibers oder der Flotte haben entsprechend ihrer Rolle Zugang für Disposition, Unterstützung und Verwaltung.",
+          "Technische Dienste für Hosting, Karten, Nachrichtenverifizierung und Benachrichtigungen können Daten für ihre jeweiligen Funktionen verarbeiten. Die Dienstleister und die Produktivkonfiguration müssen vor der Veröffentlichung bestätigt werden. Der Code enthält Google Maps, Expo Notifications und Unterstützung für Twilio Verify; daraus folgt allein nicht, dass jeder Dienst im Produktivbetrieb aktiv ist."
+        ]
+      },
+      {
+        "id": "retention",
+        "title": "Aufbewahrung und Löschung",
+        "paragraphs": [
+          "Die freigegebene Frist für die Löschung gewöhnlicher Kontodaten beträgt 30 Tage nach Prüfung der Kontoinhaberschaft. Die Aufbewahrungsfrist für Rechnungen und Finanzbelege wird gesondert bestätigt. Das Ausführungsverfahren und die endgültige Erklärung werden noch vor der Veröffentlichung vorbereitet.",
+          "Konto- und Fahrtdaten werden im PREJ-Dienst gespeichert. Die endgültigen Fristen für Verlauf, Fahrerdokumente, Belege, Protokolle und Sicherungskopien sind in diesem Entwurf noch nicht freigegeben.",
+          "Die Kontolöschung muss zugehörige Daten einschließen, für die kein dokumentierter Aufbewahrungsgrund mehr besteht. Ausnahmen für Finanzunterlagen, Sicherheit oder gesetzliche Pflichten benötigen einen Zweck, eine Frist und eingeschränkten Zugang. Die bloße Sperrung der Anmeldung ist keine Löschung."
+        ]
+      },
+      {
+        "id": "rights",
+        "title": "Fragen und Anfragen zu Daten",
+        "paragraphs": [
+          "Du kannst PREJ SH.P.K. für Auskünfte, Berichtigungen oder eine Anfrage zur Löschung deines Kontos und der zugehörigen Daten kontaktieren. Nutze die Seite Kontolöschung oben oder den Kontakt unten.",
+          "Gib nur die zur Zuordnung deines Kontos notwendigen Informationen an. Sende keine Passwörter, Bestätigungscodes, Ausweisdokumente oder Kartendaten per E-Mail. Die Kontoinhaberschaft wird vor einer Löschung gesondert geprüft."
+        ]
+      }
+    ]
+  },
+  "delete-account": {
+    "nav": "Kontolöschung",
+    "title": "Kontolöschung anfragen",
+    "intro": "Sende eine Anfrage zu deinem Konto und den zugehörigen Daten in PREJ Taxi oder PREJ Driver. Eine Anmeldung in der App ist nicht erforderlich.",
+    "sections": [
+      {
+        "id": "request-scope",
+        "title": "Diese Angaben werden benötigt",
+        "paragraphs": [
+          "Nenne die App, die mit deinem Konto verknüpfte Telefonnummer und ob das gesamte Konto samt zugehörigen Daten oder nur bestimmte Daten gelöscht werden sollen. Wenn du beide Apps mit derselben Nummer nutzt, gib an, ob die Anfrage für beide gilt."
+        ]
+      },
+      {
+        "id": "next-steps",
+        "title": "So geht es weiter",
+        "paragraphs": [
+          "Die freigegebene Frist für die Löschung gewöhnlicher Kontodaten beträgt 30 Tage nach Prüfung der Kontoinhaberschaft. Die Aufbewahrungsfrist für Rechnungen und Finanzbelege wird gesondert bestätigt. Das Ausführungsverfahren und die endgültige Erklärung werden noch vor der Veröffentlichung vorbereitet.",
+          "PREJ SH.P.K. prüft die Anfrage und die Kontoinhaberschaft, bevor Maßnahmen erfolgen. Die zu löschenden Daten und Unterlagen, die aus einem dokumentierten Grund aufbewahrt werden müssen, werden geklärt. Eine Antwort oder gesperrte Anmeldung bestätigt noch keine abgeschlossene Löschung.",
+          "Das Profil, Gerätekennungen und zugehörige Kontodaten werden bei der Anfrage geprüft. Für Belege und Finanzunterlagen können gesonderte Aufbewahrungspflichten gelten. Endgültige Fristen und das Ausführungsverfahren werden vor der Veröffentlichung noch vorbereitet; siehe den Datenschutzentwurf. Diese Seite führt keine automatische Löschung aus."
+        ]
+      },
+      {
+        "id": "sensitive-warning",
+        "title": "Keine sensiblen Angaben senden",
+        "paragraphs": [
+          "Sende keine Passwörter, SMS-/OTP-Codes, Fotos von Ausweisdokumenten oder Kartennummern. Gib nur deine Kontotelefonnummer und die Anfrage an. Sende keine Daten anderer Personen."
+        ]
+      }
+    ],
+    "button": "E-Mail-Anfrage vorbereiten",
+    "subject": "PREJ — Anfrage zur Konto- und Datenlöschung",
+    "body": "An PREJ SH.P.K.\n\nAnwendung: [PREJ Taxi / PREJ Driver / beide]\nTelefonnummer des Kontos: [eigene Nummer eintragen]\nAnfrage: [Konto und zugehörige Daten löschen / bestimmte Daten]\n\nBitte erläutern Sie die Schritte zur Kontoverifizierung und Bearbeitung der Anfrage.",
+    "sendExplanation": "Die Schaltfläche öffnet nur einen Entwurf in deiner E-Mail-Anwendung. Prüfe und sende ihn selbst. Diese Seite versendet keine E-Mail, erfasst deren Inhalt nicht und bestätigt keine Löschung.",
+    "manualTitle": "Falls sich die E-Mail-Anwendung nicht öffnet",
+    "manualText": "Kopiere die folgende Adresse und Vorlage in deinen E-Mail-Dienst. Ergänze nur die Felder in eckigen Klammern."
+  },
+  "support": {
+    "nav": "Hilfe",
+    "title": "Hilfe zu PREJ-Anwendungen",
+    "intro": "Informationen und Kontakt zu PREJ Taxi und PREJ Driver von PREJ SH.P.K.",
+    "sections": [
+      {
+        "id": "apps",
+        "title": "Zwei Anwendungen, klare Rollen",
+        "paragraphs": [
+          "PREJ Taxi ist die Anwendung zum Anfragen und Verfolgen einer Fahrt als Fahrgast. PREJ Driver dient Fahrern mit aktiviertem Zugang zur Verwaltung von Fahrtangeboten und Fahrten.",
+          "Die Anwendungen werden für die Veröffentlichung vorbereitet. Diese Seite kündigt weder allgemeine Verfügbarkeit bei Google Play noch bestimmte bediente Städte oder garantierte Betriebszeiten an."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "Beschreibe, was passiert ist",
+        "paragraphs": [
+          "Kontaktiere die E-Mail-Adresse unten mit App, Version, Gerätemodell und einer kurzen Problembeschreibung. Entferne vor dem Senden eines Screenshots Namen, Telefonnummern, genaue Adressen und Zahlungsdaten.",
+          "Sende keine Passwörter oder Bestätigungscodes. Verwende für Datenanfragen die Seiten Datenschutz und Kontolöschung."
+        ]
+      },
+      {
+        "id": "payments",
+        "title": "Fahrpreis und Zahlung",
+        "paragraphs": [
+          "Prüfe Zahlungsart und Fahrpreis auf dem jeweiligen Fahrtbildschirm. Die Testunterlagen prüfen den Ablauf mit Barzahlung. Kartenzahlungen oder eine elektronische Geldbörse gelten erst als verfügbar, wenn sie im jeweiligen Dienst als aktiviert angezeigt werden."
+        ]
+      }
+    ]
+  }
+}
