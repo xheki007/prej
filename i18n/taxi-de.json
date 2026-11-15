@@ -19,6 +19,7 @@
         "title": "Vom Dienst verwendete Daten",
         "paragraphs": [
           "Ein Konto verwendet eine Telefonnummer, einen Anzeigenamen und eine Kontokennung. Die Anmeldeprüfung und Gerätesitzungen helfen, den Zugang zu schützen.",
+          "Karten- und Benachrichtigungsdienste können auch technische Daten verarbeiten: IP-Adresse, Geräteinformationen, Diagnosedaten, Karten- oder Installationskennungen und Karteninteraktionen. Das Datenverzeichnis der endgültigen Version muss diese Daten auch dann berücksichtigen, wenn kein gesonderter Analysedienst verwendet wird.",
           "Für eine Fahrt verarbeitet der Dienst Abholort und Ziel, Zeit, zugewiesenen Fahrer, Status, Fahrpreis, Zahlung und Beleg. Wenn du ein Rechnungsprofil ausfüllst, werden auch die dafür eingegebenen Angaben verarbeitet.",
           "Bei Fahrern kann der Dienst Bewerbungen, zur Prüfung eingereichte Dokumente, Fahrzeuge und die Flottenzugehörigkeit verarbeiten. Geräteinformationen, Installationskennungen, Benachrichtigungs-Token und Sicherheitsprotokolle unterstützen den Betrieb. Der endgültige Umfang hängt von den in der veröffentlichten Version aktivierten Funktionen ab."
         ]

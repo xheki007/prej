@@ -19,6 +19,7 @@
         "title": "Të dhënat që përdor shërbimi",
         "paragraphs": [
           "Llogaria përdor numrin e telefonit, emrin e shfaqur dhe identifikuesin e llogarisë. Verifikimi i hyrjes dhe sesionet e pajisjes ndihmojnë në mbrojtjen e qasjes.",
+          "Shërbimet e hartës dhe njoftimeve mund të përpunojnë edhe të dhëna teknike: adresën IP, informacion për pajisjen, diagnostikë, identifikues të hartës ose instalimit dhe ndërveprime me hartën. Inventari i versionit final duhet të përfshijë këto të dhëna, edhe kur nuk përdoret një shërbim i veçantë analitikash.",
           "Për një udhëtim përpunohen pika e nisjes, destinacioni, koha, shoferi i caktuar, statusi, tarifa, pagesa dhe dëftesa. Kur plotëson profilin e faturimit, përpunohen edhe të dhënat që jep për atë profil.",
           "Për shoferët, shërbimi mund të përpunojë aplikimin, dokumentet e dorëzuara për verifikim, automjetin dhe lidhjen me flotën. Të dhënat e pajisjes, identifikuesi i instalimit, token-i i njoftimeve dhe regjistrat e sigurisë përdoren për funksionimin e shërbimit. Lista përfundimtare varet nga funksionet e aktivizuara në versionin e publikuar."
         ]

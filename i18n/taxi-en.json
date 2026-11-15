@@ -19,6 +19,7 @@
         "title": "Data used by the service",
         "paragraphs": [
           "An account uses a phone number, display name and account identifier. Sign-in verification and device sessions help protect access.",
+          "Map and notification services may also process technical data: IP address, device information, diagnostics, map or installation identifiers and map interactions. The final version's inventory must include these data even when no separate analytics service is used.",
           "For a trip, the service processes pickup and destination, time, assigned driver, status, fare, payment and receipt. If you complete a billing profile, it also processes the information you provide for that profile.",
           "For drivers, the service may process applications, documents submitted for verification, vehicles and fleet membership. Device information, installation identifiers, notification tokens and security logs support the service. The final inventory depends on the features enabled in the released version."
         ]

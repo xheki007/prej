@@ -33,6 +33,9 @@ Kërkesa duhet të përfshijë aplikacionin, telefonin e llogarisë dhe fushëve
 - `apps/api/src/driver-location/ingestion.service.ts`: `purgeExpiredSamples()` ekziston por kërkon planifikim operacional; nuk u pretendua se është aktiv.
 - `apps/api/src/auth/config.ts`: OTP development ndalohet në production; mbështeten external dhe twilio-verify. Ofruesi aktiv duhet konfirmuar pa nxjerrë sekrete.
 - Android Rider/Driver: Google Maps, Expo Notifications, SecureStore; Driver shton background location dhe task manager. SDK-të duhen audituar kundrejt versionit të nënshkruar.
+- Kontrolli i AAB-ve versionCode 2 më 15.11.2026 gjeti Maps SDK 19.1.0, Play Services Location 21.3.0, descriptor-at Firebase Messaging/Installations dhe emrat e resource-ve të konfigurimit FCM. Nuk u nxorën çelësa ose vlera resource-sh. Politika draft SQ/EN/DE tani përfshin edhe IP, diagnostikën dhe identifikuesit teknikë. Dokumentacioni aktual i Maps mbulon versionin e fundit; sjellja e versionit konkret dhe ofruesit aktivë kërkojnë kontroll përfundimtar.
+
+Referenca të inventarit: [Maps SDK disclosure](https://developers.google.com/maps/documentation/android-sdk/play-data-disclosure), [Firebase disclosure](https://firebase.google.com/docs/android/play-data-disclosure), [Expo push](https://docs.expo.dev/push-notifications/faq/). Prania e SDK-së nuk provon dorëzim njoftimesh ose fshirje te procesori.
 
 ## Porta e publikimit
 
