@@ -8,10 +8,10 @@ Faqja statike përgatit një email te kontakti publik ekzistues i PREJ. Dërgimi
 
 Kërkesa duhet të përfshijë aplikacionin, telefonin e llogarisë dhe fushëveprimin. Kërkuesit nuk i kërkohen fjalëkalime, OTP ose dokumente identiteti me email. Një email nga një adresë e panjohur nuk është provë e pronësisë së numrit të telefonit.
 
-## Propozim konkret për pronarin
+## Vendimi i pronarit dhe pjesët e hapura
 
 - PREJ merr dhe regjistron kërkesën, pastaj verifikon pronësinë përmes kanalit të llogarisë. Mos dërgo kurrë OTP te personeli; përdor një rrjedhë të kontrolluar verifikimi.
-- Propozohet përfundimi i fshirjes së të dhënave të zakonshme të llogarisë brenda 30 ditëve nga verifikimi, me njoftim të qartë për çdo përjashtim. Ky është një propozim shërbimi, jo një afat ligjor i pretenduar.
+- Pronari miratoi shprehimisht më 15.11.2026 përfundimin e fshirjes së të dhënave të zakonshme të llogarisë brenda 30 ditëve nga verifikimi. Ky është afat operacional i miratuar, jo afat ligjor i pretenduar. Miratimi nuk provon zbatimin teknik dhe nuk autorizon fshirjen e të dhënave reale pa kërkesë të verifikuar. Afatin e faturave pronari do ta konfirmojë më vonë.
 - Llogaria e përbashkët Rider/Driver kërkon sqarim nëse kërkesa prek të dy rolet. Mos fshi të dhënat e një personi tjetër ose të një flote tjetër.
 - Ruajtja e faturave/dëftesave duhet të përcaktohet nga operatori dhe kontabilisti sipas detyrimeve që zbatohen realisht. Nuk është caktuar një numër vitesh me supozim. PREJ SH.P.K. si ofrues platforme duhet të dallohet nga transportuesi që lëshon dëftesën.
 - Duhet miratuar periudha për historikun jo financiar, dokumentet e shoferit, regjistrat e sigurisë dhe kopjet rezervë. Një datë `expiresAt` pa punë të planifikuar pastrimi nuk provon fshirje.

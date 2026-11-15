@@ -1,34 +1,128 @@
 {
-  "ui":{"skip":"Skip to content","languages":"Language","pages":"Application help","contact":"App and privacy contact","company":"Company website","updated":"Updated"},
-  "privacy":{
-    "nav":"Privacy","title":"Privacy for PREJ applications","intro":"How PREJ Taxi for passengers and PREJ Driver for drivers, provided by PREJ SH.P.K., use data.",
-    "draftTitle":"Draft for review before release","draftText":"This document describes features verified during development. Final retention periods, the erasure procedure and production service providers are being verified. It is not yet the final privacy policy for Google Play publication.",
-    "sections":[
-      {"id":"data","title":"Data used by the service","paragraphs":["An account uses a phone number, display name and account identifier. Sign-in verification and device sessions help protect access.","For a trip, the service processes pickup and destination, time, assigned driver, status, fare, payment and receipt. If you complete a billing profile, it also processes the information you provide for that profile.","For drivers, the service may process applications, documents submitted for verification, vehicles and fleet membership. Device information, installation identifiers, notification tokens and security logs support the service. The final inventory depends on the features enabled in the released version."]},
-      {"id":"location","title":"Location and permissions","paragraphs":["PREJ Taxi uses location while you use the app, with your permission, to set a pickup point. You can also choose an address manually. The passenger app does not require background location tracking.","PREJ Driver uses location for nearby offers, trip assignment and arrival updates. With separate permission, location may also be sent while the app is in the background or closed, while you are online or on an active trip. Tracking behavior and stopping are checked in final release tests.","You can manage location and notification permissions in your device settings. Refusing them limits features that depend on those permissions. Uninstalling the app does not delete the account or server-side history."]},
-      {"id":"sharing","title":"Who receives data","paragraphs":["Passengers and drivers see the information needed for their trip. Authorized operator or fleet personnel have role-based access for dispatch, support and administration.","Technical services for hosting, maps, message verification and notifications may process data to provide their respective features. The provider inventory and production configuration must be confirmed before release. The code includes Google Maps, Expo Notifications and support for Twilio Verify; this alone does not establish that every provider is active in production."]},
-      {"id":"retention","title":"Retention and deletion","paragraphs":["Account and trip data are stored in the PREJ service. Final periods for history, driver documents, receipts, logs and backups have not yet been approved in this draft.","Account deletion must include associated data that no longer has a documented reason for retention. Any exception for financial records, security or legal obligations must have a purpose, retention period and restricted access; disabling sign-in alone is not deletion."]},
-      {"id":"rights","title":"Data questions and requests","paragraphs":["You can contact PREJ SH.P.K. for information, corrections or a request to delete your account and associated data. Use the Account deletion page above or the contact below.","Provide only the minimum information needed to identify your account. Do not email passwords, verification codes, identity documents or payment-card details. Account ownership is verified separately before any deletion."]}
+  "ui": {
+    "skip": "Skip to content",
+    "languages": "Language",
+    "pages": "Application help",
+    "contact": "App and privacy contact",
+    "company": "Company website",
+    "updated": "Updated"
+  },
+  "privacy": {
+    "nav": "Privacy",
+    "title": "Privacy for PREJ applications",
+    "intro": "How PREJ Taxi for passengers and PREJ Driver for drivers, provided by PREJ SH.P.K., use data.",
+    "draftTitle": "Draft for review before release",
+    "draftText": "This document describes features verified during development. Final retention periods, the erasure procedure and production service providers are being verified. It is not yet the final privacy policy for Google Play publication.",
+    "sections": [
+      {
+        "id": "data",
+        "title": "Data used by the service",
+        "paragraphs": [
+          "An account uses a phone number, display name and account identifier. Sign-in verification and device sessions help protect access.",
+          "For a trip, the service processes pickup and destination, time, assigned driver, status, fare, payment and receipt. If you complete a billing profile, it also processes the information you provide for that profile.",
+          "For drivers, the service may process applications, documents submitted for verification, vehicles and fleet membership. Device information, installation identifiers, notification tokens and security logs support the service. The final inventory depends on the features enabled in the released version."
+        ]
+      },
+      {
+        "id": "location",
+        "title": "Location and permissions",
+        "paragraphs": [
+          "PREJ Taxi uses location while you use the app, with your permission, to set a pickup point. You can also choose an address manually. The passenger app does not require background location tracking.",
+          "PREJ Driver uses location for nearby offers, trip assignment and arrival updates. With separate permission, location may also be sent while the app is in the background or closed, while you are online or on an active trip. Tracking behavior and stopping are checked in final release tests.",
+          "You can manage location and notification permissions in your device settings. Refusing them limits features that depend on those permissions. Uninstalling the app does not delete the account or server-side history."
+        ]
+      },
+      {
+        "id": "sharing",
+        "title": "Who receives data",
+        "paragraphs": [
+          "Passengers and drivers see the information needed for their trip. Authorized operator or fleet personnel have role-based access for dispatch, support and administration.",
+          "Technical services for hosting, maps, message verification and notifications may process data to provide their respective features. The provider inventory and production configuration must be confirmed before release. The code includes Google Maps, Expo Notifications and support for Twilio Verify; this alone does not establish that every provider is active in production."
+        ]
+      },
+      {
+        "id": "retention",
+        "title": "Retention and deletion",
+        "paragraphs": [
+          "The approved period for deleting ordinary account data is 30 days after account ownership is verified. The retention period for invoices and financial receipts will be confirmed separately. The execution procedure and final policy are still being prepared before release.",
+          "Account and trip data are stored in the PREJ service. Final periods for history, driver documents, receipts, logs and backups have not yet been approved in this draft.",
+          "Account deletion must include associated data that no longer has a documented reason for retention. Any exception for financial records, security or legal obligations must have a purpose, retention period and restricted access; disabling sign-in alone is not deletion."
+        ]
+      },
+      {
+        "id": "rights",
+        "title": "Data questions and requests",
+        "paragraphs": [
+          "You can contact PREJ SH.P.K. for information, corrections or a request to delete your account and associated data. Use the Account deletion page above or the contact below.",
+          "Provide only the minimum information needed to identify your account. Do not email passwords, verification codes, identity documents or payment-card details. Account ownership is verified separately before any deletion."
+        ]
+      }
     ]
   },
-  "delete-account":{
-    "nav":"Account deletion","title":"Request account deletion","intro":"Send a request concerning your account and associated data in PREJ Taxi or PREJ Driver. You do not need to sign in to the app.",
-    "sections":[
-      {"id":"request-scope","title":"What to include","paragraphs":["State the app, the phone number linked to your account, and whether you request deletion of the entire account and associated data or only specific data. If you use both apps with the same number, say whether the request applies to both."]},
-      {"id":"next-steps","title":"What happens next","paragraphs":["PREJ SH.P.K. reviews the request and verifies account ownership before taking action. The data to be deleted and any records that must be retained for a documented reason will be clarified. A reply or disabled sign-in is not confirmation that deletion has been completed.","Your profile, device identifiers and associated account data are included in the request review. Receipts and financial records may have separate retention requirements. Final periods and the execution procedure are still being prepared before release; see the privacy draft. This page does not perform automatic deletion."]},
-      {"id":"sensitive-warning","title":"Do not send sensitive information","paragraphs":["Do not include passwords, SMS/OTP codes, photographs of identity documents or payment-card numbers. Provide only your account phone number and request. Do not send another person's data."]}
+  "delete-account": {
+    "nav": "Account deletion",
+    "title": "Request account deletion",
+    "intro": "Send a request concerning your account and associated data in PREJ Taxi or PREJ Driver. You do not need to sign in to the app.",
+    "sections": [
+      {
+        "id": "request-scope",
+        "title": "What to include",
+        "paragraphs": [
+          "State the app, the phone number linked to your account, and whether you request deletion of the entire account and associated data or only specific data. If you use both apps with the same number, say whether the request applies to both."
+        ]
+      },
+      {
+        "id": "next-steps",
+        "title": "What happens next",
+        "paragraphs": [
+          "The approved period for deleting ordinary account data is 30 days after account ownership is verified. The retention period for invoices and financial receipts will be confirmed separately. The execution procedure and final policy are still being prepared before release.",
+          "PREJ SH.P.K. reviews the request and verifies account ownership before taking action. The data to be deleted and any records that must be retained for a documented reason will be clarified. A reply or disabled sign-in is not confirmation that deletion has been completed.",
+          "Your profile, device identifiers and associated account data are included in the request review. Receipts and financial records may have separate retention requirements. Final periods and the execution procedure are still being prepared before release; see the privacy draft. This page does not perform automatic deletion."
+        ]
+      },
+      {
+        "id": "sensitive-warning",
+        "title": "Do not send sensitive information",
+        "paragraphs": [
+          "Do not include passwords, SMS/OTP codes, photographs of identity documents or payment-card numbers. Provide only your account phone number and request. Do not send another person's data."
+        ]
+      }
     ],
-    "button":"Prepare an email request","subject":"PREJ — account and data deletion request",
-    "body":"To PREJ SH.P.K.\n\nApplication: [PREJ Taxi / PREJ Driver / both]\nAccount phone number: [enter your number]\nRequest: [delete account and associated data / specific data]\n\nPlease explain the account verification and request processing steps.",
-    "sendExplanation":"The button only opens a draft in your email application. Review and send it yourself. This page does not send email, collect its contents or confirm deletion.",
-    "manualTitle":"If your email app does not open","manualText":"Copy the address and template below into your email service. Complete only the fields in brackets."
+    "button": "Prepare an email request",
+    "subject": "PREJ — account and data deletion request",
+    "body": "To PREJ SH.P.K.\n\nApplication: [PREJ Taxi / PREJ Driver / both]\nAccount phone number: [enter your number]\nRequest: [delete account and associated data / specific data]\n\nPlease explain the account verification and request processing steps.",
+    "sendExplanation": "The button only opens a draft in your email application. Review and send it yourself. This page does not send email, collect its contents or confirm deletion.",
+    "manualTitle": "If your email app does not open",
+    "manualText": "Copy the address and template below into your email service. Complete only the fields in brackets."
   },
-  "support":{
-    "nav":"Help","title":"Help with PREJ applications","intro":"Information and contact for PREJ Taxi and PREJ Driver from PREJ SH.P.K.",
-    "sections":[
-      {"id":"apps","title":"Two applications, clear roles","paragraphs":["PREJ Taxi is the application for requesting and following a trip as a passenger. PREJ Driver is for drivers with activated access, trip offers and trip management.","The applications are being prepared for release. This page does not announce general Google Play availability, city coverage or guaranteed service hours."]},
-      {"id":"help","title":"Tell us what happened","paragraphs":["Contact the email address below with the app, version, device model and a brief description of the issue. Before sending a screenshot, remove names, phone numbers, precise addresses and payment information.","Do not send passwords or verification codes. For data requests, use the privacy and account deletion pages."]},
-      {"id":"payments","title":"Fare and payment","paragraphs":["Check the payment method and fare on the relevant trip screen. Test materials verify the cash payment flow. Card payments or an electronic wallet should not be considered available unless shown as activated in the relevant service."]}
+  "support": {
+    "nav": "Help",
+    "title": "Help with PREJ applications",
+    "intro": "Information and contact for PREJ Taxi and PREJ Driver from PREJ SH.P.K.",
+    "sections": [
+      {
+        "id": "apps",
+        "title": "Two applications, clear roles",
+        "paragraphs": [
+          "PREJ Taxi is the application for requesting and following a trip as a passenger. PREJ Driver is for drivers with activated access, trip offers and trip management.",
+          "The applications are being prepared for release. This page does not announce general Google Play availability, city coverage or guaranteed service hours."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "Tell us what happened",
+        "paragraphs": [
+          "Contact the email address below with the app, version, device model and a brief description of the issue. Before sending a screenshot, remove names, phone numbers, precise addresses and payment information.",
+          "Do not send passwords or verification codes. For data requests, use the privacy and account deletion pages."
+        ]
+      },
+      {
+        "id": "payments",
+        "title": "Fare and payment",
+        "paragraphs": [
+          "Check the payment method and fare on the relevant trip screen. Test materials verify the cash payment flow. Card payments or an electronic wallet should not be considered available unless shown as activated in the relevant service."
+        ]
+      }
     ]
   }
 }
