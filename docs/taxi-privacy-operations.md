@@ -1,0 +1,39 @@
+# Privatësia dhe fshirja: vendimet operative para publikimit
+
+Status: përgatitje për shqyrtim, jo procedurë e shpallur si e aktivizuar. Asnjë e dhënë ekzistuese nuk është fshirë nga kjo punë.
+
+## Kanali i kërkesave
+
+Faqja statike përgatit një email te kontakti publik ekzistues i PREJ. Dërgimi bëhet nga përdoruesi në shërbimin e tij të emailit. Faqja nuk pranon formular, nuk ruan telefonin dhe nuk bën kërkesa rrjeti me të dhënat e llogarisë. Alternativa manuale funksionon pa JavaScript dhe pa aplikacion emaili të parazgjedhur.
+
+Kërkesa duhet të përfshijë aplikacionin, telefonin e llogarisë dhe fushëveprimin. Kërkuesit nuk i kërkohen fjalëkalime, OTP ose dokumente identiteti me email. Një email nga një adresë e panjohur nuk është provë e pronësisë së numrit të telefonit.
+
+## Propozim konkret për pronarin
+
+- PREJ merr dhe regjistron kërkesën, pastaj verifikon pronësinë përmes kanalit të llogarisë. Mos dërgo kurrë OTP te personeli; përdor një rrjedhë të kontrolluar verifikimi.
+- Propozohet përfundimi i fshirjes së të dhënave të zakonshme të llogarisë brenda 30 ditëve nga verifikimi, me njoftim të qartë për çdo përjashtim. Ky është një propozim shërbimi, jo një afat ligjor i pretenduar.
+- Llogaria e përbashkët Rider/Driver kërkon sqarim nëse kërkesa prek të dy rolet. Mos fshi të dhënat e një personi tjetër ose të një flote tjetër.
+- Ruajtja e faturave/dëftesave duhet të përcaktohet nga operatori dhe kontabilisti sipas detyrimeve që zbatohen realisht. Nuk është caktuar një numër vitesh me supozim. PREJ SH.P.K. si ofrues platforme duhet të dallohet nga transportuesi që lëshon dëftesën.
+- Duhet miratuar periudha për historikun jo financiar, dokumentet e shoferit, regjistrat e sigurisë dhe kopjet rezervë. Një datë `expiresAt` pa punë të planifikuar pastrimi nuk provon fshirje.
+
+## Hapat teknikë që mbeten për zbatim dhe provë
+
+1. Regjistro kërkesën në një hapësirë me qasje të kufizuar; mos kopjo përmbajtje private në Git, raportin publik PREJ ose screenshot.
+2. Verifiko identitetin dhe fushëveprimin, kërkesat e hapura financiare dhe udhëtimet aktive. Mos fshi në mes të një udhëtimi.
+3. Përgatit një inventar vetëm për lexim: profil, pajisje/token-a, sesione, të dhëna lokacioni, historik, njoftime, aplikim shoferi, dokumente dhe të dhëna të lidhura.
+4. Ndaj të dhënat që duhen fshirë/anonimizuar nga ato që duhet të mbahen me arsye dhe afat të miratuar. Mos modifiko faturat ose regjistrimet financiare historike në mënyrë që të humbet integriteti i tyre.
+5. Ekzekuto me kontroll të fushëveprimit, revokim sesionesh dhe shmangie të rrjedhës së re të të dhënave. Testo fillimisht në të dhëna sintetike dhe me dry-run; fshirja reale kërkon kërkesë të verifikuar.
+6. Verifiko sistemet kryesore, procesorët dhe rotacionin e backup-eve. Në rikthim nga backup duhet riaplikuar evidenca e fshirjes para hapjes së shërbimit.
+7. Konfirmo vetëm pasi kontrollet të tregojnë çfarë është fshirë dhe çfarë mbetet me afat të përcaktuar. Mos e barazo `disabledAt` me fshirje.
+
+## Evidenca e kodit të inspektuar
+
+- `prej-platform/packages/database/prisma/schema.prisma`: User, Device, Session, RiderProfile, DriverProfile, Ride, ReceiptProfile, ReceiptDocument dhe lidhje me kufizime referenciale. Fshirja direkte e User nuk është procedurë e plotë.
+- `apps/api/src/driver-location/domain.ts`: konfigurimi i parazgjedhur i mostrave 30 ditë, interval i lejuar 1–90 ditë.
+- `apps/api/src/driver-location/ingestion.service.ts`: `purgeExpiredSamples()` ekziston por kërkon planifikim operacional; nuk u pretendua se është aktiv.
+- `apps/api/src/auth/config.ts`: OTP development ndalohet në production; mbështeten external dhe twilio-verify. Ofruesi aktiv duhet konfirmuar pa nxjerrë sekrete.
+- Android Rider/Driver: Google Maps, Expo Notifications, SecureStore; Driver shton background location dhe task manager. SDK-të duhen audituar kundrejt versionit të nënshkruar.
+
+## Porta e publikimit
+
+Politika mbetet me shenjë të dukshme draft derisa të konfirmohen afatet, procesi i zbatueshëm dhe ofruesit e prodhimit. Testi i faqeve nuk është provë e një fshirjeje reale. Një URL publike nuk e bën automatikisht aplikacionin gati për shqyrtim nga Google Play.
